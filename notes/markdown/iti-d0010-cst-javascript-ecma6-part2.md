@@ -254,15 +254,28 @@ console.log(names);
 
 ### External JS files loading Strategies
 
-- default (traditional)
-  ![default loading](./imgs/pasted_image_20241216224049.png)
-- async - Don't rely on it - Will work with small HTML files, as it can be fully interpreted, before the JS script fully downloaded
-  ![async loading](./imgs/pasted_image_20241216224115.png)
-- defer - JS modules, by default it `defer` executed
-  ![defer loading](./imgs/pasted_image_20241216224129.png)
-  > [!Note]
-  >
-  > **async & defer** > `async` & `defer` only for external `src` scripts (because it needs to be downloaded).
+**default (traditional)**:
+
+![default loading](./imgs/pasted_image_20241216224049.png)
+
+**async**:
+
+- Don't rely on it
+- Will work with small HTML files, as it can be fully interpreted, before the JS script fully downloaded
+
+![async loading](./imgs/pasted_image_20241216224115.png)
+
+**defer**:
+
+- JS modules, by default it `defer` executed
+
+![defer loading](./imgs/pasted_image_20241216224129.png)
+
+> [!Note]
+>
+> **async & defer**
+>
+> `async` & `defer` only for external `src` scripts (because it needs to be downloaded).
 
 [^1]: C++ supports multiple inheritance, but multiple inheritance have **diamond problem**, which happens when a child class inherits from multiple classes and there are some parent classes shares the same base class.
 [^2]: Prototypal Inheritance is the linking of prototypes of a parent object to a child object to share and utilize the properties of a parent class using a child class.
