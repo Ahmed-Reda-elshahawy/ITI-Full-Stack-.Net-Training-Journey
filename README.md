@@ -28,6 +28,12 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0007 - CST (JavaScript 5, ECMA5) (Part 4) | [Markdown](./notes/markdown/iti-d0007-cst-javascript-ecma5-part4.md) |
 | 🔖 ITI - D0008 - CST (JavaScript 5, ECMA5) (Part 5) | [Markdown](./notes/markdown/iti-d0008-cst-javascript-ecma5-part5.md) |
 
+#### JavaScript 6, ECMA6
+
+| Topic                                                          | Notes                                                                 |
+| -------------------------------------------------------------- | --------------------------------------------------------------------- |
+| 🔖 ITI - D0009 - CST (JavaScript 6, ECMA6, ECMA.NEXT) (Part 1) | [Markdown](./notes//markdown/iti-d0009-cst-javascript-ecma6-part1.md) |
+
 ## Progress
 
 - [ ] Add notes for all topics as a Markdown files.

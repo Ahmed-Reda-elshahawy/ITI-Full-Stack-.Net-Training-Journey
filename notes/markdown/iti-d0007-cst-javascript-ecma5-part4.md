@@ -1,4 +1,4 @@
-# 🔖 ITI - D0009 - CST (JavaScript 5, ECMA5) (Part 4)
+# 🔖 ITI - D0007 - CST (JavaScript 5, ECMA5) (Part 4)
 
 ## BOM (Browser Object Model)
 
