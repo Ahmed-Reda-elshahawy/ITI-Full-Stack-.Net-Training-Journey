@@ -17,6 +17,7 @@ This index will be update as I progress through the training. It will contain al
 | 🔖 ITI - D0001 - Client Server Model & Basics of HTML4 | [Markdown](./notes/markdown/iti-d0001-client-server-model-and-basics-of-html4.md) |
 | 🔖 ITI - D0002 - CST (HTML Part2)                      | [Markdown](./notes//markdown/iti-d0002-cst-html-part2.md)                         |
 | 🔖 ITI - D0003 - CST (CSS 2.0)                         | [Markdown](./notes/markdown/iti-d0003-cst-css2.md)                                |
+| 🔖 ITI - D0004 - CST (JavaScript 5, ECMA5)             | [Markdown](./notes/markdown/iti-d0004-cst-javascript-ecma5.md)                    |
 
 ## Disclaimer
 
