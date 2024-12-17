@@ -6,7 +6,7 @@ This repository contains my journey through the Full Stack .Net Training at ITI.
 
 ## Index
 
-This index will be update as I progress through the training. It will contain all the topics that we have covered in the training. and links to the related notes, tasks and projects.
+This index will be updated as I progress through the training. It will contain all the topics that we have covered in the training. and links to the related notes, tasks and projects.
 
 ### Client Side Technologies (CST)
 
