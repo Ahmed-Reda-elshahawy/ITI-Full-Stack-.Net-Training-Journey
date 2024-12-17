@@ -10,7 +10,9 @@
 - **Integrated with HTML**
 - **Event handling**
 
-> [!Info] Loosely types vs. Strongly typed languages
+> [!Info]
+>
+> **Loosely types vs. Strongly typed languages**
 >
 > - **Strongly Typed**: according to variable type, you must assign a correct value to it (like C/C++).
 >
@@ -95,7 +97,9 @@ console.log(typeof x); // number
 > console.log(y); // 20
 > ```
 
-> [!Note] > `typeof` is not the best way to check type of variable, especially when dealing with objects so we will use _prototype_ name to know exact type of variables
+> [!Note]
+>
+> `typeof` is not the best way to check type of variable, especially when dealing with objects so we will use _prototype_ name to know exact type of variables
 
 #### Variable Declaration Type
 
@@ -148,7 +152,9 @@ var obj = {}; // literal object
   > [!Note]
   > Objects with identical identities share the same state.
 
-> [!Tip] > `hasOwnProperty("prop")` is a method returns true if the current object instance has the property defined in its constructor or in a related constructor function.
+> [!Tip]
+>
+> `hasOwnProperty("prop")` is a method returns true if the current object instance has the property defined in its constructor or in a related constructor function.
 
 ### Variable Scopes
 
