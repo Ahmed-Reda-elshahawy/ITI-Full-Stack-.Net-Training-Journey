@@ -21,6 +21,13 @@ This index will be update as I progress through the training. It will contain al
 | 🔖 ITI - D0005 - CST (JavaScript 5, ECMA5) (Part 2)    | [Markdown](./notes/markdown/iti-d0005-cst-javascript-ecma5-part2.md)              |
 | 🔖 ITI - D0006 - CST (JavaScript 5, ECMA5) (Part 3)    | [Markdown](./notes/markdown/iti-d0006-cst-javascript-ecma5-part3.md)              |
 
+## Progress
+
+- [ ] Add notes for all topics as a Markdown files.
+- [ ] Add notes for all topics as a PDF files.
+- [ ] Automate the process of converting the Markdown files to PDF files.
+- [ ] Add tasks for all topics
+
 ## Disclaimer
 
 This repository is contains my personal notes and work. It is not an official repository for ITI. It is not affiliated with ITI in any way. It is just a personal repository that I am using to document my journey through the training.
