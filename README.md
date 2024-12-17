@@ -12,10 +12,11 @@ This index will be update as I progress through the training. It will contain al
 
 #### Intro To Web Development, HTML4, CSS2.0
 
-| Topic                                                  | Notes in Markdown                                                                 |
+| Topic                                                  | Notes                                                                             |
 | ------------------------------------------------------ | --------------------------------------------------------------------------------- |
 | 🔖 ITI - D0001 - Client Server Model & Basics of HTML4 | [Markdown](./notes/markdown/iti-d0001-client-server-model-and-basics-of-html4.md) |
 | 🔖 ITI - D0002 - CST (HTML Part2)                      | [Markdown](./notes//markdown/iti-d0002-cst-html-part2.md)                         |
+| 🔖 ITI - D0003 - CST (CSS 2.0)                         | [Markdown](./notes/markdown/iti-d0003-cst-css2.md)                                |
 
 ## Disclaimer
 
