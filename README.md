@@ -8,6 +8,14 @@ This repository contains my journey through the Full Stack .Net Training at ITI.
 
 This index will be update as I progress through the training. It will contain all the topics that we have covered in the training. and links to the related notes, tasks and projects.
 
+### Client Side Technologies (CST)
+
+#### Intro To Web Development, HTML4, CSS2.0
+
+| Topic                                                  | Notes in Markdown                                                                 |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------- |
+| 🔖 ITI - D0001 - Client Server Model & Basics of HTML4 | [Markdown](./notes/markdown/iti-d0001-client-server-model-and-basics-of-html4.md) |
+
 ## Disclaimer
 
 This repository is contains my personal notes and work. It is not an official repository for ITI. It is not affiliated with ITI in any way. It is just a personal repository that I am using to document my journey through the training.
