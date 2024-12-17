@@ -15,6 +15,7 @@ This index will be update as I progress through the training. It will contain al
 | Topic                                                  | Notes in Markdown                                                                 |
 | ------------------------------------------------------ | --------------------------------------------------------------------------------- |
 | 🔖 ITI - D0001 - Client Server Model & Basics of HTML4 | [Markdown](./notes/markdown/iti-d0001-client-server-model-and-basics-of-html4.md) |
+| 🔖 ITI - D0002 - CST (HTML Part2)                      | [Markdown](./notes//markdown/iti-d0002-cst-html-part2.md)                         |
 
 ## Disclaimer
 
