@@ -10,7 +10,7 @@
 - **Integrated with HTML**
 - **Event handling**
 
-> [!Info]
+> [!NOTE]
 >
 > **Loosely types vs. Strongly typed languages**
 >
@@ -50,7 +50,7 @@ Use `<noscript></noscript>`
 - Null
 - Undefined
 
-> [!Info]
+> [!NOTE]
 >
 > - **Number** is represented under the hood as _double_ (8 bytes) followed IEEE 754 standards
 >   - **Issue:** summation of floating number with it's double value will not have the exact expected answer (e.g. $0.1+0.2=0.30000000000004$)
@@ -161,7 +161,7 @@ var obj = {}; // literal object
 - Global Scope (script scope, namespace scope)
 - Local Scope (function scope)
 
-> [!Info]
+> [!NOTE]
 > We didn't have a **block scope** in ECMA5 using **var**
 >
 > ```js
@@ -195,7 +195,7 @@ console.log(1 * "2"); // 2 as a number
 
 Use `parseInt`, `parseFloat`
 
-**Using Algorithm**
+**Using Algorithm**:
 
 ```txt
 trim string from both sides
@@ -212,7 +212,7 @@ while (current character is digit):
 return result
 ```
 
-> [!INFO]
+> [!NOTE]
 >
 > - `NaN` is a special value in JS from type Number, not equal anything even itself
 >
