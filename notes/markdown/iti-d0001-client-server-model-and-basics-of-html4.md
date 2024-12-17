@@ -18,8 +18,8 @@
   - FTP: 20, 21
 - We use **protocols** (like HTTP, HTTPS)to set communication standard between client and server
 - HTTP web server should have a public folder called _www_ which in the root directory
-- URI (Uniform Resource Identifier) (e.g. https://iti.com/index.html)
-  - URL (Universal Resource Locator) (e.g. https://iti.com)
+- URI (Uniform Resource Identifier) (e.g. `https://iti.com/index.html`)
+  - URL (Universal Resource Locator) (e.g.`https://iti.com`)
   - URN (Uniform Resource Name) (e.g. index.html)
 
 ## Frontend Technologies
@@ -106,15 +106,15 @@
 
 **Common Attributes:**
 
-- width
-- height
-- src: image location path
-- alt: alternative text (if alt not setted, it will take title value)
-- title
-- border: (just set width, and it will be solid border but we can't change it's style with html)
-- hspace (set left and right margin for image)
-- vspace (set top and bottom margin for image)
-- align: "right|left|top|bottom|middle"
+- `width`
+- `height`
+- `src`: image location path
+- `alt`: alternative text (if alt not setted, it will take title value)
+- `title`
+- `border`: (just set width, and it will be solid border but we can't change it's style with html)
+- `hspace` (set left and right margin for image)
+- `vspace` (set top and bottom margin for image)
+- `align`: "right|left|top|bottom|middle"
   - by default will be left
   - "left|right|bottom" not align for image, it's an align for text around image
 
@@ -129,7 +129,7 @@
 <img usemap="" src="" alt="" />
 ```
 
-**Example**
+**Example:**
 
 ```html
 <img src="./img.png" alt="an image" usemap="#mymap" />
