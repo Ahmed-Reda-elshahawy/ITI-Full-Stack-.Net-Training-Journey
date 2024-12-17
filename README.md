@@ -20,6 +20,7 @@ This index will be update as I progress through the training. It will contain al
 | 🔖 ITI - D0004 - CST (JavaScript 5, ECMA5)             | [Markdown](./notes/markdown/iti-d0004-cst-javascript-ecma5.md)                    |
 | 🔖 ITI - D0005 - CST (JavaScript 5, ECMA5) (Part 2)    | [Markdown](./notes/markdown/iti-d0005-cst-javascript-ecma5-part2.md)              |
 | 🔖 ITI - D0006 - CST (JavaScript 5, ECMA5) (Part 3)    | [Markdown](./notes/markdown/iti-d0006-cst-javascript-ecma5-part3.md)              |
+| 🔖 ITI - D0007 - CST (JavaScript 5, ECMA5) (Part 4)    | [Markdown](./notes/markdown/iti-d0007-cst-javascript-ecma5-part4.md)              |
 
 ## Progress
 
