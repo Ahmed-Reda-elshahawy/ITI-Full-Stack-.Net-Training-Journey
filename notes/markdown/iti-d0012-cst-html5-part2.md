@@ -93,7 +93,8 @@ transform: translate(50px, 20px); /* moves the element 50px along the x-axis, 
 transform: translate(100px, 30px); /* moves the element 100px along the x-axis, and 30px along the y-axis */
 ```
 
-> [!Note] Apply Multiple function to `transform`
+> [!Note]
+> Apply Multiple function to `transform`
 >
 > ```css
 > transform: rotate(0deg) scale(1.2);
