@@ -38,9 +38,9 @@ This index will be updated as I progress through the training. It will contain a
 
 #### HTML5, CSS3.0
 
-| Topic                                | Notes                                                  |
-| ------------------------------------ | ------------------------------------------------------ |
-| 🔖 ITI - D0013 - CST (HTML5) (Part2) | [Markdown](./notes/markdown/iti-d0013-cst-html5-part2.md) |
+| Topic                                | Notes                                                     |
+| ------------------------------------ | --------------------------------------------------------- |
+| 🔖 ITI - D0012 - CST (HTML5) (Part2) | [Markdown](./notes/markdown/iti-d0012-cst-html5-part2.md) |
 
 ## Progress
 
