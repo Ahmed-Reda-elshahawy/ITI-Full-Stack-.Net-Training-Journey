@@ -41,11 +41,20 @@ Callback hell refers to the situation in JavaScript where multiple nested callba
 
 ## JS Engine
 
-- Compiler
-- Interpreter
-- V8 engine
-- Turbofan
-- AST
+### JS Engine Key Components
+
+1. **Parser**: Converts JS code into an Abstract Syntax Tree (AST).
+2. **Interpreter**: Executes code directly, focusing on faster startup.
+3. **Compiler**: Optimizes code for better runtime performance.
+
+### V8 Engine
+
+- V8 is Google's open-source engine
+- Used in Chrome and Node.js
+- Designed for high performance and handles the following
+  - **Parsing** JS code into an AST.
+  - **Interpreting** the AST for quick startup using an interpreter called **Ignition**.
+  - **Optimizing** code for runtime using compiler called **Turbofan**.
 
 ## Promises
 
