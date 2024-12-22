@@ -40,6 +40,7 @@ This index will be updated as I progress through the training. It will contain a
 
 | Topic                                | Notes                                                     |
 | ------------------------------------ | --------------------------------------------------------- |
+| 🔖 ITI - D0011 - CST (HTML5)         | [Markdown](./notes/markdown/iti-d0011-cst-html5.md)       |
 | 🔖 ITI - D0012 - CST (HTML5) (Part2) | [Markdown](./notes/markdown/iti-d0012-cst-html5-part2.md) |
 
 ## Progress
