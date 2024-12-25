@@ -66,9 +66,10 @@ c1.X = 20;
 Console.WriteLine(c1.X); // 20
 ```
 
-> [!Tip] Code Snippets
-> Use `cw` snippet to quickly write `Console.WriteLine`
-> Use `ctor` snippet to quickly create default constructor for struct
+> [!Tip]
+>
+> - Use `cw` snippet to quickly write `Console.WriteLine`
+> - Use `ctor` snippet to quickly create default constructor for struct
 
 ### Indexer
 
