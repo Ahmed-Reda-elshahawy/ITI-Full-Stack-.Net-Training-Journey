@@ -60,7 +60,10 @@ switch(expression)
 }
 ```
 
-> [!Tip] Regions
+> [!Tip]
+>
+> **Regions**
+>
 > Regions in C# is a useful feature that helps manage code in areas that can be hidden or visible.
 >
 > ```cs
@@ -75,7 +78,7 @@ switch(expression)
 - `while`
 - `do/while`
 
-**For: Example**
+**For: Example**:
 
 ```csharp
 for (int i = 0; i < 5; i++)
@@ -84,7 +87,7 @@ for (int i = 0; i < 5; i++)
 } // 0 1 2 3 4
 ```
 
-**While: Example**
+**While: Example**:
 
 ```csharp
 int i = 0;
@@ -95,7 +98,7 @@ while (i < 5)
 } // 0 1 2 3 4
 ```
 
-**do/while: Example**
+**do/while: Example**:
 
 ```csharp
 int i = 0;
@@ -175,7 +178,7 @@ int[] arr = {10, 20, 30}; // Allocate array with initialization
 Console.WriteLine(arr[0]); // 10
 ```
 
-**Examples: 2D Array**
+**Examples: 2D Array**:
 
 ```csharp
 int[,] mat = new int[2, 3] { { 10, 20, 30 }, { 40, 50, 60 } };
