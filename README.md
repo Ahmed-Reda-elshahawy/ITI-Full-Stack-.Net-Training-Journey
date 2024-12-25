@@ -52,6 +52,7 @@ This index will be updated as I progress through the training. It will contain a
 | -------------------------------------- | ---------------------------------------------------------- |
 | 🔖 ITI - D0015 - C Sharp - OOP         | [Markdown](./notes/markdown/iti-d0015-csharp-oop.md)       |
 | 🔖 ITI - D0016 - C Sharp - OOP (Part2) | [Markdown](./notes/markdown/iti-d0016-csharp-oop-part2.md) |
+| 🔖 ITI - D0017 - C Sharp - OOP (Part3) | [Markdown](./notes/markdown/iti-d0017-csharp-oop-part3.md) |
 
 ## Progress
 
