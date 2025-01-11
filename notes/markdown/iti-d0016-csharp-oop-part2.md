@@ -125,7 +125,7 @@ for (int i = 0; i < 6; i++)
 {
   if (i == 2)
   {
-    continue;
+    break;
   }
   Console.WriteLine(i);
 } // 0 1
