@@ -186,8 +186,8 @@ int[,] mat = new int[2, 3] { { 10, 20, 30 }, { 40, 50, 60 } };
 Console.WriteLine(mat[0, 0]);  // 10
 Console.WriteLine(mat.Length);  // 6
 Console.WriteLine(mat.Rank);  // 2
-Console.WriteLine(mat.GetLength(1)); // 2
-Console.WriteLine(mat.GetLength(2)); // 3
+Console.WriteLine(mat.GetLength(0)); // 2
+Console.WriteLine(mat.GetLength(1)); // 3
 ```
 
 ### Array Common Properties
