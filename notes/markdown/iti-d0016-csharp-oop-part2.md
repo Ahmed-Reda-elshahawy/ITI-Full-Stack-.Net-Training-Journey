@@ -155,12 +155,12 @@ for (int i = 0; i < 6; i++)
 
 ```csharp
 int[] arr;
-Console.WriteLine(arr); //   Error: [CS0165] Use of unassigned local variable 'arr'
+Console.WriteLine(arr); // Error: [CS0165] Use of unassigned local variable 'arr'
 ```
 
 ```csharp
 int[] arr = null; // Allocate reference to array and initialize it with null
-Console.WriteLine(arr); //   Correct, it will output nothing
+Console.WriteLine(arr); // Correct, it will output nothing
 ```
 
 ```csharp
