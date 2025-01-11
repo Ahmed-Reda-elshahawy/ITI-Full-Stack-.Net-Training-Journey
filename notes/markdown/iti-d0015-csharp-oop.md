@@ -133,3 +133,15 @@ int x = 10;
 int y = 20;
 Console.WriteLine($"sum: {x:c} + {y:c} = {x+y:c}")
 ```
+
+#### Format specifiers in C# for numbers
+
+| **Format Specifier** | **Meaning**                                                                                         | **Example Input** | **Example Output** (en-US Culture)   |
+| -------------------- | --------------------------------------------------------------------------------------------------- | ----------------- | ------------------------------------ |
+| `C` or `c`           | Formats the number as currency.                                                                     | `123.45`          | `$123.45`                            |
+| `F` or `f`           | Displays the number in fixed-point notation with a specified number of decimal places (default: 2). | `123.456`         | `123.46`                             |
+| `G` or `g`           | General format. Uses the most compact form (fixed-point or scientific notation).                    | `12345.6789`      | `12345.6789`                         |
+| `N` or `n`           | Number format with thousands separators and specified decimal places (default: 2).                  | `1234567.89`      | `1,234,567.89`                       |
+| `P` or `p`           | Percent format. Multiplies by 100 and appends `%`.                                                  | `0.85`            | `85.00%`                             |
+| `E` or `e`           | Scientific (exponential) notation with a specified number of decimal places.                        | `12345.6789`      | `1.23E+004`                          |
+| `X` or `x`           | Hexadecimal format (uppercase or lowercase).                                                        | `255`             | `FF` (uppercase) or `ff` (lowercase) |
