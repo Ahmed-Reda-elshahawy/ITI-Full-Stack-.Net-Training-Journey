@@ -18,7 +18,8 @@ Programming paradigm is a style, or "way" of programming
 
 - **Imperative programming** describes how program executes
 - **Declarative programming** describes what program executed
-  _For more details read this [🔗article](https://cs.lmu.edu/~ray/notes/paradigms/)_
+
+_For more details read this [🔗article](https://cs.lmu.edu/~ray/notes/paradigms/)_
 
 ## `C#`
 
@@ -33,15 +34,15 @@ Programming paradigm is a style, or "way" of programming
 
 ### OOP Pillars
 
-- **Encapsulation** methods and attributes must be contained together in a single container (e.g. `class`)
+- **Encapsulation** methods and attributes must be contained together in a single container (`class`)
 - **Inheritance**
 - **Abstraction** hide complexity, show what is necessary only
-- **Polymorphism** (poly = may, morphism = forms), more than one form
+- **Polymorphism** (`poly` = `many`, `morphism` = `forms`), more than one form
   - **Overload** same name, with different signature, at compile time
   - **Override** only with inheritance, different implementation, at runtime
 
 > [!Note]
-> You can't create a standalone function in CS, i.e. functions(methods), fileds (attributes) must be wrapped inside a class
+> You can't create a standalone function in CS, i.e. functions(methods), fields (attributes) must be wrapped inside a class
 
 > [!Note]
 > C# with visual studio, we create solution and solution can have a multiple projects.
@@ -63,7 +64,7 @@ namespace ConsoleApp1 {
 ### key Points
 
 - `Main` Function is the entry-point of execution.
-- Compilation output from cs compiler, not a binary, it's IL (Indeterminate Language)
+- Compilation output from cs compiler, not a binary, it's `IL` (Indeterminate Language)
 - `BCL` (Base Class Library) like `System` in the code above
 
 ## Namespace in CS
@@ -74,7 +75,7 @@ namespace ConsoleApp1 {
   - Avoid `naming collision`
   - Group related types logically
 
-## Datatypes in CS
+## DataTypes in CS
 
 - **Value types** stored in stack, directly hold data in memory.
 - **Reference types** stored in heap, hold a reference to the data in heap.
