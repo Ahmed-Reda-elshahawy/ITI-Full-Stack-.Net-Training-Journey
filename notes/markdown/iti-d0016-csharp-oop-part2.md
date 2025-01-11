@@ -210,11 +210,11 @@ AccessModifier static methodName(parameter list) // function header
 
 ### Access Modifier
 
-- public
-- private
-- protected
-- internal
-- protected internal
+- `public`: Accessible from anywhere.
+- `private`: Accessible only within the defining class.
+- `protected`: Accessible within the defining class and its derived classes.
+- `internal`: Accessible within the same assembly (project).
+- `protected internal`: Accessible within the same assembly or from derived classes.
 
 > [!Note]
 > All code paths inside a function in C# must return a value
@@ -222,7 +222,7 @@ AccessModifier static methodName(parameter list) // function header
 > ```cs
 > class Program {
 > 	public static int sum(int a, int b) {
-> 		if (a < 0 or b < 0) {
+> 		if (a < 0 || b < 0) {
 > 			return 0;
 > 		}
 > 		// here you must return value from this path or you will have a compilation error
