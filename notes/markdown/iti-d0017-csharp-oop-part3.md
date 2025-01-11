@@ -73,7 +73,10 @@ Console.WriteLine(c1.X); // 20
 
 ### Indexer
 
-- Struct can have an indexer but only if this struct contains array of structs
+- Indexer is a special type of property that allows a class or struct to be accessed like an array for its instances
+- Structs can have an indexer but only if this struct contains a property or field that is an array
+- Indexer is defined using `this` keyword
+- Structs can have only one indexer
 
 **Syntax**:
 
@@ -86,5 +89,36 @@ public return_value_type this[indexer_data_type index_name] {
 	get {
 		// handle getter case
 	}
+}
+```
+
+**Example**:
+
+```cs
+class MyCollection
+{
+    private string[] items = new string[10];
+
+    // Indexer definition
+    public string this[int index]
+    {
+        get { return items[index]; }   // Retrieve item at the given index
+        set { items[index] = value; }  // Set item at the given index
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        MyCollection collection = new MyCollection();
+
+        // Using the indexer to assign and retrieve values
+        collection[0] = "Hello";  // Set value at index 0
+        collection[1] = "World";  // Set value at index 1
+
+        Console.WriteLine(collection[0]);  // Output: Hello
+        Console.WriteLine(collection[1]);  // Output: World
+    }
 }
 ```
