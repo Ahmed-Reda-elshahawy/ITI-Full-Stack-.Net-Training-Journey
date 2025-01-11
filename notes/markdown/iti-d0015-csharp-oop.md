@@ -77,8 +77,8 @@ namespace ConsoleApp1 {
 
 ## DataTypes in CS
 
-- **Value types** stored in stack, directly hold data in memory.
-- **Reference types** stored in heap, hold a reference to the data in heap.
+- **Value types** stored in `stack`, directly hold data in memory.
+- **Reference types** Reference types stored in `heap` and hold a reference to the data in the `stack`
 
 ### Value types
 
