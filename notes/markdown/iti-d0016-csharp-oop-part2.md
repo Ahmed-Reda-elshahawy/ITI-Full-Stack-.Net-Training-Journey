@@ -192,12 +192,12 @@ Console.WriteLine(mat.GetLength(1)); // 3
 
 ### Array Common Properties
 
-- `Length` returns the array length
-- `Rank` returns array's number of dimensions
+- `Length`: returns the total number of elements in the array
+- `Rank`: returns array's number of dimensions (e.g., 1D, 2D, etc.)
 
 ### Array Common Methods
 
-- `GetLength(dimension)` return length for specific array `dimension`
+- `GetLength(dimension)` return length for specific array `dimension` (0-based)
 
 ## Functions (Methods)
 
