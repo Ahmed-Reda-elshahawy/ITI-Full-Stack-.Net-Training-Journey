@@ -46,7 +46,7 @@ B b = (B)a;      // Casting base class reference to derived class.
 B bObj = new A(); // Error: Base object cannot be assigned to derived reference.
 ```
 
-_Example_
+**_Example_**
 
 ```csharp
 class Vehicle  // base class (parent)
@@ -65,7 +65,7 @@ class Car : Vehicle  // derived class (child)
 
 Car car = new Car(); // Create an object from Car, Vehicle default constructor will be executed, then Car default constructor will be executed
 
-Car c = new Vechical(); // Create an object from Vechial holded by reference from type Car
+Car c = new Vehicle(); // Create an object from Vehicle hold by reference from type Car
 ```
 
 ## Virtuality and Method Resolution
@@ -94,7 +94,7 @@ a.DoSomething(); // Output: "A" (resolved based on reference type)
 ### Virtual and Override
 
 - **Dynamic binding** (late binding).
-- Enables polymorphism: Method resolution happens at runtime.
+- **Enables polymorphism**: Method resolution happens at runtime.
 - **Requirements** for overriding:
   - Base method must be marked as `virtual`, `abstract`, or `override`.
   - Derived class method must use `override` to provide a new implementation.

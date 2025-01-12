@@ -3,7 +3,7 @@
 ## Difference between Value Type and Reference Types
 
 - **Value types** stored in `stack`, directly hold data in memory.
-- **Reference types** stored in `heap`, hold a reference to the data in `heap`.
+- **Reference types** Reference types stored in `heap` and hold a reference in the `stack` which points to the data (object) in the `heap`
 
 ### GetHashCode() method
 
