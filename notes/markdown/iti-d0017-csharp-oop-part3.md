@@ -39,7 +39,6 @@ Console.WriteLine(Int32.MaxValue); // 2147483647
 - Structs in C# **can't** have an **explicit parameterless constructor**.
 - Structs in C# can have an **explicit parameterized constructor**, but you **must initialize all fields** within the constructor.
 - Structs in C# can have more than one **explicit parameterized constructor** with different parameter lists.
-- Structs members can be initialized manually.
 - Structs in C# can't support inheritance, i.e. (structs can't derive from other structs, and also can't be a base for other structs).
 - Structs implicitly inherited from the base `Object` class, so it has some behaviors like (`ToString()`, `GetHashCode()`, `Equals()`).
 - Structs have a good performance because it's fully stored in the `stack`.
