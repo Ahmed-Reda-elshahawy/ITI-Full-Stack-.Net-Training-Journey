@@ -55,7 +55,7 @@ class Square : Shape
 >
 > **Abstraction** Hide complexity, Show what is necessary
 
-> [!Info]
+> [!Note]
 >
 > **Concrete Class**
 >
