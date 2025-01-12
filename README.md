@@ -57,6 +57,12 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0019 - C Sharp - OOP (Part5) | [Markdown](./notes/markdown/iti-d0019-csharp-oop-part5.md) |
 | 🔖 ITI - D0020 - C Sharp - OOP (Part6) | [Markdown](./notes/markdown/iti-d0020-csharp-oop-part6.md) |
 
+#### C# Basics
+
+| Topic                             | Notes                                                   |
+| --------------------------------- | ------------------------------------------------------- |
+| 🔖 ITI - D0021 - C Sharp - Basics | [Markdown](./notes/markdown/iti-d0021-csharp-basics.md) |
+
 ## Progress
 
 - [ ] Add notes for all topics as a Markdown files.
