@@ -59,9 +59,10 @@ This index will be updated as I progress through the training. It will contain a
 
 #### C# Basics
 
-| Topic                             | Notes                                                   |
-| --------------------------------- | ------------------------------------------------------- |
-| 🔖 ITI - D0021 - C Sharp - Basics | [Markdown](./notes/markdown/iti-d0021-csharp-basics.md) |
+| Topic                                     | Notes                                                         |
+| ----------------------------------------- | ------------------------------------------------------------- |
+| 🔖 ITI - D0021 - C Sharp - Basics         | [Markdown](./notes/markdown/iti-d0021-csharp-basics.md)       |
+| 🔖 ITI - D0022 - C Sharp - Basics (Part2) | [Markdown](./notes/markdown/iti-d0022-csharp-basics-part2.md) |
 
 ## Progress
 
