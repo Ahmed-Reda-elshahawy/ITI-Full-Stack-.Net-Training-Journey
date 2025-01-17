@@ -59,12 +59,12 @@ This index will be updated as I progress through the training. It will contain a
 
 #### C# Basics
 
-| Topic                                     | Notes                                                         |
-| ----------------------------------------- | ------------------------------------------------------------- |
-| 🔖 ITI - D0021 - C Sharp - Basics         | [Markdown](./notes/markdown/iti-d0021-csharp-basics.md)       |
-| 🔖 ITI - D0022 - C Sharp - Basics (Part2) | [Markdown](./notes/markdown/iti-d0022-csharp-basics-part2.md) |
-| 🔖 ITI - D0023 - C Sharp - Basics (Part3) | [Markdown](./notes/markdown/iti-d0023-csharp-basics-part3.md) |
-| 🔖 ITI - D0024 - C Sharp - Basics (Part4) | [Markdown](./notes/markdown/iti-d0024-csharp-basics-part4.md) |
+| Lecture                                   | Topics                                                                                                                                                                                                                                                | Notes                                                         |
+| ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| 🔖 ITI - D0021 - C Sharp - Basics         | • History before C#</br>• C# History</br>• Compilation of C# Code</br>• Running C# Code</br>• Cross-Language Platform</br>• .NET Core</br>• GAC (Global Assembly Cache)                                                                               | [Markdown](./notes/markdown/iti-d0021-csharp-basics.md)       |
+| 🔖 ITI - D0022 - C Sharp - Basics (Part2) | • Object Base `Object`</br>• Casting & Parsing</br>• Enums                                                                                                                                                                                            | [Markdown](./notes/markdown/iti-d0022-csharp-basics-part2.md) |
+| 🔖 ITI - D0023 - C Sharp - Basics (Part3) | • Bitwise Operators</br>• Enums & Bit Flag Enumerations                                                                                                                                                                                               | [Markdown](./notes/markdown/iti-d0023-csharp-basics-part3.md) |
+| 🔖 ITI - D0024 - C Sharp - Basics (Part4) | • Enums (Bit Flag)</br>• Nullable Variables in C#</br>• Advanced Array Topics in C#</br>• Pass by Value vs.</br>• Pass by Reference in C#</br>• Difference Between `ref` and `out`</br>• `params` Keyword</br>• Default and Optional Parameters in C# | [Markdown](./notes/markdown/iti-d0024-csharp-basics-part4.md) |
 
 ## Progress
 
