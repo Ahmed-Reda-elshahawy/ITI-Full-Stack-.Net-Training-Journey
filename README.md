@@ -1,5 +1,8 @@
 # ITI Full Stack .Net Training Journey
 
+![ITI Community Desings](https://github.com/user-attachments/assets/12e6b281-61a3-40c4-bd08-cfc0854d384b)
+
+
 ## Introduction
 
 This repository contains my journey through the Full Stack .Net Training at ITI. It contains all my notes, tasks and projects that I have worked on during the training.
