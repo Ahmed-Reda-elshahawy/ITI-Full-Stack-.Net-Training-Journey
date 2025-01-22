@@ -1,7 +1,6 @@
 # ITI Full Stack .Net Training Journey
 
-![ITI Community Desings](https://github.com/user-attachments/assets/12e6b281-61a3-40c4-bd08-cfc0854d384b)
-
+![ITI Community Banner](./assets/iti-community-banner-rounded.png)
 
 ## Introduction
 
@@ -41,11 +40,11 @@ This index will be updated as I progress through the training. It will contain a
 
 #### HTML5, CSS3.0
 
-| Lecture                               |Topics                     | Notes                                                     |
-| --------------------------------------|---------------------------| --------------------------------------------------------- |
-| 🔖 ITI - D0011 - CST (HTML5)         |• Semantic Tags<br/>• CSS 3.0<br/>• JS APIs<br/>• New CSS Selectors<br/>• MediaQuery<br/>• XML<br/>• XHTML| [Markdown](./notes/markdown/iti-d0011-cst-html5.md)       |
-| 🔖 ITI - D0012 - CST (HTML5) (Part2) |• Shadows<br/>• Manipulating section text<br/>• Transformation<br/>• Transitions<br/>• Animation<br/>• CSS Variables<br/>• Box Sizing<br/>• Measure Units<br/>• Flex<br/>• Grid| [Markdown](./notes/markdown/iti-d0012-cst-html5-part2.md) |
-| 🔖 ITI - D0013 - CST (HTML5) (Part3) |• New Added APIs<br/>• Media APIs<br/>• Drag And Drop<br/>• Forms<br/>• Storage API<br/>• Geolocation API| [Markdown](./notes/markdown/iti-d0013-cst-html5-part3.md) |
+| Lecture                              | Topics                                                                                                                                                                          | Notes                                                     |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| 🔖 ITI - D0011 - CST (HTML5)         | • Semantic Tags<br/>• CSS 3.0<br/>• JS APIs<br/>• New CSS Selectors<br/>• MediaQuery<br/>• XML<br/>• XHTML                                                                      | [Markdown](./notes/markdown/iti-d0011-cst-html5.md)       |
+| 🔖 ITI - D0012 - CST (HTML5) (Part2) | • Shadows<br/>• Manipulating section text<br/>• Transformation<br/>• Transitions<br/>• Animation<br/>• CSS Variables<br/>• Box Sizing<br/>• Measure Units<br/>• Flex<br/>• Grid | [Markdown](./notes/markdown/iti-d0012-cst-html5-part2.md) |
+| 🔖 ITI - D0013 - CST (HTML5) (Part3) | • New Added APIs<br/>• Media APIs<br/>• Drag And Drop<br/>• Forms<br/>• Storage API<br/>• Geolocation API                                                                       | [Markdown](./notes/markdown/iti-d0013-cst-html5-part3.md) |
 
 ### C# Programming Language
 
