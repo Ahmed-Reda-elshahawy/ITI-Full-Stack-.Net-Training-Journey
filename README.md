@@ -32,11 +32,11 @@ This index will be updated as I progress through the training. It will contain a
 
 #### JavaScript 6, ECMA6
 
-| Topic                                                          | Notes                                                                |
-| -------------------------------------------------------------- | -------------------------------------------------------------------- |
-| 🔖 ITI - D0009 - CST (JavaScript 6, ECMA6, ECMA.NEXT) (Part 1) | [Markdown](./notes/markdown/iti-d0009-cst-javascript-ecma6-part1.md) |
-| 🔖 ITI - D0010 - CST (JavaScript 6, ECMA6, ECMA.NEXT) (Part 2) | [Markdown](./notes/markdown/iti-d0010-cst-javascript-ecma6-part2.md) |
-| 🔖 ITI - D0011 - CST (JavaScript 6, ECMA6, ECMA.NEXT) (Part 3) | [Markdown](./notes/markdown/iti-d0011-cst-javascript-ecma6-part3.md) |
+| Lecture                                                        | Topics Covered                                                                                                                                    | Notes                                                                |
+| -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| 🔖 ITI - D0009 - CST (JavaScript 6, ECMA6, ECMA.NEXT) (Part 1) | • ECMA6<br/>• Block Scoping using (`let`, `const`)<br/>• String Updates: String literals using (``): string interpolation<br/>• Function Updates  | [Markdown](./notes/markdown/iti-d0009-cst-javascript-ecma6-part1.md) |
+| 🔖 ITI - D0010 - CST (JavaScript 6, ECMA6, ECMA.NEXT) (Part 2) | • Classes<br/>• OOP<br/>• JS Modules                                                                                                              | [Markdown](./notes/markdown/iti-d0010-cst-javascript-ecma6-part2.md) |
+| 🔖 ITI - D0011 - CST (JavaScript 6, ECMA6, ECMA.NEXT) (Part 3) | • Asynchronous<br/>• JS Runtime Environment<br/>• JS Engine<br/>• Promises<br/>• async/await<br/>• fetch API<br/>• Web Storage API<br/>• JSON API | [Markdown](./notes/markdown/iti-d0011-cst-javascript-ecma6-part3.md) |
 
 #### HTML5, CSS3.0
 
