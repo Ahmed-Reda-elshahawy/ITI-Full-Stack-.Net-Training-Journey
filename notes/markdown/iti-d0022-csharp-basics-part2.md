@@ -182,17 +182,17 @@ Gender gen2 = 0; // will work because it is 0
 Gender gen4 = (Gender)1; // 1
 Gender gen5 = (Gender)2; // Will work but not recommended
 
-Console.WriteLine(gen0); // 0
+Console.WriteLine(gen0); // MALE
 Console.WriteLine(gen0.ToString()); // MALE
 
-Console.WriteLine(gen1); // 1
+Console.WriteLine(gen1); // FEMALE
 Console.WriteLine(gen1.ToString()); // FEMALE
 
-Console.WriteLine(gen2); // 0
+Console.WriteLine(gen2); // MALE
 Console.WriteLine(gen2.ToString()); // MALE
 
-Console.WriteLine(gen4); // 1
-Console.WriteLine(gen4.ToString()); // MALE
+Console.WriteLine(gen4); // FEMALE
+Console.WriteLine(gen4.ToString()); // FEMALE
 
 Console.WriteLine(gen5); // 2
 Console.WriteLine(gen5.ToString()); // 2
