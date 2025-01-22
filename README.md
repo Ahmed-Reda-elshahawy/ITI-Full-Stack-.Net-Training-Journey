@@ -22,13 +22,13 @@ This index will be updated as I progress through the training. It will contain a
 
 #### JavaScript 5, ECMA5
 
-| Topic                                               | Notes                                                                |
-| --------------------------------------------------- | -------------------------------------------------------------------- |
-| 🔖 ITI - D0004 - CST (JavaScript 5, ECMA5)          | [Markdown](./notes/markdown/iti-d0004-cst-javascript-ecma5.md)       |
-| 🔖 ITI - D0005 - CST (JavaScript 5, ECMA5) (Part 2) | [Markdown](./notes/markdown/iti-d0005-cst-javascript-ecma5-part2.md) |
-| 🔖 ITI - D0006 - CST (JavaScript 5, ECMA5) (Part 3) | [Markdown](./notes/markdown/iti-d0006-cst-javascript-ecma5-part3.md) |
-| 🔖 ITI - D0007 - CST (JavaScript 5, ECMA5) (Part 4) | [Markdown](./notes/markdown/iti-d0007-cst-javascript-ecma5-part4.md) |
-| 🔖 ITI - D0008 - CST (JavaScript 5, ECMA5) (Part 5) | [Markdown](./notes/markdown/iti-d0008-cst-javascript-ecma5-part5.md) |
+| Lecture                                             | Topics Covered                                                                                                                                                   | Notes                                                                |
+| --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| 🔖 ITI - D0004 - CST (JavaScript 5, ECMA5)          | • JavaScript<br/>• How to use JS with HTML<br/>• Dealing with not-allowed JS on Browsers<br/>• Variables and Datatypes<br/>• Dialog<br/>• Write on HTML document | [Markdown](./notes/markdown/iti-d0004-cst-javascript-ecma5.md)       |
+| 🔖 ITI - D0005 - CST (JavaScript 5, ECMA5) (Part 2) | • Strings<br/>• Arrays                                                                                                                                           | [Markdown](./notes/markdown/iti-d0005-cst-javascript-ecma5-part2.md) |
+| 🔖 ITI - D0006 - CST (JavaScript 5, ECMA5) (Part 3) | • Functions<br/>• Boolean<br/>• Date<br/>• Math                                                                                                                  | [Markdown](./notes/markdown/iti-d0006-cst-javascript-ecma5-part3.md) |
+| 🔖 ITI - D0007 - CST (JavaScript 5, ECMA5) (Part 4) | • BOM (Browser Object Model)<br/>• DOM (Document Object Model)                                                                                                   | [Markdown](./notes/markdown/iti-d0007-cst-javascript-ecma5-part4.md) |
+| 🔖 ITI - D0008 - CST (JavaScript 5, ECMA5) (Part 5) | • document.cookie<br/>• Events<br/>• Regex                                                                                                                       | [Markdown](./notes/markdown/iti-d0008-cst-javascript-ecma5-part5.md) |
 
 #### JavaScript 6, ECMA6
 
