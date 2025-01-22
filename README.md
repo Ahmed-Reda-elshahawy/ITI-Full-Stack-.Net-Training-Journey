@@ -14,11 +14,11 @@ This index will be updated as I progress through the training. It will contain a
 
 #### Intro To Web Development, HTML4, CSS2.0
 
-| Topic                                                  | Notes                                                                             |
-| ------------------------------------------------------ | --------------------------------------------------------------------------------- |
-| 🔖 ITI - D0001 - Client Server Model & Basics of HTML4 | [Markdown](./notes/markdown/iti-d0001-client-server-model-and-basics-of-html4.md) |
-| 🔖 ITI - D0002 - CST (HTML Part2)                      | [Markdown](./notes//markdown/iti-d0002-cst-html-part2.md)                         |
-| 🔖 ITI - D0003 - CST (CSS 2.0)                         | [Markdown](./notes/markdown/iti-d0003-cst-css2.md)                                |
+| Lecture                                                | Topics Covered                                                                                                                                                                                                                                                                          | Notes                                                                             |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| 🔖 ITI - D0001 - Client Server Model & Basics of HTML4 | • Client Server Model (Request, Response)<br/>• Frontend Technologies<br/>• HTML                                                                                                                                                                                                        | [Markdown](./notes/markdown/iti-d0001-client-server-model-and-basics-of-html4.md) |
+| 🔖 ITI - D0002 - CST (HTML Part2)                      | • Tables in HTML<br/>• Form                                                                                                                                                                                                                                                             | [Markdown](./notes//markdown/iti-d0002-cst-html-part2.md)                         |
+| 🔖 ITI - D0003 - CST (CSS 2.0)                         | • Introduction<br/>• HTML Problems with Styles<br/>• CSS Usage<br/>• CSS Comments<br/>• CSS Selectors<br/>• Box Model<br/>• Styling Text<br/>• Display (block, inline-block, block)<br/>• Styling Lists<br/>• Styling Images<br/>• Styling Background<br/>• Position<br/>• Float Layout | [Markdown](./notes/markdown/iti-d0003-cst-css2.md)                                |
 
 #### JavaScript 5, ECMA5
 
@@ -40,7 +40,7 @@ This index will be updated as I progress through the training. It will contain a
 
 #### HTML5, CSS3.0
 
-| Lecture                              | Topics                                                                                                                                                                          | Notes                                                     |
+| Lecture                              | Topics Covered                                                                                                                                                                  | Notes                                                     |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | 🔖 ITI - D0011 - CST (HTML5)         | • Semantic Tags<br/>• CSS 3.0<br/>• JS APIs<br/>• New CSS Selectors<br/>• MediaQuery<br/>• XML<br/>• XHTML                                                                      | [Markdown](./notes/markdown/iti-d0011-cst-html5.md)       |
 | 🔖 ITI - D0012 - CST (HTML5) (Part2) | • Shadows<br/>• Manipulating section text<br/>• Transformation<br/>• Transitions<br/>• Animation<br/>• CSS Variables<br/>• Box Sizing<br/>• Measure Units<br/>• Flex<br/>• Grid | [Markdown](./notes/markdown/iti-d0012-cst-html5-part2.md) |
@@ -61,7 +61,7 @@ This index will be updated as I progress through the training. It will contain a
 
 #### C# Basics
 
-| Lecture                                   | Topics                                                                                                                                                                                                                                          | Notes                                                         |
+| Lecture                                   | Topics Covered                                                                                                                                                                                                                                  | Notes                                                         |
 | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | 🔖 ITI - D0021 - C Sharp - Basics         | • History before C#</br>• C# History</br>• Compilation of C# Code</br>• Running C# Code</br>• Cross-Language Platform</br>• .NET Core</br>• GAC (Global Assembly Cache)                                                                         | [Markdown](./notes/markdown/iti-d0021-csharp-basics.md)       |
 | 🔖 ITI - D0022 - C Sharp - Basics (Part2) | • Object Base `Object`</br>• Casting & Parsing</br>• Enums                                                                                                                                                                                      | [Markdown](./notes/markdown/iti-d0022-csharp-basics-part2.md) |
