@@ -60,14 +60,14 @@ This index will be updated as I progress through the training. It will contain a
 
 #### C# OOP
 
-| Topic                                  | Notes                                                      |
-| -------------------------------------- | ---------------------------------------------------------- |
-| 🔖 ITI - D0015 - C Sharp - OOP         | [Markdown](./notes/markdown/iti-d0015-csharp-oop.md)       |
-| 🔖 ITI - D0016 - C Sharp - OOP (Part2) | [Markdown](./notes/markdown/iti-d0016-csharp-oop-part2.md) |
-| 🔖 ITI - D0017 - C Sharp - OOP (Part3) | [Markdown](./notes/markdown/iti-d0017-csharp-oop-part3.md) |
-| 🔖 ITI - D0018 - C Sharp - OOP (Part4) | [Markdown](./notes/markdown/iti-d0018-csharp-oop-part4.md) |
-| 🔖 ITI - D0019 - C Sharp - OOP (Part5) | [Markdown](./notes/markdown/iti-d0019-csharp-oop-part5.md) |
-| 🔖 ITI - D0020 - C Sharp - OOP (Part6) | [Markdown](./notes/markdown/iti-d0020-csharp-oop-part6.md) |
+| Lecture                                | Topics Covered                                                                                                              | Notes                                                      |
+| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| 🔖 ITI - D0015 - C Sharp - OOP         | • Programming Paradigms<br/>• `C#`<br/>• OOP<br/>• Namespace in CS<br/>• DataTypes in CS                                    | [Markdown](./notes/markdown/iti-d0015-csharp-oop.md)       |
+| 🔖 ITI - D0016 - C Sharp - OOP (Part2) | • Parsing<br/>• Read Input From Console<br/>• Clear Console<br/>• Control Flow In C#<br/>• Arrays<br/>• Functions (Methods) | [Markdown](./notes/markdown/iti-d0016-csharp-oop-part2.md) |
+| 🔖 ITI - D0017 - C Sharp - OOP (Part3) | • Difference between Value Type and Reference Types<br/>• Structures                                                        | [Markdown](./notes/markdown/iti-d0017-csharp-oop-part3.md) |
+| 🔖 ITI - D0018 - C Sharp - OOP (Part4) | • Class Constructor<br/>• Properties<br/>• Object Initializers<br/>• Finalizers (Destructors)<br/>• Array of Objects        | [Markdown](./notes/markdown/iti-d0018-csharp-oop-part4.md) |
+| 🔖 ITI - D0019 - C Sharp - OOP (Part5) | • Automatic Properties<br/>• OOP Pillar: Inheritance<br/>• Virtuality and Method Resolution                                 | [Markdown](./notes/markdown/iti-d0019-csharp-oop-part5.md) |
+| 🔖 ITI - D0020 - C Sharp - OOP (Part6) | • Abstract Class<br/>• `static` Class & `static` Class Members<br/>• Operator Overloading<br/>• Access Modifiers            | [Markdown](./notes/markdown/iti-d0020-csharp-oop-part6.md) |
 
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
