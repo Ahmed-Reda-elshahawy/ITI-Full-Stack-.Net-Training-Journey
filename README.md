@@ -10,6 +10,8 @@ This repository contains my journey through the Full Stack .Net Training at ITI.
 
 This index will be updated as I progress through the training. It will contain all the topics that we have covered in the training. and links to the related notes, tasks and projects.
 
+**_[TOP⬆](#iti-full-stack-net-training-journey)_**
+
 ### Client Side Technologies (CST)
 
 #### Intro To Web Development, HTML4, CSS2.0
@@ -19,6 +21,8 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0001 - Client Server Model & Basics of HTML4 | • Client Server Model (Request, Response)<br/>• Frontend Technologies<br/>• HTML                                                                                                                                                                                                        | [Markdown](./notes/markdown/iti-d0001-client-server-model-and-basics-of-html4.md) |
 | 🔖 ITI - D0002 - CST (HTML Part2)                      | • Tables in HTML<br/>• Form                                                                                                                                                                                                                                                             | [Markdown](./notes//markdown/iti-d0002-cst-html-part2.md)                         |
 | 🔖 ITI - D0003 - CST (CSS 2.0)                         | • Introduction<br/>• HTML Problems with Styles<br/>• CSS Usage<br/>• CSS Comments<br/>• CSS Selectors<br/>• Box Model<br/>• Styling Text<br/>• Display (block, inline-block, block)<br/>• Styling Lists<br/>• Styling Images<br/>• Styling Background<br/>• Position<br/>• Float Layout | [Markdown](./notes/markdown/iti-d0003-cst-css2.md)                                |
+
+**_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
 #### JavaScript 5, ECMA5
 
@@ -30,6 +34,8 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0007 - CST (JavaScript 5, ECMA5) (Part 4) | • BOM (Browser Object Model)<br/>• DOM (Document Object Model)                                                                                                   | [Markdown](./notes/markdown/iti-d0007-cst-javascript-ecma5-part4.md) |
 | 🔖 ITI - D0008 - CST (JavaScript 5, ECMA5) (Part 5) | • document.cookie<br/>• Events<br/>• Regex                                                                                                                       | [Markdown](./notes/markdown/iti-d0008-cst-javascript-ecma5-part5.md) |
 
+**_[TOP⬆](#iti-full-stack-net-training-journey)_**
+
 #### JavaScript 6, ECMA6
 
 | Lecture                                                        | Topics Covered                                                                                                                                    | Notes                                                                |
@@ -38,6 +44,8 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0010 - CST (JavaScript 6, ECMA6, ECMA.NEXT) (Part 2) | • Classes<br/>• OOP<br/>• JS Modules                                                                                                              | [Markdown](./notes/markdown/iti-d0010-cst-javascript-ecma6-part2.md) |
 | 🔖 ITI - D0011 - CST (JavaScript 6, ECMA6, ECMA.NEXT) (Part 3) | • Asynchronous<br/>• JS Runtime Environment<br/>• JS Engine<br/>• Promises<br/>• async/await<br/>• fetch API<br/>• Web Storage API<br/>• JSON API | [Markdown](./notes/markdown/iti-d0011-cst-javascript-ecma6-part3.md) |
 
+**_[TOP⬆](#iti-full-stack-net-training-journey)_**
+
 #### HTML5, CSS3.0
 
 | Lecture                              | Topics Covered                                                                                                                                                                  | Notes                                                     |
@@ -45,6 +53,8 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0011 - CST (HTML5)         | • Semantic Tags<br/>• CSS 3.0<br/>• JS APIs<br/>• New CSS Selectors<br/>• MediaQuery<br/>• XML<br/>• XHTML                                                                      | [Markdown](./notes/markdown/iti-d0011-cst-html5.md)       |
 | 🔖 ITI - D0012 - CST (HTML5) (Part2) | • Shadows<br/>• Manipulating section text<br/>• Transformation<br/>• Transitions<br/>• Animation<br/>• CSS Variables<br/>• Box Sizing<br/>• Measure Units<br/>• Flex<br/>• Grid | [Markdown](./notes/markdown/iti-d0012-cst-html5-part2.md) |
 | 🔖 ITI - D0013 - CST (HTML5) (Part3) | • New Added APIs<br/>• Media APIs<br/>• Drag And Drop<br/>• Forms<br/>• Storage API<br/>• Geolocation API                                                                       | [Markdown](./notes/markdown/iti-d0013-cst-html5-part3.md) |
+
+**_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
 ### C# Programming Language
 
@@ -59,6 +69,8 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0019 - C Sharp - OOP (Part5) | [Markdown](./notes/markdown/iti-d0019-csharp-oop-part5.md) |
 | 🔖 ITI - D0020 - C Sharp - OOP (Part6) | [Markdown](./notes/markdown/iti-d0020-csharp-oop-part6.md) |
 
+**_[TOP⬆](#iti-full-stack-net-training-journey)_**
+
 #### C# Basics
 
 | Lecture                                   | Topics Covered                                                                                                                                                                                                                                  | Notes                                                         |
@@ -68,12 +80,16 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0023 - C Sharp - Basics (Part3) | • Bitwise Operators</br>• Enums & Bit Flag Enumerations                                                                                                                                                                                         | [Markdown](./notes/markdown/iti-d0023-csharp-basics-part3.md) |
 | 🔖 ITI - D0024 - C Sharp - Basics (Part4) | • Enums (Bit Flag)</br>• Nullable Variables in C#</br>• Advanced Array Topics in C#</br>• Pass by Value vs. Pass by Reference in C#</br>• Difference Between `ref` and `out`</br>• `params` Keyword</br>• Default and Optional Parameters in C# | [Markdown](./notes/markdown/iti-d0024-csharp-basics-part4.md) |
 
+**_[TOP⬆](#iti-full-stack-net-training-journey)_**
+
 ## Progress
 
 - [ ] Add notes for all topics as a Markdown files.
 - [ ] Add notes for all topics as a PDF files.
 - [ ] Automate the process of converting the Markdown files to PDF files.
 - [ ] Add tasks for all topics
+
+**_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
 ## Disclaimer
 
@@ -83,10 +99,16 @@ So, if you are looking for official resources, please refer to the official ITI 
 
 Also, if you find any mistakes in the notes or tasks, please feel free to open an issue or a pull request to correct it, I will be happy to receive your feedback!🙌
 
+**_[TOP⬆](#iti-full-stack-net-training-journey)_**
+
 ## Contributions
 
 I will be happy to receive any contributions from anyone who is interested in this repository. You can contribute by adding more notes, tasks or projects that you think will be helpful for others.
 
+**_[TOP⬆](#iti-full-stack-net-training-journey)_**
+
 ## License
 
 This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+**_[TOP⬆](#iti-full-stack-net-training-journey)_**
