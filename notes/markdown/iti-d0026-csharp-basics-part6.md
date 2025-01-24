@@ -2,9 +2,9 @@
 
 > 📖 is used for notes covered in the lecture, 💡 for extra interesting notes.
 
-## `is` and `as` Operators
+## 📖 `is` and `as` Operators
 
-### `is` Operator
+### 📖 `is` Operator
 
 - `is` operator is used to check if an object is compatible with a given type.
 - if type is compatible so it will return `true`, otherwise it will return `false`.
@@ -23,7 +23,7 @@ if (obj is int) // False
 }
 ```
 
-### `as` Operator
+### 📖 `as` Operator
 
 - `as operator` is used to perform conversions between compatible reference types or nullable types.
 - If the conversion is not possible, `as` returns `null`, otherwise it will return the converted type.
