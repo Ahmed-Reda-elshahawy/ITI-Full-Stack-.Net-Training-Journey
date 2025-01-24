@@ -1148,3 +1148,68 @@ class Program
     }
 }
 ```
+
+**Practical Example: Using Delegates**:
+
+```csharp
+[Flags]
+public enum EGender
+{
+    M,
+    F
+}
+
+public record Employee(int Id, string Name, EGender Gender, double Sales);
+
+public static class ReportGenerator
+{
+    public static void generate(List<Employee> employees, string reportBanner, Predicate<Employee> isEligible)
+    {
+        // Table configs
+        const int idColWidth = -3;
+        const int nameColWidth = -15;
+        const int genderColWidth = -10;
+        const int salesColWidth = -15;
+
+
+        var renderRow = (Employee emp) =>
+            $"|{emp.Id,idColWidth} | {emp.Name,nameColWidth} | {emp.Gender,genderColWidth} | {emp.Sales,salesColWidth:C} |";
+        var tableHeader =
+            $"|{"Id",idColWidth} | {"Name",nameColWidth} | {"Gender",genderColWidth} | {"Sales",salesColWidth} |";
+        var horizontalLine = new string('-',
+            Math.Abs(idColWidth) + Math.Abs(nameColWidth) + Math.Abs(genderColWidth) + Math.Abs(salesColWidth) + 10);
+
+        // Display Report Banner
+        Console.WriteLine(reportBanner);
+        Console.WriteLine(new string('~', 30));
+
+        // Render table
+        Console.WriteLine(tableHeader);
+        Console.WriteLine($"|{horizontalLine}|");
+
+        foreach (var emp in employees)
+            if (isEligible(emp))
+                Console.WriteLine(renderRow(emp));
+    }
+}
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        List<Employee> allEmployees =
+        [
+            new(3, "John", EGender.M, 10000d),
+            new(3, "Jolly", EGender.F, 5000d),
+            new(3, "Sheldon", EGender.M, 100000d),
+            new(3, "Missy", EGender.F, 1000d),
+            new(3, "George", EGender.M, 20000d)
+        ];
+
+        ReportGenerator.generate(allEmployees, "Employees with Sales >= $10,000", emp => emp.Sales >= 10_000);
+        Console.WriteLine("\n\n");
+        ReportGenerator.generate(allEmployees, "Employees with Sales >= $10,000 and <= $20,000",
+            emp => emp.Sales >= 10_000 && emp.Sales <= 20_000);
+    }
+}
+```
