@@ -1,6 +1,8 @@
 # 🔖 ITI - D0025 - C Sharp - Basics (Part5)
 
-## Structures (Enhancements in C#9.0+)
+> 📖 is used for notes covered in the lecture, 💡 for extra interesting notes.
+
+## 📖 Structures (Enhancements in C#9.0+)
 
 - **Explicit Parameterless Constructor**: Can define a custom parameterless constructor.
 
@@ -55,7 +57,7 @@
   }
   ```
 
-## Target-Typed `new` Expressions
+## 📖 Target-Typed `new` Expressions
 
 - With target-typed `new`, you can omit the type name after the `new` keyword when the type can be inferred from the context (e.g., from the variable declaration).
 - We can use it with `structs` and `classes`.
@@ -73,7 +75,7 @@ A a1 = new A();
 A a2 = new();
 ```
 
-## Interfaces
+## 📖 Interfaces
 
 - An interface in C# is a **contract** that defines a set of `methods`, `properties`, `events`, or `indexers`. `Classes` and `structs` that implement the interface **must** provide implementations for its members.
 - Interfaces enable **abstraction** and **polymorphism** in C#.
@@ -178,7 +180,7 @@ int result = IMathUtility.Add(5, 10); // 15
         }
     }
 
-    // Using Generic IComparable Interface
+    // 💡 Using Generic IComparable Interface
     // public class Person : IComparable<Person>
     // {
     //     public string Name { get; set; }
@@ -235,7 +237,7 @@ int result = IMathUtility.Add(5, 10); // 15
    Console.WriteLine(person2.Age); // 30
    ```
 
-**Some Other Predefined Interfaces**:
+**💡 Some Other Predefined Interfaces**:
 
 1. `IFormattable`:
 
@@ -252,7 +254,7 @@ int result = IMathUtility.Add(5, 10); // 15
    - Exposes an enumerator for iterating over a collection.
    - Contains the `GetEnumerator()` method.
 
-### Explicit Interface Implementation
+### 📖 Explicit Interface Implementation
 
 Explicit interface implementation is used when a class implements multiple interfaces that have members with the **same name**. It allows you to provide separate implementations for each interface, **avoiding naming conflicts**.
 
@@ -297,14 +299,14 @@ internal class Program
 }
 ```
 
-### Interfaces Best Practices
+### 📖 Interfaces Best Practices
 
 - **Follow Interface Segregation Principle**
 - **Minimize using default method implementation in interfaces**: Default implementation should be used to extend interfaces without breaking existing code.
 - **Prefer explicit interface implementation**: Use explicit implementation to avoid naming conflicts when implementing multiple interfaces.
 - **Document Interfaces Clearly**: Clearly document the purpose and usage of each interface.
 
-### Abstract Class Vs. Interface
+### 💡 Abstract Class Vs. Interface
 
 #### Interface
 
@@ -340,7 +342,7 @@ internal class Program
 - You want to share **common code** among related classes.
 - You need to define **partial implementation** and force derived classes to complete it.
 
-## Design Pattern: Singleton
+## 📖 Design Pattern: Singleton
 
 The Singleton pattern ensures that a class has **only one instance**. It is commonly used for `logging`, `database connections`, etc.
 
@@ -389,7 +391,7 @@ internal class Program
 }
 ```
 
-## Switch Expression in `C#`
+## 📖 Switch Expression in `C#`
 
 - A **concise** way to handle multiple conditions.
 - They are a modern alternative to traditional `switch` statements and can be used with:
@@ -398,7 +400,7 @@ internal class Program
   - **logical operators (`or`, `and`)**
   - **range expression**
 
-### Switch Expression: Key Features
+### 📖 Switch Expression: Key Features
 
 1. **Lambda Expression**:
 
@@ -567,7 +569,7 @@ class Program
 }
 ```
 
-### `@` Symbol with Strings in `C#`
+### 📖 `@` Symbol with Strings in `C#`
 
 - The `@` symbol is used to create a verbatim string literal in C#.
 - It tells the compiler to treat the string exactly as written, without interpreting escape sequences (e.g., `\n`, `\t`).
@@ -576,12 +578,12 @@ class Program
   - Multi-line Strings
   - Regex Patterns
 
-## Exception
+## 📖 Exception
 
 - An **exception** is an error that occurs at runtime, causing the program to terminate abnormally if not handled.
 - Exceptions are represented by classes derived from the `System.Exception` base class.
 
-### Exception Handling
+### 📖 Exception Handling
 
 - Use `try`, `catch`, and `finally` blocks to handle exceptions gracefully.
 - The `try` block contains code that might throw an exception.
@@ -613,7 +615,7 @@ finally
 }
 ```
 
-### Throwing Exceptions
+### 📖 Throwing Exceptions
 
 - Use the `throw` keyword to throw an exception manually.
 - You can `throw` built-in exceptions or custom exceptions.
@@ -639,12 +641,12 @@ catch (ArgumentException ex)
 }
 ```
 
-### Exception Hierarchy
+### 📖 Exception Hierarchy
 
 - Catch the most specific exceptions first, followed by more general ones.
 - This is because a derived class exception can be caught by a base class exception handler.
 
-### Custom Exceptions
+### 📖 Custom Exceptions
 
 - Create custom exceptions by deriving from the `System.Exception` class.
 - Custom exceptions can include additional properties or methods for better error handling.
@@ -676,7 +678,7 @@ catch (InvalidEmailException ex)
 }
 ```
 
-### Inner Exception
+### 💡 Inner Exception
 
 - The `InnerException` property is used to capture the original exception that caused the current exception.
 - This is useful for debugging and logging.
@@ -703,9 +705,9 @@ catch (Exception ex)
 }
 ```
 
-## `var` vs. `dynamic` vs. `object`
+## 📖 `var` vs. `dynamic` vs. `object`
 
-### `var`
+### 📖 `var`
 
 - The `var` keyword is used for **implicitly typed variables**.
 - The type of the variable is inferred at **compile time** based on the assigned value.
@@ -728,7 +730,7 @@ var list = new List<int>(); // Compiler infers 'List<int>'
 // var invalid; // Error: must be initialized
 ```
 
-### `dynamic`
+### 📖 `dynamic`
 
 - The `dynamic` keyword is used for **dynamically typed variables**.
 - The type is resolved at **runtime**, not at compile time.
@@ -755,7 +757,7 @@ Console.WriteLine(value.Count); // Output: 3
 // value.Fun(); // Throws RuntimeBinderException
 ```
 
-### `object`
+### 📖 `object`
 
 - The `object` keyword is the base type for all types in C#.
 - It is a **strongly typed** variable, but it can hold any type because of boxing.
@@ -784,7 +786,7 @@ Console.WriteLine(str); // Output: Hello
 // int number = (int)obj; // Throws InvalidCastException
 ```
 
-## Mutability (Mutable data-types vs Immutable data-types)
+## 💡 Mutability (Mutable data-types vs Immutable data-types)
 
 - **Mutability**: Refers to whether an object's state (data) can be changed after it is created.
 - **Mutable**: The object's state can be modified after creation.
@@ -792,19 +794,19 @@ Console.WriteLine(str); // Output: Hello
 - **Immutable**: The object's state cannot be modified after creation.
   - **Examples in C#**: `string`, `DateTime`,`TimeSpan`,`Tuple<T1, T2>`,`Records(record types in C# 9+)`.
 
-### Mutability Use Cases
+### 💡 Mutability Use Cases
 
 - **Mutable objects** are useful when you need to modify the object's state frequently.
 - **Immutable objects** are safer in multi-threaded environments and help prevent unintended side effects.
 
-## String Builder
+## 📖 String Builder
 
 - The `StringBuilder` class is used to efficiently manipulate strings, especially when performing multiple modifications (e.g., concatenations, replacements, or insertions).
 - Unlike `string`, which is **immutable**, `StringBuilder` is **mutable**, meaning it modifies the same instance in memory.
 - Exists under the `System.Text` namespace.
 - **Performance**: Using `StringBuilder` is more efficient than repeatedly concatenating strings with`+` or `string.Concat`, as it avoids creating multiple intermediate string objects.
 
-### String Builder Common Methods
+### 📖 String Builder Common Methods
 
 - `Append`: Adds text to the end of the current StringBuilder.
 - `Insert`: Inserts text at a specified position.
@@ -813,7 +815,7 @@ Console.WriteLine(str); // Output: Hello
 - `Clear`: Clears all the content
 - `ToString`: Converts the StringBuilder to a string.
 
-### String Properties
+### 📖 String Properties
 
 - `Length`: represents the **number of characters** currently in the `StringBuilder`.
 - `Capacity`: represents the maximum number of characters that can be stored without resizing its internal buffer.
@@ -850,7 +852,7 @@ class Program
 }
 ```
 
-## `init` Accessors in Properties
+## 📖 `init` Accessors in Properties
 
 - The `init` accessor is used to create **immutable properties** that can only be set during object initialization.
 - Introduced in **C# 9** as part of the **init-only properties** feature.
@@ -915,7 +917,7 @@ internal class Program
 }
 ```
 
-## `record` Types in `C#`
+## 📖 `record` Types in `C#`
 
 - A `record` is a `class` or `struct` that provides a special syntax and behavior for working with data models.
 - Records are designed to simplify the creation of immutable types with value-based equality.
@@ -930,7 +932,7 @@ internal class Program
 **Syntax**:
 
 ```csharp
-// define struct record
+// 💡 define struct record
 [Access Modifier] record struct [Record Name](...positional_parameters);
 
 // define class record
@@ -942,7 +944,7 @@ internal class Program
 > - The **primary constructor** syntax automatically generates properties with `init` (for record classes) or `readonly` (for record structs) accessors.
 > - You can also define records with explicit properties if needed.
 
-**Example: Struct Record**:
+**💡 Example: Struct Record**:
 
 ```csharp
 public record struct Point(int X, int Y);
@@ -960,7 +962,7 @@ class Program
 }
 ```
 
-**Example: Class Record**:
+**📖 Example: Class Record**:
 
 ```csharp
 public record Person(string FirstName, string LastName, int Age);
@@ -978,7 +980,7 @@ class Program
 }
 ```
 
-### Records Additional Notes
+### 💡 Records Additional Notes
 
 1. **Inheritance**:
    - Record classes support **inheritance**, allowing you to create hierarchies of immutable types.
@@ -993,14 +995,14 @@ class Program
     }
    ```
 
-## Extension Methods
+## 📖 Extension Methods
 
-### Extension Methods: Purpose
+### 📖 Extension Methods: Purpose
 
 - Extension methods allow you to **add new methods** to existing types without modifying their source code or creating a derived type.
 - They are particularly useful for extending **sealed classes** or types you don't have control over (e.g., `string`, `int`, or framework classes).
 
-### Extension Methods: Syntax
+### 📖 Extension Methods: Syntax
 
 - Extension methods must be declared as **static methods** inside a static class.
 - The first parameter of the method specifies **which type the method operates on** and must be prefixed with the `this` keyword.
@@ -1015,7 +1017,7 @@ static class [ClassName]
 }
 ```
 
-### Extension Methods: Usage
+### 📖 Extension Methods: Usage
 
 - Extension methods can be called as if they were instance methods of the extended type.
 - They can also be called statically, but this is less common.
@@ -1041,7 +1043,7 @@ class Program
 }
 ```
 
-### Extension Methods: Limitations
+### 📖 Extension Methods: Limitations
 
 - Cannot access `private` or `protected` members of the extended type.
 - Cannot `override` existing methods (they only add new methods).
@@ -1052,7 +1054,7 @@ class Program
 - They are used to generate **API documentation** and provide **IntelliSense** support in Visual Studio.
 - XML Docs start with `///` and use XML tags to describe code elements like classes, methods, properties, and parameters.
 
-### Common XML Tags
+### 📖 Common XML Tags
 
 - `<summary>`: Provides a brief description of the code element.
 - `<param>`: Describes a method parameter.
