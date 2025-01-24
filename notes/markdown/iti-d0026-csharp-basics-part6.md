@@ -468,8 +468,70 @@ internal class Program
 
 #### 💡 `SortedList` Performance
 
-- Lookup by key is `O(log n)` due to binary search.
-- Insertion and deletion are `O(n)` because elements may need to be shifted to maintain sorted order.
+- Lookup by key is **$O(log n)$** due to binary search.
+- Insertion and deletion are **$O(n)$** because elements may need to be shifted to maintain sorted order.
+
+### 💡 `Stack`
+
+- A `Stack` is a **non-generic collection** that follows the **Last-In-First-Out (LIFO)** principle.
+- It is part of the `System.Collections` namespace.
+- Elements are added and removed from the top of the stack.
+- Supports **push** (add) and **pop** (remove) operations.
+- Provides a **peek** operation to view the top element without removing it.
+
+#### 💡 `Stack` Common Properties
+
+- `Count`: Gets the number of elements in the `Stack`.
+
+#### 💡 `Stack` Common Methods
+
+- `Push(item)`: Adds an item to the top of the stack.
+- `Pop()`: Removes and returns the item at the top of the stack.
+- `Peek()`: Returns the item at the top of the stack without removing it.
+- `Clear()`: Removes all items from the stack.
+- `Contains(item)`: Checks if the stack contains a specific item.
+
+#### 💡 `Stack` Performance
+
+- `Push`, `Pop`, and `Peek` operations are **$O(1)$** (constant time).
+
+**Example: Using `Stack`**:
+
+```csharp
+using System.Collections;
+
+internal class Program
+{
+    private static void Main()
+    {
+        // Create a Stack
+        var stack = new Stack();
+
+        // Push items onto the stack
+        stack.Push("Apple");
+        stack.Push("Banana");
+        stack.Push("Cherry");
+
+        // Peek at the top item
+        Console.WriteLine($"Top item: {stack.Peek()}"); // Output: Cherry
+
+        // Pop items from the stack
+        while (stack.Count > 0) Console.WriteLine(stack.Pop());
+
+        stack.Push(1);
+        Console.WriteLine(stack.Contains("Apple")); // False
+        Console.WriteLine(stack.Contains(1)); // True
+
+        // Output
+        // Top item: Cherry
+        // Cherry
+        // Banana
+        // Apple
+        // False
+        // True
+    }
+}
+```
 
 ## Generics
 
