@@ -44,6 +44,7 @@ int? num = obj as int; // null
   - `SortedList`
   - `DictionaryEntry`
   - `Stack`
+  - `Queue`
 - All types in `System.Collections` are based on the `object` type.
 - This leads to **boxing** (converting value types to `object`) and **unboxing** (converting `object` back to value types).
 - Boxing and unboxing can cause **performance overhead** and **runtime errors** (e.g., invalid cast exceptions).
@@ -377,6 +378,7 @@ class Program
 - Keys must be **unique** and **non-null**.
 - Values can be `null` or duplicated.
 - Internally uses two arrays: one for keys and one for values.
+- Key must implement `IComparable`, cause it's sorted based on keys.
 
 #### 📖 `SortedList` Common Properties
 
@@ -527,6 +529,68 @@ internal class Program
         // Cherry
         // Banana
         // Apple
+        // False
+        // True
+    }
+}
+```
+
+### 💡 `Queue`
+
+- A `Queue` is a `non-generic` collection that follows the **First-In-First-Out (FIFO) principle**.
+- It is part of the `System.Collections` namespace.
+- Elements are added at the **end** (enqueue) and removed from the **front** (dequeue).
+- Supports **enqueue** (add) and **dequeue** (remove) operations.
+- Provides a **peek** operation to view the front element without removing it.
+
+#### 💡 `Queue` Common Properties
+
+- `Count`: Gets the number of elements in the `Queue`.
+
+#### 💡 `Queue` Common Methods
+
+- `Enqueue(item)`: Adds an item to the end of the queue.
+- `Dequeue()`: Removes and returns the item at the front of the queue.
+- `Peek()`: Returns the item at the front of the queue without removing it.
+- `Clear()`: Removes all items from the queue.
+- `Contains(item)`: Checks if the queue contains a specific item.
+
+#### 💡 `Queue` Performance
+
+- `Enqueue`, `Dequeue`, and `Peek` operations are **$O(1)$** (constant time).
+
+**Example: Using `Queue`**:
+
+```csharp
+using System.Collections;
+
+internal class Program
+{
+    private static void Main()
+    {
+        // Create a Queue
+        var queue = new Queue();
+
+        // Enqueue items
+        queue.Enqueue("Apple");
+        queue.Enqueue("Banana");
+        queue.Enqueue("Cherry");
+
+        // Peek at the front item
+        Console.WriteLine($"Front item: {queue.Peek()}"); // Output: Apple
+
+        // Dequeue items
+        while (queue.Count > 0) Console.WriteLine(queue.Dequeue());
+
+        queue.Enqueue(1);
+        Console.WriteLine(queue.Contains("Apple")); // False
+        Console.WriteLine(queue.Contains(1)); // True
+
+        // Output
+        // Front item: Apple
+        // Apple
+        // Banana
+        // Cherry
         // False
         // True
     }
