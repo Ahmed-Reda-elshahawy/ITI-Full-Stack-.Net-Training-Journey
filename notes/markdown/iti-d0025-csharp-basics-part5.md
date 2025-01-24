@@ -80,7 +80,7 @@ A a2 = new();
 - An interface in C# is a **contract** that defines a set of `methods`, `properties`, `events`, or `indexers`. `Classes` and `structs` that implement the interface **must** provide implementations for its members.
 - Interfaces enable **abstraction** and **polymorphism** in C#.
 
-### Interfaces: Key Features
+### 📖 Interfaces: Key Features
 
 1. **Contract for Implementation**:
 
@@ -308,7 +308,7 @@ internal class Program
 
 ### 💡 Abstract Class Vs. Interface
 
-#### Interface
+#### 💡 Interface
 
 - A contract that defines **what** class or struct **should do**.
 - **Inheritance**: A class or struct can implement **multiple** interfaces.
@@ -320,7 +320,7 @@ internal class Program
 - **Static Members**: Can contain **static methods** (C# 8.0+).
 - **Purpose** Used for **abstraction** and **polymorphism**.
 
-#### Abstract Class
+#### 💡 Abstract Class
 
 - A class that cannot be instantiated and may contain **partial implementation** (contains abstract methods)
 - **Inheritance**: A class can inherit from **only one abstract class**.
@@ -328,7 +328,7 @@ internal class Program
 - **Static Members**: Can contain **static methods** and also **static fields**.
 - **Purpose**: Use for **code reuse** and **abstraction**
 
-#### When to use
+#### 💡 When to use
 
 **Use Interfaces When**:
 
@@ -489,9 +489,9 @@ Console.WriteLine(GetGrade(55)); // Output: F
 >
 > Above examples are written using top-level statements.
 
-## `in` keyword and return `ref`
+## 📖 `in` keyword and return `ref`
 
-### `in` keyword
+### 📖 `in` keyword
 
 - The `in` keyword is used to pass arguments to methods by reference but ensures that the argument **cannot be modified** inside the method.
 - It is useful for passing large structs efficiently without copying them, while also guaranteeing **immutability**.
@@ -515,7 +515,7 @@ Point point = new Point { X = 5, Y = 10 };
 PrintPoint(point); // Pass by reference (read-only)
 ```
 
-### `ref` return
+### 📖 `ref` return
 
 - The `ref` return allows a method to return a reference to a variable (instead of a value).
 - This enables the caller to modify the original variable directly.
@@ -540,7 +540,7 @@ numRef = 10; // Modify the original array
 Console.WriteLine(string.Join(", ", numbers)); // Output: 1, 2, 10, 4, 5
 ```
 
-## `StreamWriter`
+## 📖 `StreamWriter`
 
 - The `StreamWriter` class is used to write text data to a stream (e.g., a file, memory, or network stream).
 - It is part of the `System.IO` namespace.
@@ -1048,7 +1048,7 @@ class Program
 - Cannot access `private` or `protected` members of the extended type.
 - Cannot `override` existing methods (they only add new methods).
 
-## XML Docs
+## 📖 XML Docs
 
 - XML Docs are special comments in C# that allow you to **document your code** in a structured way.
 - They are used to generate **API documentation** and provide **IntelliSense** support in Visual Studio.
