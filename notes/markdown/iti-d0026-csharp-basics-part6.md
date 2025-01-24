@@ -770,42 +770,197 @@ class Program
 }
 ```
 
-## User Defined Generics
+## 📖 User Defined Generics
 
-### Generic Methods
+- Generics in C# allow you to define **type-safe**, **reusable** methods, classes, and interfaces that can work with any data type.
+- They provide flexibility and performance benefits by avoiding **boxing** and **unboxing**.
 
-<!--TODO: Add notes about Generic Methods-->
+### 📖 Generic Methods
 
-- With using Overloading, we can create multiple methods with the same name but with different types, which generate different methods at the IL code.
-- With using Generics, we can create a single method that can accept any type.
-- So Generic Methods work as a template for the method, which will be generate the appropriate method at the compile time.
-- We can use `T` as a type for the method, and we can use it as a type for the parameters and return type.
-- **Type Inference**: the compiler can infer the type of the method from the parameters passed to the method.
+- A **generic method** is a method that can accept any type as a parameter or return type.
+- It acts as a **template** for methods, generating the appropriate method at compile time.
+- **Type Inference**: The compiler can infer the type of the method from the parameters passed to it.
 
-<!--TODO: Add generic methods examples to support key notes -->
+**Syntax**:
 
-### Generic Classes
+```csharp
+[AccessModifier] void [MethodName]<T>(T parameter) { ... }
+```
 
-<!--TODO: Add notes about Generic Classes-->
+**Example: Using Generic Methods**:
 
-<!--TODO: Add generic classes examples to support key notes -->
+```csharp
+using System;
 
-### Generic Interfaces
+class Program
+{
+    static void Main()
+    {
+        // Call generic method with different types
+        PrintValue(10); // T is int
+        PrintValue("Hello"); // T is string
+        PrintValue(3.14); // T is double
+    }
 
-<!--TODO: Add notes about Generic Interfaces-->
+    // Generic method
+    static void PrintValue<T>(T value)
+    {
+        Console.WriteLine($"Value: {value}, Type: {typeof(T)}");
+    }
+}
 
-<!--TODO: Add generic interfaces examples to support key notes -->
+// Output
+// Value: 10, Type: System.Int32
+// Value: Hello, Type: System.String
+// Value: 3.14, Type: System.Double
+```
 
-### Type constraints
+### 📖 Generic Classes
 
-<!-- TODO: Add notes about Type constrains with Generic types like classes and Methods -->
+- A **generic class** is a class that can work with any data type.
+- It allows you to define a class with a placeholder for the type, which is specified when the class is instantiated.
 
-- Primary Constrains: only one primary constrain
-- Secondary Constrains
-- Constructor Constrains
-- Enum Constrains (at least in C# 7.3)
+**Syntax**:
 
-using `where` keyword
+```csharp
+[AccessModifier] class [ClassName]<T> { ... }
+```
+
+**Example: Using Generic Classes**:
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Create a generic class with int
+        var intBox = new Box<int>(10);
+        Console.WriteLine(intBox.Value); // Output: 10
+
+        // Create a generic class with string
+        var stringBox = new Box<string>("Hello");
+        Console.WriteLine(stringBox.Value); // Output: Hello
+    }
+}
+
+// Generic class
+public class Box<T>
+{
+    public T Value { get; set; }
+
+    public Box(T value)
+    {
+        Value = value;
+    }
+}
+```
+
+### 📖 Generic Interfaces
+
+- A **generic interface** is an interface that can work with any data type.
+- It allows you to define methods and properties that use a generic type.
+
+**Syntax**:
+
+```csharp
+[AccessModifier] interface [IInterfaceName]<T> { ... }
+```
+
+**Example: Using Generic Interfaces**:
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        var repo = new Repository<string>();
+        repo.Add("Item 1");
+        Console.WriteLine(repo.Get(0)); // Output: Item 1
+    }
+}
+
+// Generic interface
+public interface IRepository<T>
+{
+    void Add(T item);
+    T Get(int index);
+}
+
+// Generic class implementing generic interface
+public class Repository<T> : IRepository<T>
+{
+    private readonly List<T> _items = new List<T>();
+
+    public void Add(T item)
+    {
+        _items.Add(item);
+    }
+
+    public T Get(int index)
+    {
+        return _items[index];
+    }
+}
+```
+
+### 📖 Type constraints
+
+- Type constraints restrict the types that can be used with generics.
+- They ensure that the generic type meets specific requirements.
+- Constraints are applied using the `where` keyword.
+
+#### 📖 4 Types of Type Constrains
+
+1. **Primary Constrains**:
+
+   - Only one primary constraint can be applied.
+   - Examples: class, struct, or a specific base class.
+
+2. **Secondary Constrains**:
+
+   - Multiple secondary constraints can be applied.
+   - Examples: Interfaces or other generic types.
+
+3. **Constructor Constrains**: Ensures the type has a parameterless constructor.
+4. **Enum Constrains** (C# 7.3+): Ensures the type is an enum.
+
+**Syntax**:
+
+```csharp
+[AccessModifier] void [MethodName]<T>(T parameter) where T : constraint { ... }
+```
+
+**Example: Using Type Constrains**:
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        var number = new Number<int>(10);
+        Console.WriteLine(number.Value); // Output: 10
+
+        // var invalid = new Number<string>("Hello"); // Error: string does not implement IComparable
+    }
+}
+
+// Generic class with constraints
+public class Number<T> where T : IComparable
+{
+    public T Value { get; set; }
+
+    public Number(T value)
+    {
+        Value = value;
+    }
+}
+```
 
 ## Delegates
 
@@ -856,8 +1011,4 @@ PrintDelegate print = message => Console.WriteLine(message);
 ```csharp
 List<int> mynums = Enumerable.Range(1, 10).ToList();
 mynums.FindAll(x => x % 2 == 0);
-```
-
-```
-
 ```
