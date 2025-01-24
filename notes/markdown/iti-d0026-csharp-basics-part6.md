@@ -597,24 +597,182 @@ internal class Program
 }
 ```
 
-## Generics
+## 📖 Built-in Generics
 
-### Built-in Generics
+- Generics are a feature of C# that allows you to define **type-safe** and **reusable** data structures.
+- Located in the `System.Collections.Generic` namespace.
+- Generics are **homogeneous**, meaning they store elements of a single specified type.
+- They provide **compile-time type checking**, reducing runtime errors and improving performance by avoiding **boxing** and **unboxing**.
 
-- Generics is a new update of collections
-- Located in `System.Collections.Generic`
-- Have set of Types like:
-  - `List<T>`
-  - `Dictionary<Key, Value>`
-  - `SortedList<Key, Value>`
-  - `KeyValuePair<Key, Value>`: type used with looping like `DictionaryEntry` in collections.
-  - `Stack<T>`
-  - `Queue<T>`
-- Generics is more safer than collections, because it's homogenous type so any issues will be raised at compile time.
+### 📖 Common Generic Collections
 
-### User Defined Generics
+#### 📖 1. `List<T>`
 
-#### Generic Methods
+- A dynamically resizable array.
+- Similar to `ArrayList` but type-safe.
+
+**`List<T>` Common Methods**:
+
+- `Add(item)`: Adds an item to the end of the list.
+- `Remove(item)`: Removes the first occurrence of an item.
+- `Contains(item)`: Checks if the list contains a specific item.
+- `Sort()`: Sorts the elements in the list.
+
+**Example: List**:
+
+```csharp
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        List<int> numbers = new List<int> { 1, 2, 3 };
+        numbers.Add(4);
+        Console.WriteLine(numbers[2]); // Output: 3
+    }
+}
+```
+
+#### 📖 2. `Dictionary<TKey, TValue>`
+
+- A collection of key-value pairs with fast lookups.
+- Similar to `Hashtable` but type-safe.
+
+**`Dictionary<TKey, TValue>` Common Methods**:
+
+- `Add(key, value)`: Adds a key-value pair.
+- `Remove(key)`: Removes the key-value pair with the specified key.
+- `ContainsKey(key)`: Checks if the dictionary contains a specific key.
+
+```csharp
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        Dictionary<string, int> ages = new Dictionary<string, int>();
+        ages.Add("John", 30);
+        ages.Add("Jane", 25);
+        Console.WriteLine(ages["John"]); // Output: 30
+    }
+}
+```
+
+#### 📖 3. `SortedList<TKey, TValue>`
+
+- A collection of key-value pairs sorted by keys.
+- Similar to SortedList but type-safe.
+
+**`SortedList<TKey, TValue>` Common Methods:**
+
+- `Add(key, value)`: Adds a key-value pair.
+- `Remove(key)`: Removes the key-value pair with the specified key.
+- `ContainsKey(key)`: Checks if the sorted list contains a specific key.
+
+```csharp
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        SortedList<string, int> prices = new SortedList<string, int>();
+        prices.Add("apple", 1);
+        prices.Add("banana", 2);
+        Console.WriteLine(prices["apple"]); // Output: 1
+    }
+}
+```
+
+#### 📖 4. `KeyValuePair<TKey, TValue>`
+
+- A `struct` representing a **key-value pair**.
+- Used for iterating over `Dictionary<TKey, TValue>` or `SortedList<TKey, TValue>`.
+
+```csharp
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        Dictionary<string, int> ages = new Dictionary<string, int>
+        {
+            { "John", 30 },
+            { "Jane", 25 }
+        };
+
+        foreach (KeyValuePair<string, int> entry in ages)
+        {
+            Console.WriteLine($"{entry.Key}: {entry.Value}");
+        }
+    }
+}
+```
+
+#### 📖 5. `Stack<T>`
+
+- A Last-In-First-Out (LIFO) collection.
+- Similar to `Stack` but type-safe.
+
+**`Stack<T>` Common Methods**:
+
+- `Push(item)`: Adds an item to the top of the stack.
+- `Pop()`: Removes and returns the item at the top of the stack.
+- `Peek()`: Returns the item at the top of the stack without removing it.
+
+```csharp
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        Stack<int> stack = new Stack<int>();
+        stack.Push(1);
+        stack.Push(2);
+        Console.WriteLine(stack.Pop()); // Output: 2
+    }
+}
+```
+
+#### 📖 6. `Queue<T>`
+
+- A First-In-First-Out (FIFO) collection.
+- Similar to `Queue` but type-safe.
+
+**`Queue<T>` Common Methods**:
+
+- `Enqueue(item)`: Adds an item to the end of the queue.
+- `Dequeue()`: Removes and returns the item at the front of the queue.
+- `Peek()`: Returns the item at the front of the queue without removing it.
+
+```csharp
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        Queue<int> queue = new Queue<int>();
+        queue.Enqueue(1);
+        queue.Enqueue(2);
+        Console.WriteLine(queue.Dequeue()); // Output: 1
+    }
+}
+```
+
+## User Defined Generics
+
+### Generic Methods
 
 <!--TODO: Add notes about Generic Methods-->
 
@@ -626,13 +784,13 @@ internal class Program
 
 <!--TODO: Add generic methods examples to support key notes -->
 
-#### Generic Classes
+### Generic Classes
 
 <!--TODO: Add notes about Generic Classes-->
 
 <!--TODO: Add generic classes examples to support key notes -->
 
-#### Generic Interfaces
+### Generic Interfaces
 
 <!--TODO: Add notes about Generic Interfaces-->
 
@@ -698,4 +856,8 @@ PrintDelegate print = message => Console.WriteLine(message);
 ```csharp
 List<int> mynums = Enumerable.Range(1, 10).ToList();
 mynums.FindAll(x => x % 2 == 0);
+```
+
+```
+
 ```
