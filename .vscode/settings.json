@@ -3,6 +3,7 @@
     "Cloneable",
     "decompile",
     "Hashtable",
+    "LINQ",
     "MSIL",
     "parameterless"
   ]

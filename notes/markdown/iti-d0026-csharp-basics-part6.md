@@ -962,53 +962,189 @@ public class Number<T> where T : IComparable
 }
 ```
 
-## Delegates
+## 📖 Delegates
 
-- Each delegate has a method signature, which is the same as the method signature of the method that the delegate will point to.
-- Each delegate have a table called `Invocation List` which contains the methods that the delegate will point to.
-- We can add multiple methods to the `Invocation List` of the delegate using `+=` operator.
-- When delegate is called, it will call all methods in the `Invocation List` in the order they were added.
+- A **delegate** is a type-safe function pointer that holds references to methods with a specific signature.
+- It allows you to pass methods as parameters or store them in variables.
+- **Method Signature**: A delegate has a method signature that matches the methods it can point to (same return type and parameters).
+- **Invocation List**:
+  - A delegate has an **invocation list** that contains the methods it points to.
+  - You can add multiple methods to the invocation list using the `+=` operator.
+  - When the delegate is invoked, all methods in the invocation list are called in the order they were added.
+  - You can remove method from the invocation list using the `-=` operator.
+- **Usage**: Delegates are commonly used for **event handling**, **callbacks**, and **method chaining**.
+- We can call `invoke` delegate directly like normal method with `()`, but it preferred to use `Invoke` method with null propagation operator `?.`
+
+**Syntax**:
 
 ```csharp
-public delegate [returnType For Function] [DelegateName]([parameters]);
+[AccessModifier] delegate [returnType] [DelegateName]([parameters]);
 ```
 
-```csharp
-public delegate void PrintDelegate(string message);
+**Example: Basic Delegate**:
 
-public void PrintMessage(string message)
+```csharp
+using System;
+
+class Program
 {
-    Console.WriteLine(message);
+    // Define a delegate
+    public delegate void PrintDelegate(string message);
+
+    // Method that matches the delegate signature
+    public static void PrintMessage(string message)
+    {
+        Console.WriteLine(message);
+    }
+
+    static void Main()
+    {
+        // Create a delegate instance
+        PrintDelegate print = new PrintDelegate(PrintMessage);
+        // Or simply: PrintDelegate print = PrintMessage;
+
+        // Invoke the delegate
+        print("Hello, World!");
+        print?.Invoke("Hello, World!"); // preferred syntax
+    }
+
+    // Output
+    // Hello, World!
+    // Hello, World!
+}
+```
+
+### 📖 Multicast Delegates
+
+- A delegate can point to multiple methods.
+- Use the `+=` operator to add methods to the invocation list.
+- Use the `-=` operator to remove methods from the invocation list.
+- Methods in the invocation list will be called in the same order they were added.
+
+```csharp
+using System;
+
+class Program
+{
+    public delegate void PrintDelegate(string message);
+
+    public static void PrintMessage1(string message)
+    {
+        Console.WriteLine($"Message 1: {message}");
+    }
+
+    public static void PrintMessage2(string message)
+    {
+        Console.WriteLine($"Message 2: {message}");
+    }
+
+    static void Main()
+    {
+        PrintDelegate print = PrintMessage1;
+        print += PrintMessage2; // Add another method
+
+        // Invoke the delegate (both methods are called)
+        print("Hello, World!");
+    }
 }
 
-PrintDelegate print = new PrintDelegate(PrintMessage);
-// or   PrintDelegate print = PrintMessage;
+// Output
+// Message 1: Hello, World!
+// Message 2: Hello, World!
 ```
 
-**Anonymous Methods**:
+### 📖 Anonymous Methods
+
+- Anonymous methods allow you to define a method inline without a name.
+- They are useful for short, one-time-use methods.
 
 ```csharp
-PrintDelegate print = delegate (string message)
+using System;
+
+class Program
 {
-    Console.WriteLine(message);
-};
+    public delegate void PrintDelegate(string message);
+
+    static void Main()
+    {
+        // Define an anonymous method
+        PrintDelegate print = delegate (string message)
+        {
+            Console.WriteLine(message);
+        };
+
+        // Invoke the delegate
+        print("Hello, World!");
+    }
+}
 ```
 
-**Lambda Expressions**:
+### 📖 Lambda Expression
+
+- Lambda expressions provide a concise way to define anonymous methods.
+- They are widely used with delegates, `LINQ`, and functional programming.
 
 ```csharp
-PrintDelegate print = (string message) => Console.WriteLine(message);
-// another way
-PrintDelegate print = message => Console.WriteLine(message);
+using System;
+
+class Program
+{
+    public delegate void PrintDelegate(string message);
+
+    static void Main()
+    {
+        // Define a lambda expression
+        PrintDelegate print = (string message) => Console.WriteLine(message);
+        // Or simply: PrintDelegate print = message => Console.WriteLine(message);
+
+        // Invoke the delegate
+        print("Hello, World!");
+    }
+}
 ```
 
-### Predefined Delegates
+### 📖 Predefined Delegates
 
-- `Action`: delegate that takes parameters but does not return a value.
-- `Func`: delegate that takes parameters and returns a value.
-- `Predicate`: delegate that takes a parameter and returns a boolean value.
+C# provides **built-in generic** delegates to simplify common scenarios:
+
+1. `Action`:
+
+   - A delegate that takes parameters but does not return a value.
+   - Example: `Action<string>` for a method that takes a string parameter.
+
+2. `Func`:
+
+   - A delegate that takes parameters and returns a value.
+   - Example: `Func<int, int, int>` for a method that takes two `int` parameters and returns an `int`.
+
+3. `Predicate`:
+
+   - A delegate that takes a parameter and returns a bool.
+   - Example: `Predicate<int>` for a method that takes an `int` parameter and returns `true` or `false`.
+
+**Example: Using Predefined Delegates**:
 
 ```csharp
-List<int> mynums = Enumerable.Range(1, 10).ToList();
-mynums.FindAll(x => x % 2 == 0);
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+class Program
+{
+    static void Main()
+    {
+        // Action example
+        Action<string> print = message => Console.WriteLine(message);
+        print("Hello, World!");
+
+        // Func example
+        Func<int, int, int> add = (x, y) => x + y;
+        Console.WriteLine(add(10, 20)); // Output: 30
+
+        // Predicate example
+        List<int> numbers = Enumerable.Range(1, 10).ToList();
+        List<int> evenNumbers = numbers.FindAll(x => x % 2 == 0);
+        Console.WriteLine(string.Join(", ", evenNumbers)); // Output: 2, 4, 6, 8, 10
+    }
+}
 ```
