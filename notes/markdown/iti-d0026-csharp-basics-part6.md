@@ -1200,10 +1200,10 @@ public class Program
         List<Employee> allEmployees =
         [
             new(3, "John", EGender.M, 10000d),
-            new(3, "Jolly", EGender.F, 5000d),
-            new(3, "Sheldon", EGender.M, 100000d),
-            new(3, "Missy", EGender.F, 1000d),
-            new(3, "George", EGender.M, 20000d)
+            new(4, "Jolly", EGender.F, 5000d),
+            new(5, "Sheldon", EGender.M, 100000d),
+            new(6, "Missy", EGender.F, 1000d),
+            new(7, "George", EGender.M, 20000d)
         ];
 
         ReportGenerator.generate(allEmployees, "Employees with Sales >= $10,000", emp => emp.Sales >= 10_000);
