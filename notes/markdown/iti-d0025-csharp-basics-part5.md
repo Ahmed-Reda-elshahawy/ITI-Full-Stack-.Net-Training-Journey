@@ -852,6 +852,38 @@ class Program
 }
 ```
 
+### 💡 Performance Comparison: `StringBuilder` vs `string Concatenation`
+
+```csharp
+using System.Diagnostics;
+using System.Text;
+
+namespace ConsoleApp1;
+
+internal class Program
+{
+    private static void Main()
+    {
+        var iterations = 100000;
+        var sw = new Stopwatch();
+
+        // Using string concatenation
+        sw.Start();
+        var result = "";
+        for (var i = 0; i < iterations; i++) result += "a";
+        sw.Stop();
+        Console.WriteLine($"String concatenation: {sw.ElapsedMilliseconds} ms");
+
+        // Using StringBuilder
+        sw.Restart();
+        var sb = new StringBuilder();
+        for (var i = 0; i < iterations; i++) sb.Append("a");
+        sw.Stop();
+        Console.WriteLine($"StringBuilder: {sw.ElapsedMilliseconds} ms");
+    }
+}
+```
+
 ## 📖 `init` Accessors in Properties
 
 - The `init` accessor is used to create **immutable properties** that can only be set during object initialization.
