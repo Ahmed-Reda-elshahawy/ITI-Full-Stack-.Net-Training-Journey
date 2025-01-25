@@ -255,23 +255,123 @@ public class Program
 // Referee Referee Smith is looking at Location { X = 5, Y = 9 }...
 ```
 
-## Partial Classes
+## 📖 Partial Classes
 
- <!-- TODO: add partial classes notes -->
+- A **partial class** allows you to **split** the definition of a class across multiple files.
+- All parts of the class must use the `partial` keyword and be in **the same namespace and assembly**.
 
-<!-- - Partial classes is a unique feature of C#.
-- It can break the functionality of a single class into many files. -->
+### 📖 Benefits of Partial Classes
 
-_Will be added soon..._
+- **Code Organization**: Split large classes into smaller, more manageable files.
+- **Separation of Concerns**: Different parts of the class can be maintained by different developers.
+- **Code Generation**: Allow tools (e.g., Visual Studio designers) to generate code in one file while you write custom code in another.
 
-### Partial Methods
+### 📖 Partial Class Syntax
 
- <!-- TODO: add partial methods notes -->
+```csharp
+public partial class ClassName
+{
+    // Members (fields, properties, methods, etc.)
+}
+```
 
-<!-- - Partial methods is a unique feature of C#.
-- Partial methods before C#0.7 can only be defined as `private` and `void`. -->
+**Example**:
 
-_Will be added soon..._
+```csharp
+// File: Person.cs (Part 1)
+public partial class Person
+{
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+}
+
+// File: PersonExtensions.cs (Part 2)
+public partial class Person
+{
+    public string GetFullName()
+    {
+        return $"{FirstName} {LastName}";
+    }
+}
+
+// Usage
+class Program
+{
+    static void Main()
+    {
+        var person = new Person { FirstName = "John", LastName = "Doe" };
+        Console.WriteLine(person.GetFullName()); // Output: John Doe
+    }
+}
+```
+
+### 💡 Partial Class Rules
+
+- All parts of the class must have the same access modifier (e.g., `public`).
+- If any part of the class is declared as `abstract`, the entire class is considered `abstract`.
+- If any part of the class is declared as `sealed`, the entire class is considered `sealed`.
+
+### 📖 Partial Methods
+
+- A **partial method** allows you to declare a method in one part of a partial class and optionally implement it in another part.
+- Partial methods are implicitly `private` and must return `void`.
+
+**Syntax**:
+
+```csharp
+// Declaration
+partial void MethodName();
+
+// Implementation
+partial void MethodName()
+{
+    // Implementation
+}
+```
+
+**Rules**:
+
+- Partial methods must be declared within a partial class.
+- If a partial method is not implemented, the compiler removes the method signature and all calls to it.
+
+**Example**:
+
+```csharp
+// File: Logger.cs (Part 1)
+public partial class Logger
+{
+    partial void LogMessage(string message);
+
+    public void Log(string message)
+    {
+        LogMessage(message); // Call the partial method
+        Console.WriteLine("Logging: " + message);
+    }
+}
+
+// File: LoggerExtensions.cs (Part 2)
+public partial class Logger
+{
+    partial void LogMessage(string message)
+    {
+        Console.WriteLine("Custom Log: " + message);
+    }
+}
+
+// Usage
+class Program
+{
+    static void Main()
+    {
+        var logger = new Logger();
+        logger.Log("Hello, World!");
+    }
+}
+
+// Output
+// Custom Log: Hello, World!
+// Logging: Hello, World!
+```
 
 ## Intro to WindowsForms
 
