@@ -85,6 +85,12 @@ This index will be updated as I progress through the training. It will contain a
 
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
+### Database (SQL Server)
+
+| Lecture                   | Topics Covered                                                                                                                                                                                       | Notes                                              |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| 🔖 ITI - D0029 - Database | • Database Life Cycle<br/>• File Based System<br/>• Database Basic Definitions<br/>• Benefits of Database System<br/>• Database Users<br/>• Entity-Relationship Model (ER Model)<br/>• Types of Keys | [Markdown](./notes/markdown/iti-d0029-database.md) |
+
 ## Progress
 
 - [ ] Add notes for all topics as a Markdown files.
