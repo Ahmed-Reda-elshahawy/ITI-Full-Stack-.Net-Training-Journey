@@ -338,3 +338,55 @@ Table Mentorship {
   }
 }
 ```
+
+## SQL (Structured Query Language)
+
+- **Definition**: SQL is a standardized language used to communicate with relational databases to perform operations like `querying`, `updating`, and `managing` data.
+- **Core Functionality**: Data definition (`DDL`), data query (`DQL`),data manipulation (`DML`), data control (`DCL`), and transaction control (`TCL`).
+
+### ANSI SQL
+
+- **Definition**: A standardized version of SQL defined by the American National Standards Institute (ANSI) to ensure compatibility across different database systems.
+- **Core Feature**: Focuses on basic SQL syntax and operations like `SELECT`, `INSERT`, `UPDATE`, `DELETE`.
+
+### SQL Flavors (Vendor-Specific Extensions)
+
+- **T-SQL (Transact-SQL)**: Microsoft SQL Server, Azure SQL.
+- **PL/SQL (Procedural Language SQL)**: Oracle Database.
+- **MySQL (SQL/PSM)**: MySQL database.
+- **pgSQL (PL/pgSQL)**: PostgreSQL
+
+### SQL Core Functionality
+
+1. **Data Definition Language (DDL)**
+
+   - **Purpose**: Defines database structure and schema.
+   - **Key Commands**:
+     - `CREATE TABLE`, `CREATE VIEW`, `CREATE FUNCTION`
+     - `ALTER TABLE`, `DROP TABLE`
+
+2. **Data Query Language (DQL)**
+
+   - **Purpose**: Retrieves data from the database.
+   - **Key Commands**:
+     - `SELECT`, `Aggregate Functions` (e.g., `SUM`, `AVG`)
+     - `GROUP BY`, `UNION`
+     - `JOINS`, `Subqueries`
+
+3. **Data Manipulation Language (DML)**
+
+   - **Purpose**: Manipulates existing data in tables.
+   - **Key Commands**:
+     - `INSERT`, `UPDATE`, `DELETE`
+     - `MERGE` (for upserts)
+
+4. **Data Control Language (DCL)**
+
+   - **Purpose**: Manages access and permissions.
+   - **Key Commands**:
+     - `GRANT`, `DENY`, `REVOKE`
+
+5. **Transaction Control Language (TCL)**
+   - **Purpose**: Manages transaction integrity and execution.
+   - **Key Commands**:
+     - `BEGIN TRANSACTION`, `COMMIT`, `ROLLBACK`
