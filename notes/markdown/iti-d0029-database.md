@@ -78,7 +78,7 @@ Relationship has 3 properties:
 - **Cardinality**: Number of instances of an entity that can be associated with the relationship.
   - **One-to-One (1:1)**: One instance of an entity is associated with one instance of another entity.
   - **One-to-Many (1:M)**: One instance of an entity is associated with many instances of another entity.
-  - **Many-to-One (M:1)**: Many instances of an entity are associated with one instance of another entity.
+  - **Many-to-Many (M:N)**: Many instances of an entity are associated with many instances of another entity.
 - **Participation**: Describes whether the existence of an entity depends on the relationship.
   - **Total Participation**: Every entity must participate in the relationship (most probably represented with `must` in the requirement document).
   - **Partial Participation**: Not every entity must participate in the relationship (most probably represented with `may` in the requirement document).
