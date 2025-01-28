@@ -35,7 +35,7 @@
 - Step 4: Mapping of Binary 1:N Relationship Types.
 - Step 5: Mapping of Binary M:N Relationship Types.
 - Step 6: Mapping of N-ary Relationship Types.
-- Step 7: Mapping of Unary Relationship.
+- Step 7: Mapping of Unary Relationship Types.
 
 ### Step 1: Mapping of Regular Entity
 
@@ -117,7 +117,7 @@
 
 **Example**:
 
-- **Entities**: Husband, Wife
+- **Entities**: `Husband`, `Wife`
 - **Attributes**:
   - `HusbandID`
   - `WifeID`
@@ -263,7 +263,7 @@ Table Employee {
 
 **Example**:
 
-- **Entities**: Doctor, Patient, Treatment
+- **Entities**: `Doctor`, `Patient`, `Treatment`
   - A doctor provides treatment to a patient.
 - **Mapping**:
 
