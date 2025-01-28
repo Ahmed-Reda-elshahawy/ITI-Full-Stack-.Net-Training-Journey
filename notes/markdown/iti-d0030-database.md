@@ -390,3 +390,263 @@ Table Mentorship {
    - **Purpose**: Manages transaction integrity and execution.
    - **Key Commands**:
      - `BEGIN TRANSACTION`, `COMMIT`, `ROLLBACK`
+
+## Microsoft SQL Server
+
+**Microsoft SQL Server** is a relational database management system (RDBMS) developed by Microsoft that supports a wide range of transaction processing, business intelligence, and analytics applications.
+
+### SQL Server Editions
+
+1. **Express**: Free entry-level database.
+2. **Developer**: Full-featured edition for development and testing.
+
+### SQL Server Management Studio (SSMS)
+
+An integrated environment for managing SQL Server databases, used for configuring, managing, and administering all components within SQL Server.
+
+#### Create Database Using SSMS
+
+1. Open SQL Server Management Studio.
+2. Connect to the SQL Server instance.
+3. Right-click on `Databases` in the Object Explorer.
+4. Select `New Database`.
+5. Enter the database name and configure other settings.
+   - **Database Name**
+   - **Owner**: Default is `dbo`.
+   - **Database Files**: Data file (`mdf`) and log file settings (`ldf`).
+6. Click `OK` to create the database.
+
+#### Create Table Using SSMS
+
+1. Open SQL Server Management Studio.
+2. Connect to the SQL Server instance.
+3. Expand the database in which you want to create the table.
+4. Right-click on `Tables` and select `New Table`.
+5. Add columns to the table by specifying the column name, data type, and other properties.
+6. Press `Ctrl + S` to save the table.
+7. Refresh `Tables` to view the newly created table.
+
+#### Create Diagram Using SSMS
+
+1. Open SQL Server Management Studio.
+2. Connect to the SQL Server instance.
+3. Right-click on `Database Diagrams` in the Object Explorer.
+4. Select `New Database Diagram`.
+5. Select the tables you want to include in the diagram and then press `Add`.
+6. Arrange the tables and create relationships between them by dragging the primary key to the foreign key.
+7. Save the diagram by pressing `Ctrl + S`.
+
+#### Insert, Update and Query Data Using SSMS
+
+1. **Insert Data**:
+   - Right-click on the table and select `Edit Top 200 Rows`.
+   - Enter the data in the table.
+   - Press `Ctrl + S` to save the data.
+2. **Update Data**:
+   - Right-click on the table and select `Edit Top 200 Rows`.
+   - Update the data in the table.
+   - Press `Ctrl + S` to save the changes.
+3. **Query Data**:
+   - Open a new query window.
+   - Write the SQL query to retrieve data.
+   - Execute the query by pressing `F5`.
+   - View the results in the output window.
+   - **OR** Right-click on the table and select `Select Top 1000 Rows`.
+
+## DQL - Data Query Language
+
+### SELECT Statement
+
+- **Purpose**: Retrieves data from one or more tables.
+- **Syntax**:
+
+  ```sql
+  SELECT column1, column2, ...
+  FROM table_name
+  WHERE condition;
+  ```
+
+- **Example**:
+
+  ```sql
+  SELECT
+      first_name,
+      last_name,
+      email
+  FROM
+      sales.customers;
+  ```
+
+### Null Comparison
+
+- Never to use `=` or `!=` to compare `NULL` values.
+- Use `IS NULL` or `IS NOT NULL` instead.
+
+### Aliases
+
+- We can use alias names for columns using the `AS` keyword (e.g., `SELECT column_name AS alias_name`), also another way in sql server is to use `SELECT column_name = alias_name`.
+
+**Example**:
+
+```sql
+SELECT
+  first_name + ' ' + last_name AS full_name
+FROM
+  sales.customers;
+
+-- another way
+SELECT
+  full_name = first_name + ' ' + last_name
+FROM
+  sales.customers;
+
+-- using [] with alias names containing spaces
+SELECT
+  [full name] = first_name + ' ' + last_name
+FROM
+  sales.customers;
+```
+
+> [!Note]
+>
+> Concatenation Operator in example above using `+` Operator is valid because `first_name` and `last_name` are of type `VARCHAR`, but if we want to concatenate columns of type `INT` we should cast them to `VARCHAR` first.
+>
+> ```sql
+>  SELECT
+>    first_name + ' ' + last_name AS full_name,
+>    first_name + last_name + CAST(age AS VARCHAR) AS username
+>  FROM
+>    sales.customers;
+> ```
+
+### Logical Operators in WHERE Clause
+
+- **AND**: Returns rows where both conditions are true.
+- **OR**: Returns rows where either condition is true.
+
+**Example**:
+
+```sql
+SELECT
+    first_name,
+    last_name,
+    email
+FROM
+  sales.customers
+WHERE
+    city = 'New York'
+    AND state = 'NY';
+```
+
+## DML - Data Manipulation Language
+
+### INSERT Statement
+
+- **Purpose**: Adds new rows to a table.
+- **Syntax**:
+
+  ```sql
+  INSERT INTO table_name (column1, column2, ...)
+  VALUES (value1, value2, ...);
+  ```
+
+- **Example**:
+
+  ```sql
+  INSERT INTO sales.customers (first_name, last_name, email)
+  VALUES ('John', 'Doe', 'john@example.com');
+  ```
+
+### UPDATE Statement
+
+- **Purpose**: Modifies existing records in a table.
+- **Syntax**:
+
+  ```sql
+  UPDATE table_name
+  SET column1 = value1, column2 = value2, ...
+  WHERE condition;
+  ```
+
+- **Example**:
+
+  ```sql
+  UPDATE sales.customers
+  SET email = 'johndoe@example.com'
+  WHERE first_name = 'John' AND last_name = 'Doe';
+  ```
+
+### DELETE Statement
+
+- **Purpose**: Removes one or more rows from a table.
+- **Syntax**:
+
+  ```sql
+  DELETE FROM table_name
+  WHERE condition;
+  ```
+
+- **Example**:
+
+  ```sql
+  DELETE FROM sales.customers
+  WHERE first_name = 'John' AND last_name = 'Doe';
+  ```
+
+## DDL - Data Definition Language
+
+### Create Table Statement
+
+- **Purpose**: Creates a new table in the database.
+- **Syntax**:
+
+  ```sql
+  CREATE TABLE table_name (
+      column1 datatype,
+      column2 datatype,
+      ...
+  );
+  ```
+
+- **Example**:
+
+  ```sql
+  CREATE TABLE sales.customers (
+      customer_id INT PRIMARY KEY,
+      first_name VARCHAR(50),
+      last_name VARCHAR(50),
+      email VARCHAR(100)
+  );
+  ```
+
+### Alter Table Statement
+
+- **Purpose**: Modifies an existing table structure.
+- **Syntax**:
+
+  ```sql
+  ALTER TABLE table_name
+  ADD column_name datatype;
+  ```
+
+- **Example**:
+
+  ```sql
+  ALTER TABLE sales.customers
+  ADD phone_number VARCHAR(20);
+  ```
+
+### Drop Table Statement
+
+- **Purpose**: Removes a table from the database.
+- **Syntax**:
+
+  ```sql
+  DROP TABLE table_name;
+  ```
+
+- **Example**:
+
+  ```sql
+  DROP TABLE sales.customers;
+  ```
