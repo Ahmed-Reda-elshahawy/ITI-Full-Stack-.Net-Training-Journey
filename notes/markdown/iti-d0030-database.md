@@ -259,7 +259,7 @@ Table Employee {
 
 - Create a table for each entity and an **additional table** for the relationship.
 - The relationship table contains **N foreign keys**, one for each participating entity.
-  - Use the combination of these foreign keys as a **composite primary key**.
+  - Use the combination of the foreign keys with other columns as a **composite primary key**.
 
 **Example**:
 
