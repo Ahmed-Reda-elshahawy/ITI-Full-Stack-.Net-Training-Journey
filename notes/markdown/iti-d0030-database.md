@@ -20,7 +20,9 @@
 - Used to create relationships (links) between tables.
 - Prevents actions that would destroy the link between tables (e.g. deleting a record referenced by a foreign key).
 
-> [!Note] > **Mapping Representation**:
+> [!Note]
+>
+> **Mapping Representation**:
 >
 > - **Primary Key**: Represented by an **underline solid line** (`_________`).
 > - **Foreign Key**: Represented by an **underline dashed line** (`_ _ _ _ _`).
