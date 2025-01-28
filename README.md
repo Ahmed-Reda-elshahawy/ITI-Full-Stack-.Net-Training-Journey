@@ -87,9 +87,10 @@ This index will be updated as I progress through the training. It will contain a
 
 ### Database (SQL Server)
 
-| Lecture                   | Topics Covered                                                                                                                                                                                       | Notes                                              |
-| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
-| 🔖 ITI - D0029 - Database | • Database Life Cycle<br/>• File Based System<br/>• Database Basic Definitions<br/>• Benefits of Database System<br/>• Database Users<br/>• Entity-Relationship Model (ER Model)<br/>• Types of Keys | [Markdown](./notes/markdown/iti-d0029-database.md) |
+| Lecture                   | Topics Covered                                                                                                                                                                                                                            | Notes                                              |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| 🔖 ITI - D0029 - Database | • Database Life Cycle<br/>• File Based System<br/>• Database Basic Definitions<br/>• Benefits of Database System<br/>• Database Users<br/>• Entity-Relationship Model (ER Model)<br/>• Types of Keys                                      | [Markdown](./notes/markdown/iti-d0029-database.md) |
+| 🔖 ITI - D0030 - Database | • Primary Key vs. Foreign Key<br/>• ER-to-Relational Mapping<br/>• SQL (Structured Query Language)<br/>• Microsoft SQL Server<br/>• DQL - Data Query Language<br/>• DML - Data Manipulation Language<br/>• DDL - Data Definition Language | [Markdown](./notes/markdown/iti-d0030-database.md) |
 
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
