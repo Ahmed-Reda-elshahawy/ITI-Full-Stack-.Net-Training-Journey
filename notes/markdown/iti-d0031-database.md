@@ -6,7 +6,7 @@ _Review [Database Restoring](./iti-d0030-database.md#restore-database-using-ssms
 
 1. **CROSS JOIN**: Returns the Cartesian product of the two tables.
 2. **INNER JOIN**: Returns rows when there is at least one match in both tables. (`Equi Join`)
-3. **OUTER JOIN**: Returns all rows from both tables, joining them where there is a match in the left table.
+3. **OUTER JOIN**: Returns all rows from both tables, joining them where there is a match.
    - **LEFT JOIN**: Returns all rows from the left table, and the matched rows from the right table.
    - **RIGHT JOIN**: Returns all rows from the right table, and the matched rows from the left table.
    - **FULL JOIN**: Returns rows when there is a match in one of the tables.
