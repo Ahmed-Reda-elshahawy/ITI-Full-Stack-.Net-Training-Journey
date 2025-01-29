@@ -453,6 +453,17 @@ An integrated environment for managing SQL Server databases, used for configurin
    - View the results in the output window.
    - **OR** Right-click on the table and select `Select Top 1000 Rows`.
 
+#### Restore Database Using SSMS
+
+- Connect to the SQL Server instance.
+- Right-click on `Databases` in the Object Explorer.
+- Create a new database with the same name as the backup database.
+- Right-click on the newly created database and select `Tasks` > `Restore` > `Database`.
+- Click on `Device` and select the backup file.
+- Click `OK` to restore the database.
+- Change the database owner to the correct user if needed or use `sa` user.
+- Refresh the database to view the restored data.
+
 ## DQL - Data Query Language
 
 ### SELECT Statement
