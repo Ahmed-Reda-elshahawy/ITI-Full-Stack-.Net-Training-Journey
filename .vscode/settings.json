@@ -1,14 +1,18 @@
 {
   "cSpell.words": [
+    "BINDRULE",
     "Cloneable",
     "decompile",
     "Equi",
+    "GETDATE",
     "Hashtable",
+    "ISNULL",
     "LINQ",
     "Mentee",
     "MSIL",
     "parameterless",
     "SSMS",
+    "UNBINDRULE",
     "varchar"
   ]
 }
