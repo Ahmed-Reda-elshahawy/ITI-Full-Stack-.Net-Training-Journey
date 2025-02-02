@@ -435,3 +435,18 @@ BEGIN CATCH
 		ERROR_MESSAGE() AS err_message;
 END CATCH
 ```
+
+### Summary of ACID Properties:
+
+|**Property**    |	**Description**   						|			**Example**                                       |
+|----------------|----------------------------------------------------------------------|-------------------------------------------------------------------------|
+|**Atomicity**   |Transactions are all-or-nothing.	                                |Money transfer: both debit and credit must succeed, or neither happens.  |
+|**Consistency** |Transactions maintain database integrity and rules.	 		|Account balance cannot go negative.					  |
+|**Isolation**   |Transactions are isolated from each other until committed.	        |Two transfers happening simultaneously do not interfere with each other. |
+|**Durability**  |Committed transactions are permanent, even after system failures.	|Updated data remains intact after a crash.				  |
+
+### Why ACID Properties Are Important:
+- **Data Integrity**: Ensures that the database remains accurate and consistent.
+- **Concurrency Control**: Allows multiple transactions to occur simultaneously without causing conflicts.
+- **Recovery**: Ensures that the database can recover from failures without losing data.
+
