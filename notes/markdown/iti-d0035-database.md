@@ -297,14 +297,6 @@ UNPIVOT (
 - **Views do not store data** (except Indexed Views).
 - Views **cannot accept parameters** like stored procedures.
 - Views **cannot contain DML (`INSERT`, `UPDATE`, `DELETE`) statements** inside their body.
-- Is a select statement
-- Specify user view of data
-- Hide DB objects
-- Limit access of data
-- Simplify Construction of complex queries
-- Has no parameters
-- Has no DBML queries inside its body
-- Standard view can be considered as Virtual table
 
 ### Types of Views in MS SQL Server
 
