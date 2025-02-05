@@ -94,6 +94,7 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0031 - Database | • Types of Joins in SQL Server<br/>• JOINs with DML Statements<br/>• Actions For Referential Integrity<br/>• Handling `NULL` Values in Queries<br/>• Identity Column<br/>• Database Integrity                                                                    | [Markdown](./notes/markdown/iti-d0031-database.md) |
 | 🔖 ITI - D0032 - Database | • Aggregate Functions<br/>• Grouping<br/>• Query Execution Order<br/>• Subquery<br/>• Set Operations<br/>• Data Types In MS SQL Server<br/>• Using Column Numbers in `ORDER BY`<br/>• `LIKE` operator with `WHERE` clause<br/>• BATCH vs. Script vs. Transaction | [Markdown](./notes/markdown/iti-d0032-database.md) |
 | 🔖 ITI - D0033 - Database | • Database Security in MS SQL Sever<br/>• Synonyms in MS SQL Server<br/>• Using Full Path in MS SQL Server<br/>• T-SQL (Transact SQL)                                                                                                                            | [Markdown](./notes/markdown/iti-d0033-database.md) |
+| 🔖 ITI - D0034 - Database | • Variables in MS SQL Server<br/>• SYS Schema in MS SQL Server<br/>• Control Flow Statements in MS SQL Server<br/>• Windowing Functions in MS SQL Server<br/>• Functions in MS SQL Server                                                                        | [Markdown](./notes/markdown/iti-d0034-database.md) |
 
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
