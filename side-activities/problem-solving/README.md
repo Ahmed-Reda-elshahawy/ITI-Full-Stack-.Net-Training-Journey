@@ -19,4 +19,4 @@
 
 | Date       | Problem                                                                                                                                                 | Topics  | Solutions                                                                     |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ----------------------------------------------------------------------------- |
-| 2025-02-08 | [1450. Number of Students Doing Homework at a Given Time](https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/description/) | `Array` | [Link](./solutions/1450-number-of-students-doing-homework-at-a-given-time.md) |
+| 2025-02-09 | [1450. Number of Students Doing Homework at a Given Time](https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/description/) | `Array` | [Link](./solutions/1450-number-of-students-doing-homework-at-a-given-time.md) |
