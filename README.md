@@ -96,6 +96,7 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0033 - Database | • Database Security in MS SQL Sever<br/>• Synonyms in MS SQL Server<br/>• Using Full Path in MS SQL Server<br/>• T-SQL (Transact SQL)                                                                                                                            | [Markdown](./notes/markdown/iti-d0033-database.md) |
 | 🔖 ITI - D0034 - Database | • Variables in MS SQL Server<br/>• SYS Schema in MS SQL Server<br/>• Control Flow Statements in MS SQL Server<br/>• Windowing Functions in MS SQL Server<br/>• Functions in MS SQL Server                                                                        | [Markdown](./notes/markdown/iti-d0034-database.md) |
 | 🔖 ITI - D0035 - Database | • Indexes in MS SQL Server<br/>• Cursors in MS SQL Server<br/>• Advanced Grouping & Pivoting in MS SQL Server<br/>• Views in MS SQL Server<br/>• Backups in MS SQL Server<br/>• Jobs in MS SQL Server                                                            | [Markdown](./notes/markdown/iti-d0035-database.md) |
+| 🔖 ITI - D0036 - Database | • How SQL Server Engine Handles a Query<br/>• Stored Procedures<br/>• Triggers<br/>• Backups in MS SQL Server                                                                                                                                                    | [Markdown](./notes/markdown/iti-d0036-database.md) |
 
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
