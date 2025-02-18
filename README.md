@@ -100,11 +100,12 @@ This index will be updated as I progress through the training. It will contain a
 
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
-### ASP.NET MVC
+### ASP .NET MVC
 
-| Lecture                       | Topics Covered                                                                                                                                                                             | Notes                                             |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------- |
-| 🔖 ITI - D0040 - ASP .NET MVC | • Overview<br/>• Client<br/>• Server Model<br/>• HTTP<br/>• ASP .NET MVC Components<br/>• Bind Data to View<br/>• Access Request Data in Controller Action<br/>• Write CSharp Code in View | [Markdown](./notes/markdown/iti-d0040-asp-mvc.md) |
+| Lecture                       | Topics Covered                                                                                                                                                                                    | Notes                                             |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| 🔖 ITI - D0040 - ASP .NET MVC | • Overview<br/>• Client<br/>• Server Model<br/>• HTTP<br/>• ASP .NET MVC Components<br/>• Bind Data to View<br/>• Access Request Data in Controller Action<br/>• Write CSharp Code in View        | [Markdown](./notes/markdown/iti-d0040-asp-mvc.md) |
+| 🔖 ITI - D0041 - ASP .NET MVC | • Returned Types from Controller Actions<br/>• EF Core With ASP .NET MVC<br/>• Controller Action Route Patterns<br/>• Map Action to Specific HTTP Methods (Action Selector)<br/>• ASP Tag Helpers | [Markdown](./notes/markdown/iti-d0041-asp-mvc.md) |
 
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
