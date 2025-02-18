@@ -100,6 +100,14 @@ This index will be updated as I progress through the training. It will contain a
 
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
+### ASP.NET MVC
+
+| Lecture                         | Topics Covered                                                                                                                                             | Notes                                             |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| # 🔖 ITI - D0040 - ASP .NET MVC | • Overview<br/>• Client<br/>• Server Model<br/>• HTTP<br/>• ASP .NET MVC Components<br/>• Bind Data to View<br/>• Access Request Data in Controller Action | [Markdown](./notes/markdown/iti-d0040-asp-mvc.md) |
+
+**_[TOP⬆](#iti-full-stack-net-training-journey)_**
+
 ## Side Activities
 
 - [Problem Solving](./side-activities/problem-solving/README.md)
