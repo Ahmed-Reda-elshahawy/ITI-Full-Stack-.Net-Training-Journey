@@ -178,3 +178,19 @@ public IActionResult Index(User user)
     return Content($"Hello {user.Name}");
 }
 ```
+
+## Write CSharp Code in View
+
+- **Razor Syntax**: Combines C# and HTML to create dynamic web pages.
+
+### Razor Syntax
+
+- **@**: Used to write C# code.
+- **@()**: Used to write expressions.
+- **@{}**: Used to write code blocks.
+- **@Model**: Used to access the model.
+- **@ViewBag**: Used to access the ViewBag.
+- **@ViewData**: Used to access the ViewData.
+- **@foreach**: Used to loop through a collection.
+- **@if**: Used to conditionally render content.
+- **@switch**: Used to conditionally render content based on multiple conditions.
