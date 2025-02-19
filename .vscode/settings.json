@@ -3,6 +3,7 @@
     "BINDRULE",
     "Cloneable",
     "Connectionless",
+    "Creational",
     "decompile",
     "Equi",
     "GETDATE",
