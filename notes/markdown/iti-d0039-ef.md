@@ -31,7 +31,8 @@ dotnet add package Microsoft.EntityFrameworkCore.Tools
 3. Search for `Microsoft.EntityFrameworkCore.SqlServer` and `Microsoft.EntityFrameworkCore.Tools`.
 4. Click on Install.
 
-> [!Hint]
+> [!Tip]
+>
 > Disable `Nullable` Reference Types in the project file to avoid warnings.
 
 ## Development Approaches in EF Core
