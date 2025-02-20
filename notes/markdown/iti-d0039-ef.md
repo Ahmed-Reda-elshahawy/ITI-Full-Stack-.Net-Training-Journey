@@ -815,3 +815,7 @@ public class AppDbContext : DbContext
     }
 }
 ```
+
+## Practical Example of EF Core
+
+For a practical example of using EF Core using the **Database-First** approach, **Code-First** approach using **Fluent API** and **Data Annotations**, and **Entity Configurations** in separate classes, refer to the following repository: [EFCore Playground](https://github.com/m7moudGadallah/EFCorePlayground)
