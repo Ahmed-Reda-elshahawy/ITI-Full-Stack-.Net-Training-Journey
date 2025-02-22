@@ -109,6 +109,18 @@ We should at first add connection string in `appsettings.json` file.
 }
 ```
 
+Don't forget to add the `ApplicationDbContext` class and parameterized constructor.
+
+```csharp
+public class ApplicationDbContext : DbContext
+{
+    public ApplicationDbContext(): base() {}
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) {}
+
+    // DbSet properties...
+}
+```
+
 ### DI in Different Layers
 
 - **Controller**: Injects the service class.
