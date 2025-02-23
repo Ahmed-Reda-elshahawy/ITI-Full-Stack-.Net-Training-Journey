@@ -131,6 +131,7 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0042 - ASP .NET MVC | • Annotations With Controller Actions<br/>• ASP Tag Helpers with Form and Hidden Fields<br/>• ASP Validation                                                                                                               | [Markdown](./notes/markdown/iti-d0042-asp-mvc.md) |
 | 🔖 ITI - D0043 - ASP .NET MVC | • Modularize MVC Application Into Layers<br/>• Dependency Injection<br/>• How to Apply DI in ASP .NET MVC                                                                                                                  | [Markdown](./notes/markdown/iti-d0043-asp-mvc.md) |
 | 🔖 ITI - D0044 - ASP .NET MVC | • Action Filters in ASP.NET MVC<br/>• Middleware in ASP.NET Core<br/>• Layouts in ASP.NET Core<br/>• Partial Views in ASP.NET Core<br/>• View Imports in ASP.NET Core<br/>• Scaffolded Controllers & Views in ASP.NET Core | [Markdown](./notes/markdown/iti-d0044-asp-mvc.md) |
+| 🔖 ITI - D0045 - ASP .NET MVC | • HTTP Request State Management in ASP .NET MVC<br/>• Authentication and Authorization in ASP .NET MVC<br/>• Display Model Errors in Razor View                                                                            | [Markdown](./notes/markdown/iti-d0045-asp-mvc.md) |
 
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
