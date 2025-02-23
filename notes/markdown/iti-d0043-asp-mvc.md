@@ -178,3 +178,5 @@ public class Controller : Controller
 - **Transient**: Lightweight, stateless, reusable logic (e.g., validation, EmailService).
 - **Scoped**: Stateful(state per request), Request-specific logic (e.g., DbContext, UnitOfWork, BusinessService).
 - **Singleton**: Heavyweight, stateful(shared state), shared logic (e.g., Configuration, Cache, Logger).
+
+[← Prev](./iti-d0042-asp-mvc.md) | [🏠 Index](../../README.md#index) | [Next →](./iti-d0044-asp-mvc.md)
