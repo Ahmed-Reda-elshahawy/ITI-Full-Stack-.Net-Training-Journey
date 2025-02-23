@@ -209,3 +209,5 @@ app.Use(async (context, next) =>
 - Choose the views to generate (Create, Read, Update, Delete).
 - Click Add.
 - The controller and views are generated automatically.
+
+[← Prev](./iti-d0043-asp-mvc.md) | [🏠 Index](../../README.md#index) | [Next →](./iti-d0045-asp-mvc.md)
