@@ -10,6 +10,20 @@ This repository contains my journey through the Full Stack .Net Training at ITI.
 
 This index will be updated as I progress through the training. It will contain all the topics that we have covered in the training. and links to the related notes, tasks and projects.
 
+### Index Navigation Guide
+
+- [Client Side Technologies (CST)](#client-side-technologies-cst)
+  - [Intro To Web Development, HTML4, CSS2.0](#intro-to-web-development-html4-css20)
+  - [JavaScript 5, ECMA5](#javascript-5-ecma5)
+  - [JavaScript 6, ECMA6](#javascript-6-ecma6)
+  - [HTML5, CSS3.0](#html5-css30)
+- [C# Programming Language](#c-programming-language)
+  - [C# OOP](#c-oop)
+  - [C# Basics](#c-basics)
+- [Database (SQL Server)](#database-sql-server)
+- [Entity Framework Core (`EF Core`)](#entity-framework-core-ef-core)
+- [ASP .NET MVC](#asp-net-mvc)
+
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
 ### Client Side Technologies (CST)
