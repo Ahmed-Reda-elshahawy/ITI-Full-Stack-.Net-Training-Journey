@@ -194,3 +194,5 @@ public IActionResult Index(User user)
 - **@foreach**: Used to loop through a collection.
 - **@if**: Used to conditionally render content.
 - **@switch**: Used to conditionally render content based on multiple conditions.
+
+[← Prev](./iti-d0039-ef.md) | [🏠 Index](../../README.md#index) | [Next →](./iti-d0041-asp-mvc.md)
