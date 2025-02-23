@@ -283,3 +283,5 @@ Tag Helpers are used to generate HTML elements in Razor views.
 <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
 <script src="~/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"></script>
 ```
+
+[← Prev](./iti-d0040-asp-mvc.md) | [🏠 Index](../../README.md#index) | [Next →](./iti-d0042-asp-mvc.md)
