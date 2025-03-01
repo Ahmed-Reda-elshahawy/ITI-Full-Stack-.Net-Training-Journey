@@ -23,6 +23,7 @@ This index will be updated as I progress through the training. It will contain a
 - [Database (SQL Server)](#database-sql-server)
 - [Entity Framework Core (`EF Core`)](#entity-framework-core-ef-core)
 - [ASP .NET MVC](#asp-net-mvc)
+- [ASP .NET Web API](#asp-net-web-api)
 
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
@@ -133,6 +134,14 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0044 - ASP .NET MVC | • Action Filters in ASP.NET MVC<br/>• Middleware in ASP.NET Core<br/>• Layouts in ASP.NET Core<br/>• Partial Views in ASP.NET Core<br/>• View Imports in ASP.NET Core<br/>• Scaffolded Controllers & Views in ASP.NET Core | [Markdown](./notes/markdown/iti-d0044-asp-mvc.md) |
 | 🔖 ITI - D0045 - ASP .NET MVC | • HTTP Request State Management in ASP .NET MVC<br/>• Authentication and Authorization in ASP .NET MVC<br/>• Display Model Errors in Razor View                                                                            | [Markdown](./notes/markdown/iti-d0045-asp-mvc.md) |
 | 🔖 ITI - D0046 - ASP .NET MVC | • Razor Pages<br/>• How to Structure a Razor Pages Project<br/>• Generic Repository Pattern                                                                                                                                | [Markdown](./notes/markdown/iti-d0046-asp-mvc.md) |
+
+**_[TOP⬆](#iti-full-stack-net-training-journey)_**
+
+### ASP .NET Web API
+
+| Lecture                       | Topics Covered                                                                                                                                                                                                                                                                                            | Notes                                             |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| 🔖 ITI - D0047 - ASP .NET API | • Overview<br/>• REST APIs<br/>• Intro to ASP .NET Web API<br/>• Controllers in ASP .NET Web API<br/>• Route Templates in ASP .NET Web API<br/>• Validation in ASP .NET Web API<br/>• API Controller Example in ASP .NET Web API<br/>• OpenAPI Documentation in ASP .NET Web API<br/>• C Sharp API Client | [Markdown](./notes/markdown/iti-d0047-asp-api.md) |
 
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
