@@ -221,41 +221,6 @@ public class ProductsController : ControllerBase
 
 4. Run the application and navigate to `https://localhost:<port>/swagger`.
 
-## Swagger With ASP .NET Web API
-
-- Swagger is a tool that helps you design, build, document, and consume RESTful web services.
-- Swagger uses OpenAPI to define and document RESTful APIs.
-- Swagger UI is a web-based tool that generates interactive API documentation.
-- Swagger UI allows you to test your API endpoints directly from the browser.
-
-### Installation
-
-1. Install the `Swashbuckle.AspNetCore.SwaggerUI` NuGet package.
-2. Add the Swagger middleware to the `Program.cs` file.
-
-   ```csharp
-   app.UseSwaggerUI(options => options.SwaggerEndpoint("/openapi/v1.json", "v1"));
-   ```
-
-3. Configure `launchSettings.json` to run the Swagger UI.
-
-   ```json
-   // Properties/launchSettings.json
-    "profiles": {
-        "http": {
-            "commandName": "Project",
-            "dotnetRunMessages": true,
-            "launchBrowser": true, // set this to true
-            "launchUrl": "swagger", // set launchUrl to swagger
-            "applicationUrl": "http://localhost:5168",
-            "environmentVariables": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
-            }
-        }
-   ```
-
-4. Run the application and navigate to `https://localhost:5168/swagger`.
-
 ## C Sharp API Client
 
 - You can use the `HttpClient` class to send HTTP requests to a Web API.
