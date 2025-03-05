@@ -35,7 +35,7 @@ var variableName = function functionName(param1, param2, ...) {
 	return returnVAlue;
 }
 
-// functionName is optoinal
+// functionName is optional
 ```
 
 ### Call Functions
@@ -151,7 +151,7 @@ var std2 = getStudent(std1);
 #### OR (`||`)
 
 - if the whole expression is evaluated to be `falsy`, so `OR` will return last `falsy` value
-- if the expression is evaluated to be `truthy`, so `OR` will return first `truty` value
+- if the expression is evaluated to be `truthy`, so `OR` will return first `truthy` value
 
 ## Date
 
