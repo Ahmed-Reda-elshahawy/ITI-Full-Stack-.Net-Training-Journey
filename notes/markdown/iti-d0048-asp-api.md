@@ -513,6 +513,19 @@ public class StudentAutoMapperProfile:Profile
 }
 ```
 
+#### ⚠ Warning: Handling Nullable Value Types in AutoMapper Partial Updates
+
+AutoMapper's `.ForAllMembers(opt => opt.Condition(...))` does not correctly handle nullable value types (`int?`, `double?`, etc.) by default. Even if `null`, these properties may still be mapped and set to their default values (e.g., `0` for `int`).
+
+**Solution:**
+
+```csharp
+CreateMap<UpdateStudentRequestDto, Student>()
+    .ForMember(dest => dest.Id, opt => opt.Ignore())
+    .ForMember(dest => dest.Age, opt => opt.Condition(src => src.Age.HasValue)) // Explicit handling
+    .ForAllMembers(opt => opt.Condition((src, dest, srcMember) => srcMember != null)); // General rule for reference types
+```
+
 ## Web API Pagination
 
 - Pagination is a technique to divide the data into multiple pages.
