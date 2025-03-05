@@ -282,36 +282,48 @@ public class ProductsUnitOfWork : IProductsUnitOfWork
 ### 🌟 Single Generic Unit of Work with Lazy Repository Initialization
 
 ```csharp
+// IUnitOfWork.cs
+public interface IUnitOfWork
+{
+    public IRepository<TEntity> Repository<TEntity>() where TEntity : class;
+    public Task SaveChangesAsync();
+}
+
 // UnitOfWork.cs
 public class UnitOfWork : IUnitOfWork
 {
     private readonly AppDbContext _context;
-    private Dictionary<Type, object> _repositories;
+    private Dictionary<Type, object> _repositories; // (EntityType, RepoInstance)
 
     public UnitOfWork(AppDbContext context)
     {
         _context = context;
     }
 
-    public IRepositoryBase<T> Repository<T>() where T : class
+    public IRepository<TEntity> Repository<TEntity>() where TEntity : class
     {
+        var type = typeof(TEntity);
+
         if (_repositories == null)
         {
             _repositories = new Dictionary<Type, object>();
         }
 
-        var type = typeof(T);
         if (!_repositories.ContainsKey(type))
         {
-            var repositoryType = typeof(RepositoryBase<>);
-            var repositoryInstance = Activator.CreateInstance(repositoryType.MakeGenericType(type), _context);
+            var repositoryType = typeof(RepositoryBase<>).MakeGenericType(type);
+
+            var repositoryInstance = Activator.CreateInstance(
+                repositoryType,
+                _context);
+
             _repositories.Add(type, repositoryInstance);
         }
 
-        return (IRepositoryBase<T>)_repositories[type];
+        return (IRepository<TEntity>)_repositories[type];
     }
 
-    public async Task SaveAsync()
+    public async Task SaveChangesAsync()
     {
         await _context.SaveChangesAsync();
     }
