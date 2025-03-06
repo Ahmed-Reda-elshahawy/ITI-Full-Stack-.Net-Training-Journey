@@ -5,7 +5,7 @@
 - TypeScript is a JS with static typing.
 - TS transpile to JS using `tsc` compiler.
 - TS used Annotations to declare the type of the variable.
-- TS supports some OOP features doesn't supported in JS like Interfaces, abstract classes, etc.
+- TS supports some extra OOP features that doesn't supported in JS like Interfaces, abstract classes, etc.
 - TS supports Generics.
 
 ## Installation
