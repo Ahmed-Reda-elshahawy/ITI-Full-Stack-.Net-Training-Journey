@@ -1,0 +1,23 @@
+﻿@model Department
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create New Department</h1>
+
+<form method="post" action="create">
+    <div class="d-flex flex-column gap-3 w-25">
+        <div>
+            <label asp-for="Name"></label>
+            <input asp-for="Name" value="" />
+        </div>
+        <div>
+            <label asp-for="Capacity"></label>
+            <input asp-for="Capacity" value="" />
+        </div>
+        <div>
+            <input type="submit" value="Create" class="button btn-primary" />
+        </div>
+    </div>
+</form>

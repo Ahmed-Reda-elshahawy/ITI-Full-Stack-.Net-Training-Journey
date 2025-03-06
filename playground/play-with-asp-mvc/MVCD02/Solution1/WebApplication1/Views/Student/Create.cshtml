@@ -1,0 +1,27 @@
+﻿@model Student
+@{
+    ViewData["Title"] = "Create";
+    var selectDeptList = new SelectList(ViewBag.Departments, "Id", "Name", 1);
+}
+
+<h1>Create New Student</h1>
+
+<form method="post" action="create">
+    <div class="d-flex flex-column gap-3 w-25">
+        <div>
+            <label asp-for="Name"></label>
+            <input asp-for="Name" value="" />
+        </div>
+        <div>
+            <label asp-for="Age"></label>
+            <input asp-for="Age" value="" />
+        </div>
+        <div>
+            <label asp-for="DeptId">Department</label>
+            <select asp-for="DeptId" asp-items="selectDeptList"></select>
+        </div>
+        <div>
+            <input type="submit" value="Create" class="button btn-primary" />
+        </div>
+    </div>
+</form>

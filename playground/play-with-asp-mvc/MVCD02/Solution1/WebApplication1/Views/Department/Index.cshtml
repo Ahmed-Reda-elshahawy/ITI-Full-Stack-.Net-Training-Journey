@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Department>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Capacity</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (!Model.Any()) // Better way to check if list is empty
+        {
+            <tr>
+                <td colspan="3" style="text-align: center;" class="fw-bold">No Departments Found!</td>
+            </tr>
+        }
+        else
+        {
+            @foreach (var dept in Model)
+            {
+                <tr>
+                    <td>@dept.Id</td>
+                    <td>@dept.Name</td>
+                    <td>@dept.Capacity</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
