@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD033-->
+
 # ITI Full Stack .Net Training Journey
 
 ![ITI Community Banner](./assets/iti-community-banner-rounded.png)
@@ -30,6 +32,10 @@ This index will be updated as I progress through the training. It will contain a
 
 ### Client Side Technologies (CST)
 
+<details>
+
+<summary>Intro To Web Development, HTML4, CSS2.0</summary>
+
 #### Intro To Web Development, HTML4, CSS2.0
 
 | Lecture                                                | Topics Covered                                                                                                                                                                                                                                                                          | Notes                                                                             |
@@ -38,7 +44,13 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0002 - CST (HTML Part2)                      | • Tables in HTML<br/>• Form                                                                                                                                                                                                                                                             | [Markdown](./notes//markdown/iti-d0002-cst-html-part2.md)                         |
 | 🔖 ITI - D0003 - CST (CSS 2.0)                         | • Introduction<br/>• HTML Problems with Styles<br/>• CSS Usage<br/>• CSS Comments<br/>• CSS Selectors<br/>• Box Model<br/>• Styling Text<br/>• Display (block, inline-block, block)<br/>• Styling Lists<br/>• Styling Images<br/>• Styling Background<br/>• Position<br/>• Float Layout | [Markdown](./notes/markdown/iti-d0003-cst-css2.md)                                |
 
+</details>
+
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
+
+<details>
+
+<summary>JavaScript 5, ECMA5</summary>
 
 #### JavaScript 5, ECMA5
 
@@ -50,7 +62,13 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0007 - CST (JavaScript 5, ECMA5) (Part 4) | • BOM (Browser Object Model)<br/>• DOM (Document Object Model)                                                                                                   | [Markdown](./notes/markdown/iti-d0007-cst-javascript-ecma5-part4.md) |
 | 🔖 ITI - D0008 - CST (JavaScript 5, ECMA5) (Part 5) | • document.cookie<br/>• Events<br/>• Regex                                                                                                                       | [Markdown](./notes/markdown/iti-d0008-cst-javascript-ecma5-part5.md) |
 
+</details>
+
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
+
+<details>
+
+<summary>JavaScript 6, ECMA6</summary>
 
 #### JavaScript 6, ECMA6
 
@@ -60,7 +78,13 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0010 - CST (JavaScript 6, ECMA6, ECMA.NEXT) (Part 2) | • Classes<br/>• OOP<br/>• JS Modules                                                                                                              | [Markdown](./notes/markdown/iti-d0010-cst-javascript-ecma6-part2.md) |
 | 🔖 ITI - D0011 - CST (JavaScript 6, ECMA6, ECMA.NEXT) (Part 3) | • Asynchronous<br/>• JS Runtime Environment<br/>• JS Engine<br/>• Promises<br/>• async/await<br/>• fetch API<br/>• Web Storage API<br/>• JSON API | [Markdown](./notes/markdown/iti-d0011-cst-javascript-ecma6-part3.md) |
 
+</details>
+
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
+
+<details>
+
+<summary>HTML5, CSS3.0</summary>
 
 #### HTML5, CSS3.0
 
@@ -70,9 +94,15 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0012 - CST (HTML5) (Part2) | • Shadows<br/>• Manipulating section text<br/>• Transformation<br/>• Transitions<br/>• Animation<br/>• CSS Variables<br/>• Box Sizing<br/>• Measure Units<br/>• Flex<br/>• Grid | [Markdown](./notes/markdown/iti-d0012-cst-html5-part2.md) |
 | 🔖 ITI - D0013 - CST (HTML5) (Part3) | • New Added APIs<br/>• Media APIs<br/>• Drag And Drop<br/>• Forms<br/>• Storage API<br/>• Geolocation API                                                                       | [Markdown](./notes/markdown/iti-d0013-cst-html5-part3.md) |
 
+</details>
+
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
 ### C# Programming Language
+
+<details>
+
+<summary> C# OOP</summary>
 
 #### C# OOP
 
@@ -85,7 +115,13 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0019 - C Sharp - OOP (Part5) | • Automatic Properties<br/>• OOP Pillar: Inheritance<br/>• Virtuality and Method Resolution                                 | [Markdown](./notes/markdown/iti-d0019-csharp-oop-part5.md) |
 | 🔖 ITI - D0020 - C Sharp - OOP (Part6) | • Abstract Class<br/>• `static` Class & `static` Class Members<br/>• Operator Overloading<br/>• Access Modifiers            | [Markdown](./notes/markdown/iti-d0020-csharp-oop-part6.md) |
 
+</details>
+
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
+
+<details>
+
+<summary>C# Basics</summary>
 
 #### C# Basics
 
@@ -99,9 +135,15 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0026 - C Sharp - Basics (Part6) | • `is` and `as` Operators<br/>• Collections<br/>• Built-in Generics<br/>• User Defined Generics<br/>• Delegates                                                                                                                                                                                                                                                                                                                                                       | [Markdown](./notes/markdown/iti-d0026-csharp-basics-part6.md)               |
 | 🔖 ITI - D0027 - C Sharp - Basics (Part7) | • Events<br/>• Partial Classes<br/>• Intro to WindowsForms                                                                                                                                                                                                                                                                                                                                                                                                            | [Markdown](./notes/markdown/iti-d0027-csharp-basics-part7.md) `In Progress` |
 
+</details>
+
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
 ### Database (SQL Server)
+
+<details>
+
+<summary>Database (SQL Server)</summary>
 
 | Lecture                   | Topics Covered                                                                                                                                                                                                                                                   | Notes                                              |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
@@ -114,18 +156,30 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0035 - Database | • Indexes in MS SQL Server<br/>• Cursors in MS SQL Server<br/>• Advanced Grouping & Pivoting in MS SQL Server<br/>• Views in MS SQL Server<br/>• Backups in MS SQL Server<br/>• Jobs in MS SQL Server                                                            | [Markdown](./notes/markdown/iti-d0035-database.md) |
 | 🔖 ITI - D0036 - Database | • How SQL Server Engine Handles a Query<br/>• Stored Procedures<br/>• Triggers<br/>• Backups in MS SQL Server                                                                                                                                                    | [Markdown](./notes/markdown/iti-d0036-database.md) |
 
+</details>
+
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
 ### ADO, LINQ and Entity Framework Core (`EF Core`)
+
+<details>
+
+<summary>ADO, LINQ and Entity Framework Core (`EF Core`)</summary>
 
 | Lecture                           | Topics Covered                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Notes                                          |
 | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------- |
 | 🔖 ITI - D0038 - LINQ             | • Introduction<br/>• Anonymous Types<br/>• Defer Execution and Eager Execution<br/>• 2 Ways of Using LINQ<br/>• LINQ Operators                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | [Markdown](./notes/markdown/iti-d0038-linq.md) |
 | 🔖 ITI - D0039 - Entity Framework | • Overview<br/>• EF Core Installation for SQL Server<br/>• Development Approaches in EF Core<br/>• Code First Approach Workflow<br/>• Add Constrains on Entity Properties<br/>• Navigation Properties<br/>• Creational Strategies in EF Core<br/>• Inheritance Mapping<br/>• Loading Strategies of Related Data in EF Core<br/>• DbContext is a Disposable Object<br/>• Tracking and No-Tracking Queries in EF Core<br/>• Access SQLQuery Generated via EF Core<br/>• Server vs. Client Query Processing in EF Core<br/>• Write Raw SQL Queries in EF Core<br/>• Organizing Entity Configurations with Fluent API in Separate Classes<br/>• Practical Example of EF Core | [Markdown](./notes/markdown/iti-d0039-ef.md)   |
 
+</details>
+
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
 ### ASP .NET MVC
+
+<details>
+
+<summary>ASP .NET MVC</summary>
 
 | Lecture                       | Topics Covered                                                                                                                                                                                                             | Notes                                             |
 | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
@@ -137,9 +191,15 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0045 - ASP .NET MVC | • HTTP Request State Management in ASP .NET MVC<br/>• Authentication and Authorization in ASP .NET MVC<br/>• Display Model Errors in Razor View                                                                            | [Markdown](./notes/markdown/iti-d0045-asp-mvc.md) |
 | 🔖 ITI - D0046 - ASP .NET MVC | • Razor Pages<br/>• How to Structure a Razor Pages Project<br/>• Generic Repository Pattern                                                                                                                                | [Markdown](./notes/markdown/iti-d0046-asp-mvc.md) |
 
+</details>
+
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
 ### ASP .NET Web API
+
+<details>
+
+<summary>ASP .NET Web API</summary>
 
 | Lecture                       | Topics Covered                                                                                                                                                                                                                                                                                            | Notes                                             |
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
@@ -147,13 +207,21 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0048 - ASP .NET API | • JsonIgnore<br/>• ASP.NET Core Attributes for Web API Controllers<br/>• Binding Source Parameter Inference in ASP.NET Core<br/>• DTOs (Data Transfer Objects)<br/>• AutoMapper<br/>• Web API Pagination<br/>• CORS (Cross-Origin Resource Sharing)                                                       | [Markdown](./notes/markdown/iti-d0048-asp-api.md) |
 | 🔖 ITI - D0049 - ASP .NET API | • Design Patterns vs. Architecture Patterns<br/>• Dependency Injection vs. Dependency Inversion<br/>• Repository Pattern<br/>• Generic Repository Pattern <br/>• Unit of Work Pattern<br/>• Enhance Generated OpenAPI Documentation By Using Attributes (Decorators)                                      | [Markdown](./notes/markdown/iti-d0049-asp-api.md) |
 
+</details>
+
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
 ### TypeScript
 
+<details>
+
+<summary>TypeScript</summary>
+
 | Lecture                     | Topics Covered                                                             | Notes                                        |
 | --------------------------- | -------------------------------------------------------------------------- | -------------------------------------------- |
 | 🔖 ITI - D0050 - TypeScript | • Introduction<br/>• Installation<br/>• Type Annotations<br/>• OOP With TS | [Markdown](./notes/markdown/iti-d0050-ts.md) |
+
+</details>
 
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
