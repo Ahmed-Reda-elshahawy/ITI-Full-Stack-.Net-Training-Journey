@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Department>
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>Index</h1>
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+<div>
+    <a class="btn btn-dark" asp-action="create" asp-controller="department">Add</a>
+</div>
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Capacity</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var dept in Model)
+        {
+            <tr>
+                <td>@dept.Id</td>
+                <td>@dept.Name</td>
+                <td>@dept.Capacity</td>
+                <td>
+                    <a class="btn btn-primary"
+                       asp-action="edit"
+                       asp-controller="department"
+                       asp-route-id="@dept.Id">Edit</a>
+                    <a class="btn btn-danger"
+                       asp-action="delete"
+                       asp-controller="department"
+                       asp-route-id="@dept.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
