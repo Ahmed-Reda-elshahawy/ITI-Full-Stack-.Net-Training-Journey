@@ -1,0 +1,29 @@
+﻿@page
+@model WebApplication1.Pages.Students.CreateModel
+@{
+    ViewData["Title"] = "Create Student";
+    var deptSelectList = new SelectList(Model.Departments, "Id", "Name", 1);
+}
+
+<form method="post">
+    <div class="d-flex flex-column gap-3 w-50 shadow p-5 m-auto mt-5">
+        <div>
+            <label asp-for="Student.Name"></label>
+            <input asp-for="Student.Name" class="form-control" />
+            <span asp-validation-for="Student.Name" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Student.DeptId"></label>
+            <select asp-for="Student.DeptId" asp-items="@deptSelectList" class="form-select"></select>
+            <span asp-validation-for="Student.DeptId" class="text-danger"></span>
+        </div>
+        <div asp-validation-summary="ModelOnly"></div>
+        <div>
+            <input type="submit" value="Create" class="btn btn-primary form-control" />
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

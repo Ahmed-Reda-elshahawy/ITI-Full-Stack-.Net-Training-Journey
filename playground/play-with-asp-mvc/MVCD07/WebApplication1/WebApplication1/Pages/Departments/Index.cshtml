@@ -1,0 +1,31 @@
+﻿@page
+@model WebApplication1.Pages.Departments.IndexModel
+@{
+    ViewData["Title"] = "Departments Index";
+}
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr class="table-dark">
+            <th>Id</th>
+            <th>Name</th>
+            <th>Capacity</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var dept in Model.Departments)
+        {
+            <tr>
+                <td>@dept.Id</td>
+                <td>@dept.Name</td>
+                <td>@dept.Capacity</td>
+                <td>
+                    <a asp-page="/Departments/Update" asp-route-id="@dept.Id" class="btn btn-primary">Update</a>
+                    <a asp-page="/Departments/Delete" asp-route-id="@dept.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a asp-page="/Departments/Create" class="btn btn-success w-100">Create</a>

@@ -1,0 +1,14 @@
+﻿@page "{id:int}"
+@model WebApplication1.Pages.Students.DeleteModel
+@{
+    ViewData["Title"] = "Delete Student";
+}
+
+<div class="alert alert-danger d-flex flex-column gap-3 m-auto p-5 shadow rounded-3 w-50">
+    <h3 class="text-center">Are you sure you want to delete <strong>@Model.Student.Name</strong>?</h3>
+
+    <form method="post" class="d-flex flex-row justify-content-around">
+        <button type="submit" class="btn btn-danger w-25">Yes</button>
+        <a asp-page="./Index" class="btn btn-dark w-25">No</a>
+    </form>
+</div>

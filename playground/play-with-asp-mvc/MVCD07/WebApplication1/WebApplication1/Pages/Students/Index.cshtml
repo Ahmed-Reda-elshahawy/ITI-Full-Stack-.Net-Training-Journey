@@ -1,0 +1,31 @@
+﻿@page
+@model WebApplication1.Pages.Students.IndexModel
+@{
+    ViewData["Title"] = "Students";
+}
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr class="table-dark">
+            <th>Id</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var std in Model.Students)
+        {
+            <tr>
+                <td>@std.Id</td>
+                <td>@std.Name</td>
+                <td>@std.Department.Name</td>
+                <td>
+                    <a asp-page="/Students/Update" asp-route-id="@std.Id" class="btn btn-primary">Update</a>
+                    <a asp-page="/Students/Delete" asp-route-id="@std.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a asp-page="/Students/Create" class="btn btn-success w-100">Create</a>
