@@ -21,7 +21,7 @@ This index will be updated as I progress through the training. It will contain a
   - [C# OOP](#c-oop)
   - [C# Basics](#c-basics)
 - [Database (SQL Server)](#database-sql-server)
-- [Entity Framework Core (`EF Core`)](#entity-framework-core-ef-core)
+- [ADO, LINQ and Entity Framework Core (`EF Core`)](#ado-linq-and-entity-framework-core-ef-core)
 - [ASP .NET MVC](#asp-net-mvc)
 - [ASP .NET Web API](#asp-net-web-api)
 
@@ -115,7 +115,7 @@ This index will be updated as I progress through the training. It will contain a
 
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
-### Entity Framework Core (`EF Core`)
+### ADO, LINQ and Entity Framework Core (`EF Core`)
 
 | Lecture                           | Topics Covered                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Notes                                          |
 | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------- |
