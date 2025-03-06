@@ -1,0 +1,49 @@
+﻿@model IEnumerable<User>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr class="table-dark">
+            <th>Id</th>
+            <th>Email</th>
+            <th>Roles</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (!Model.Any())
+        {
+            <tr>
+                <td colspan="3" class="text-center">No users found!</td>
+            </tr>
+        }
+        else
+        {
+            foreach (var usr in Model)
+            {
+                <tr>
+                    <td>@usr.Id</td>
+                    <td>@usr.Name</td>
+                    <td>
+                        @if (usr.Roles != null && usr.Roles.Any())
+                        {
+                            <ul>
+                                @foreach (var role in usr.Roles)
+                                {
+                                    <li>@role.Name</li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <span>No roles assigned</span>
+                        }
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
