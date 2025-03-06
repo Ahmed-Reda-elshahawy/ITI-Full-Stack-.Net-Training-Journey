@@ -373,4 +373,4 @@ public class UnitOfWork : IUnitOfWork
   public IActionResult CreateProduct([FromBody] Product product) => Ok();
   ```
 
-[← Prev](./iti-d0048-asp-mvc.md) | [🏠 Index](../../README.md#index) | Next →
+[← Prev](./iti-d0048-asp-mvc.md) | [🏠 Index](../../README.md#index) | [Next →](./iti-d0050-ts.md)

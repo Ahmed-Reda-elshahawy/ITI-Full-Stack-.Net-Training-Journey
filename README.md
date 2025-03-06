@@ -24,6 +24,7 @@ This index will be updated as I progress through the training. It will contain a
 - [ADO, LINQ and Entity Framework Core (`EF Core`)](#ado-linq-and-entity-framework-core-ef-core)
 - [ASP .NET MVC](#asp-net-mvc)
 - [ASP .NET Web API](#asp-net-web-api)
+- [TypeScript](#typescript)
 
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
@@ -145,6 +146,14 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0047 - ASP .NET API | • Overview<br/>• REST APIs<br/>• Intro to ASP .NET Web API<br/>• Controllers in ASP .NET Web API<br/>• Route Templates in ASP .NET Web API<br/>• Validation in ASP .NET Web API<br/>• API Controller Example in ASP .NET Web API<br/>• OpenAPI Documentation in ASP .NET Web API<br/>• C Sharp API Client | [Markdown](./notes/markdown/iti-d0047-asp-api.md) |
 | 🔖 ITI - D0048 - ASP .NET API | • JsonIgnore<br/>• ASP.NET Core Attributes for Web API Controllers<br/>• Binding Source Parameter Inference in ASP.NET Core<br/>• DTOs (Data Transfer Objects)<br/>• AutoMapper<br/>• Web API Pagination<br/>• CORS (Cross-Origin Resource Sharing)                                                       | [Markdown](./notes/markdown/iti-d0048-asp-api.md) |
 | 🔖 ITI - D0049 - ASP .NET API | • Design Patterns vs. Architecture Patterns<br/>• Dependency Injection vs. Dependency Inversion<br/>• Repository Pattern<br/>• Generic Repository Pattern <br/>• Unit of Work Pattern<br/>• Enhance Generated OpenAPI Documentation By Using Attributes (Decorators)                                      | [Markdown](./notes/markdown/iti-d0049-asp-api.md) |
+
+**_[TOP⬆](#iti-full-stack-net-training-journey)_**
+
+### TypeScript
+
+| Lecture                     | Topics Covered                                                             | Notes                                        |
+| --------------------------- | -------------------------------------------------------------------------- | -------------------------------------------- |
+| 🔖 ITI - D0050 - TypeScript | • Introduction<br/>• Installation<br/>• Type Annotations<br/>• OOP With TS | [Markdown](./notes/markdown/iti-d0050-ts.md) |
 
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
