@@ -476,4 +476,4 @@ class Admin extends User {
   };
   ```
 
-[← Prev](./iti-d0049-asp-api.md) | [🏠 Index](../../README.md#index) | Next →
+[← Prev](./iti-d0049-asp-api.md) | [🏠 Index](../../README.md#index) | [Next →](./iti-d0051-ts.md)
