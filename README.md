@@ -12,24 +12,6 @@ This repository contains my journey through the Full Stack .Net Training at ITI.
 
 This index will be updated as I progress through the training. It will contain all the topics that we have covered in the training. and links to the related notes, tasks and projects.
 
-### Index Navigation Guide
-
-- [Client Side Technologies (CST)](#client-side-technologies-cst)
-  - [Intro To Web Development, HTML4, CSS2.0](#intro-to-web-development-html4-css20)
-  - [JavaScript 5, ECMA5](#javascript-5-ecma5)
-  - [JavaScript 6, ECMA6](#javascript-6-ecma6)
-  - [HTML5, CSS3.0](#html5-css30)
-- [C# Programming Language](#c-programming-language)
-  - [C# OOP](#c-oop)
-  - [C# Basics](#c-basics)
-- [Database (SQL Server)](#database-sql-server)
-- [ADO, LINQ and Entity Framework Core (`EF Core`)](#ado-linq-and-entity-framework-core-ef-core)
-- [ASP .NET MVC](#asp-net-mvc)
-- [ASP .NET Web API](#asp-net-web-api)
-- [TypeScript](#typescript)
-
-**_[TOP⬆](#iti-full-stack-net-training-journey)_**
-
 ### Client Side Technologies (CST)
 
 <details>
@@ -45,8 +27,6 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0003 - CST (CSS 2.0)                         | • Introduction<br/>• HTML Problems with Styles<br/>• CSS Usage<br/>• CSS Comments<br/>• CSS Selectors<br/>• Box Model<br/>• Styling Text<br/>• Display (block, inline-block, block)<br/>• Styling Lists<br/>• Styling Images<br/>• Styling Background<br/>• Position<br/>• Float Layout | [Markdown](./notes/markdown/iti-d0003-cst-css2.md)                                |
 
 </details>
-
-**_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
 <details>
 
@@ -64,8 +44,6 @@ This index will be updated as I progress through the training. It will contain a
 
 </details>
 
-**_[TOP⬆](#iti-full-stack-net-training-journey)_**
-
 <details>
 
 <summary>JavaScript 6, ECMA6</summary>
@@ -80,8 +58,6 @@ This index will be updated as I progress through the training. It will contain a
 
 </details>
 
-**_[TOP⬆](#iti-full-stack-net-training-journey)_**
-
 <details>
 
 <summary>HTML5, CSS3.0</summary>
@@ -95,8 +71,6 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0013 - CST (HTML5) (Part3) | • New Added APIs<br/>• Media APIs<br/>• Drag And Drop<br/>• Forms<br/>• Storage API<br/>• Geolocation API                                                                       | [Markdown](./notes/markdown/iti-d0013-cst-html5-part3.md) |
 
 </details>
-
-**_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
 ### C# Programming Language
 
@@ -117,8 +91,6 @@ This index will be updated as I progress through the training. It will contain a
 
 </details>
 
-**_[TOP⬆](#iti-full-stack-net-training-journey)_**
-
 <details>
 
 <summary>C# Basics</summary>
@@ -136,8 +108,6 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0027 - C Sharp - Basics (Part7) | • Events<br/>• Partial Classes<br/>• Intro to WindowsForms                                                                                                                                                                                                                                                                                                                                                                                                            | [Markdown](./notes/markdown/iti-d0027-csharp-basics-part7.md) `In Progress` |
 
 </details>
-
-**_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
 ### Database (SQL Server)
 
@@ -158,8 +128,6 @@ This index will be updated as I progress through the training. It will contain a
 
 </details>
 
-**_[TOP⬆](#iti-full-stack-net-training-journey)_**
-
 ### ADO, LINQ and Entity Framework Core (`EF Core`)
 
 <details>
@@ -172,8 +140,6 @@ This index will be updated as I progress through the training. It will contain a
 | 🔖 ITI - D0039 - Entity Framework | • Overview<br/>• EF Core Installation for SQL Server<br/>• Development Approaches in EF Core<br/>• Code First Approach Workflow<br/>• Add Constrains on Entity Properties<br/>• Navigation Properties<br/>• Creational Strategies in EF Core<br/>• Inheritance Mapping<br/>• Loading Strategies of Related Data in EF Core<br/>• DbContext is a Disposable Object<br/>• Tracking and No-Tracking Queries in EF Core<br/>• Access SQLQuery Generated via EF Core<br/>• Server vs. Client Query Processing in EF Core<br/>• Write Raw SQL Queries in EF Core<br/>• Organizing Entity Configurations with Fluent API in Separate Classes<br/>• Practical Example of EF Core | [Markdown](./notes/markdown/iti-d0039-ef.md)   |
 
 </details>
-
-**_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
 ### ASP .NET MVC
 
@@ -193,8 +159,6 @@ This index will be updated as I progress through the training. It will contain a
 
 </details>
 
-**_[TOP⬆](#iti-full-stack-net-training-journey)_**
-
 ### ASP .NET Web API
 
 <details>
@@ -209,17 +173,15 @@ This index will be updated as I progress through the training. It will contain a
 
 </details>
 
-**_[TOP⬆](#iti-full-stack-net-training-journey)_**
-
 ### TypeScript
 
 <details>
 
 <summary>TypeScript</summary>
 
-| Lecture                     | Topics Covered                                                                   | Notes                                        |
-| --------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------- |
-| 🔖 ITI - D0050 - TypeScript | • Introduction<br/>• Installation<br/>• Type Annotations<br/>• OOP With TS       | [Markdown](./notes/markdown/iti-d0050-ts.md) |
+| Lecture                     | Topics Covered                                                                    | Notes                                        |
+| --------------------------- | --------------------------------------------------------------------------------- | -------------------------------------------- |
+| 🔖 ITI - D0050 - TypeScript | • Introduction<br/>• Installation<br/>• Type Annotations<br/>• OOP With TS        | [Markdown](./notes/markdown/iti-d0050-ts.md) |
 | 🔖 ITI - D0051 - TypeScript | • Interface vs. Type<br/>• Union vs. Intersection <br/>• Type Utility<br/>• Enums | [Markdown](./notes/markdown/iti-d0051-ts.md) |
 
 </details>
