@@ -259,4 +259,4 @@ enum Role {
 const role: Role = Role.Admin; // "ADMIN"
 ```
 
-[← Prev](./iti-d0050-ts.md) | [🏠 Index](../../README.md#index) | Next →
+[← Prev](./iti-d0050-ts.md) | [🏠 Index](../../README.md#index) | [Next →](./iti-d0051-angular.md)
