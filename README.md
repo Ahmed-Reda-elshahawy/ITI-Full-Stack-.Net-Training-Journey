@@ -186,6 +186,18 @@ This index will be updated as I progress through the training. It will contain a
 
 </details>
 
+### Angular
+
+<details>
+
+<summary>Angular</summary>
+
+| Lecture                  | Topics Covered                                                                                                                                                                                                                                                                                                                                                                                                                        | Notes                                             |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| 🔖 ITI - D0051 - Angular | • Server-side Rendering (SSR) vs. Client-side Rendering (CSR)<br/>• Single Page Application (SPA)<br/>• JS Bundlers<br/>• What is Angular?<br/>• Installation<br/>•Difference between `package.json` and `package-lock.json`<br/>• Angular Structure<br/>• Angular CLI Common Commands<br/>• Use Bootstrap in Angular<br/>• Enhance Angular Project File Structure<br/>• Data Binding in Angular<br/>• Control Flow Blocks in Angular | [Markdown](./notes/markdown/iti-d0051-angular.md) |
+
+</details>
+
 **_[TOP⬆](#iti-full-stack-net-training-journey)_**
 
 ## Side Activities
