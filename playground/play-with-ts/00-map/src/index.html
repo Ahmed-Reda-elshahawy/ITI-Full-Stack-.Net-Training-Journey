@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map</title>
+    <style>
+      #root {
+        height: 100vh;
+        width: 95%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden; /* Prevents content from overflowing */
+      }
+
+      #map {
+        height: 50vh; /* Ensures the map takes half of the viewport height */
+        width: 100%;
+        max-width: 100%;
+        border-radius: 8px; /* Optional: Adds rounded corners */
+        overflow: hidden; /* Prevents internal overflow */
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div id="map" style="height: 50vh; width: 100vw"></div>
+    </div>
+    <script
+      defer
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=[API_Key]&callback=Function.prototype"></script>
+    <script type="module" src="index.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "00-map",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel serve src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@faker-js/faker": "^9.6.0",
+    "00-map": "file:",
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/google.maps": "^3.58.1",
+    "@types/node": "^22.13.10",
+    "buffer": "^6.0.3",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
+  }
+}
