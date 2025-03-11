@@ -179,10 +179,10 @@ This index will be updated as I progress through the training. It will contain a
 
 <summary>TypeScript</summary>
 
-| Lecture                     | Topics Covered                                                                    | Notes                                        |
-| --------------------------- | --------------------------------------------------------------------------------- | -------------------------------------------- |
-| 🔖 ITI - D0050 - TypeScript | • Introduction<br/>• Installation<br/>• Type Annotations<br/>• OOP With TS        | [Markdown](./notes/markdown/iti-d0050-ts.md) |
-| 🔖 ITI - D0051 - TypeScript | • Interface vs. Type<br/>• Union vs. Intersection <br/>• Type Utility<br/>• Enums | [Markdown](./notes/markdown/iti-d0051-ts.md) |
+| Lecture                     | Topics Covered                                                                            | Notes                                        |
+| --------------------------- | ----------------------------------------------------------------------------------------- | -------------------------------------------- |
+| 🔖 ITI - D0050 - TypeScript | • Introduction<br/>• Installation<br/>• Type Annotations<br/>• OOP With TS                | [Markdown](./notes/markdown/iti-d0050-ts.md) |
+| 🔖 ITI - D0051 - TypeScript | • Interface vs. Type Aliases<br/>• Union vs. Intersection <br/>• Type Utility<br/>• Enums | [Markdown](./notes/markdown/iti-d0051-ts.md) |
 
 </details>
 

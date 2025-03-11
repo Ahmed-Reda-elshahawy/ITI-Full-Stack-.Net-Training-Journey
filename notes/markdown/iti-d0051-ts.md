@@ -1,6 +1,6 @@
 # 🔖 ITI - D0051 - TypeScript
 
-## Interface vs. Type
+## Interface vs. Type Aliases
 
 ### Interface
 
@@ -24,9 +24,9 @@ const person: Person = {
 };
 ```
 
-### Type
+### Type Aliases
 
-- **Type** is used to define a type.
+- **`type`** is used to define a type.
 - Multiple Types with the same name are not merged and will throw an error.
 
 ```typescript
