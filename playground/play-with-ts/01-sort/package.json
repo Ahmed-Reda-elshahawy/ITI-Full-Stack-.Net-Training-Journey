@@ -1,0 +1,22 @@
+{
+  "name": "01-sort",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*",
+    "format": "prettier --write src/**/*.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "01-sort": "file:",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
+  }
+}
