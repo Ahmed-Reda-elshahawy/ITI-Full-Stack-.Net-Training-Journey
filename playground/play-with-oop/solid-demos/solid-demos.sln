@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECOrders", "ECOrders\ECOrders.csproj", "{66C131E3-6DBC-4AD2-9A2A-A599FE596510}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECOrdersRefactor", "ECOrdersRefactor\ECOrdersRefactor.csproj", "{81627BC5-E16F-4CB1-B7CA-7C752CBFFD70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66C131E3-6DBC-4AD2-9A2A-A599FE596510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66C131E3-6DBC-4AD2-9A2A-A599FE596510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66C131E3-6DBC-4AD2-9A2A-A599FE596510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66C131E3-6DBC-4AD2-9A2A-A599FE596510}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81627BC5-E16F-4CB1-B7CA-7C752CBFFD70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81627BC5-E16F-4CB1-B7CA-7C752CBFFD70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81627BC5-E16F-4CB1-B7CA-7C752CBFFD70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81627BC5-E16F-4CB1-B7CA-7C752CBFFD70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5896059-D45C-494F-810B-3D3DE3E75D31}
+	EndGlobalSection
+EndGlobal
