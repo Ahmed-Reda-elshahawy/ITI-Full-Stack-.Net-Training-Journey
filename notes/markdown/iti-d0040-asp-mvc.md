@@ -73,7 +73,7 @@
 - **View**: Ends with `.cshtml` (e.g. `Index.cshtml`).
   - Each Controller has a folder with the same name in the `Views` folder.
   - Each Controller method has a corresponding view file in the folder with the same name as the method (e.g. `Index.cshtml` for the `Index` method).
-- **Model**: Ends with `Model` (e.g. `User`).
+- **Model**: Data models (e.g., `User`).
 - **Action Method**: Starts with a verb (e.g. `GetUsers`).
 
 > [!Note]
@@ -97,12 +97,13 @@
 ```cshtml
 @model User
 @{
-    Title = "Home";
+    string title = "Home";
 }
 
-<h1>@Title</h1>
+<h1>@title</h1>
 
 <h2>@ViewBag.Message</h1>
+<h2>@ViewData["Greeting"]
 <h3>@Model.Name</h2>
 ```
 
@@ -110,6 +111,7 @@
 public IActionResult Index()
 {
     ViewBag.Message = "Welcome to the Home Page";
+    ViewData["Greeting"] = "Hey body!"
     User user = new User { Name = "John Doe" };
     return View(user);
 }
