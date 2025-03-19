@@ -167,10 +167,11 @@ public IActionResult Index()
 
 **Example**:
 
-```cshtml
+```html
+<!-- Index.cshtml -->
 <form asp-action="Index" method="post">
-    <input type="text" name="Name" />
-    <button type="submit">Submit</button>
+  <input type="text" name="Name" />
+  <button type="submit">Submit</button>
 </form>
 ```
 
