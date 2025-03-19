@@ -290,3 +290,5 @@ export class ChildComponent {
   }
 }
 ```
+
+[← Prev](./iti-d0051-angular.md) | [🏠 Index](../../README.md#index) | Next →
