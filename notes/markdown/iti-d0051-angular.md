@@ -110,10 +110,10 @@
 - **Create new Model**
 
   ```bash
-  ng g class model-name
+  ng g class model-name # or `ng g c model-name`
 
   # or
-  ng g interface model-name
+  ng g interface model-name # or `ng g i model-name`
   ```
 
 - **Start Angular App**
@@ -229,48 +229,53 @@ export class DemoComponent {
 
 **Example:**
 
-``` html
+```html
 <!-- @if @else -->
 @if(show){
-  <h1>Hello</h1>
+<h1>Hello</h1>
 } @else {
-  <h1>World</h1>
+<h1>World</h1>
 }
 
 <!-- @for -->
-@for(let item of items; track item.id){
-  <li>{{ item.name }}</li>
+@for(let item of items; track item.id; let index = $index){
+<li>{{ item.name }}</li>
 }
 
 <!-- @switch -->
-@switch(condition){
-  @case 1:
-    <h1>One</h1>
-  @case 2:
-    <h1>Two</h1>
-  @default:
-    <h1>Default</h1>
+@switch(condition) { @case 1:
+<h1>One</h1>
+@case 2:
+<h1>Two</h1>
+@default:
+<h1>Default</h1>
 }
 ```
+
+**🌟 `track` & `$index` with `@for**:
+
+- `track` is used to avoid re-rendering.
+- `track` must have a unique value (like `item.id`).
+- `$index` is used to get the index of the item.
 
 **🌟 Toggling Example**:
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-toggle',
+  selector: "app-toggle",
   standalone: true,
   template: `
     <button (click)="toggle()">Toggle</button>
 
     @if(show) {
-      <h1>Hello</h1>
+    <h1>Hello</h1>
     } @else {
-      <h1>World</h1>
+    <h1>World</h1>
     }
   `,
-  styles: ['h1 { color: blue; }']
+  styles: ["h1 { color: blue; }"],
 })
 export class ToggleComponent {
   show = true;
@@ -281,4 +286,4 @@ export class ToggleComponent {
 }
 ```
 
-[← Prev](./iti-d0051-ts.md) | [🏠 Index](../../README.md#index) | Next →
+[← Prev](./iti-d0051-ts.md) | [🏠 Index](../../README.md#index) | [Next →](./iti-d0053-angular.md)
