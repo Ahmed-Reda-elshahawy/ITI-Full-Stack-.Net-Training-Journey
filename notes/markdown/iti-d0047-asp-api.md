@@ -281,4 +281,4 @@ using (var client = new HttpClient())
 - **Deserialization**: the process of converting a serialized object back into an object.
 - **Endpoint** - URL that an API exposes for clients to interact with.
 
-[← Prev](./iti-d0046-asp-mvc.md) | [🏠 Index](../../README.md#index) | [Next →](./iti-d0048-asp-api.md)
+[← Prev](./iti-d0052-asp-mvc.md) | [🏠 Index](../../README.md#index) | [Next →](./iti-d0048-asp-api.md)
