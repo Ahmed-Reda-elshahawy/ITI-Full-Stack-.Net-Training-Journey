@@ -92,8 +92,8 @@ export class OpenAiService {
 
     return `
     <div class="d-flex justify-content-end">
-      <img src="${imageUrl}" alt="Generated Image" class="img-fluid rounded shadow-lg" 
-           style="max-width: 60%; height: auto; border: 2px solid #dee2e6;" />
+      <img src="${imageUrl}" alt="Generated Image" class="img-fluid rounded shadow-lg mx-auto" 
+           style="width:50%; object-fit:contain;" />
     </div>
   `;
   }
