@@ -19,13 +19,18 @@
   - `@Directive()`
   - `@Pipe()`
 
+### Property Decorators
+
+- Property decorators are used to add extra meta-data to the properties.
+- Example:
+  - `@Input()`
+  - `@Output()`
+
 ### Method Decorators
 
 - Method decorators are used to add extra meta-data to the methods.
 - Example:
   - `@HostListener()`
-  - `@Input()`
-  - `@Output()`
 
 ## Directives in Angular
 
@@ -48,8 +53,9 @@
 
 - Attribute directives are used to add or remove the attributes of the HTML elements.
 - Example:
-  - `ngStyle` (new syntax `@attr`)
-  - `ngClass` (new syntax `@ngStyle`)
+  - `ngStyle`
+  - `ngClass`
+  - `ngModel`
 
 ```html
 <div [ngStyle]="{'color': 'red', 'font-size': '20px'}">Hello World</div>
@@ -63,7 +69,7 @@
 ### Custom Directives
 
 - Custom directives (User defined directives) are used to add custom behavior to the HTML elements.
-- Create custom directive using cli command `ng generate directive directive-name` or `ng g d directive-name`.
+- Create custom directive using cli command `ng [generate | g] [directive | d] <directive-name>`.
 
 **Example:**
 
@@ -132,7 +138,7 @@ export class LightBoxDirective {
 ### Custom Pipes
 
 - Custom pipes (User defined pipes) are used to transform the data.
-- Create custom pipe using cli command `ng generate pipe pipe-name` or `ng g p pipe-name`.
+- Create custom pipe using cli command `ng [generate | g] [pipe | p] <pipe-name>`.
 
 **Example:**
 
@@ -172,9 +178,9 @@ export class ConcatPipe implements PipeTransform {
 <h1>{{ 'hello' | concat: ' world' }}</h1>
 ```
 
-## Input Reference in Angular
+## Template Variable (Input Reference) in Angular
 
-- Input reference is used to get the reference of the input element.
+- Template Variable (Input Reference) is used to get the reference of the input element.
 - Use `#` symbol to create the reference.
 
 **Example:**
