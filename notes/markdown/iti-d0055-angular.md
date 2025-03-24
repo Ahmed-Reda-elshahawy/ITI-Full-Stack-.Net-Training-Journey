@@ -140,3 +140,265 @@ export class CreateProductFormComponent {
   }
 }
 ```
+
+### Reactive forms
+
+- Reactive forms depends on validation logic in the component class.
+- Reactive forms is mostly used for complex forms.
+- Reactive forms security is better than template-driven forms.
+
+**Example: Registration Form**:
+
+```html
+<h2>Register</h2>
+
+<!-- Display Form Values for Debugging -->
+<h3>Live Form Value:</h3>
+<pre>{{ registeredUser.value | json }}</pre>
+
+<form [formGroup]="registeredUser" (ngSubmit)="onSubmit()">
+  <!-- Username Field -->
+  <div>
+    <label for="userName">Username</label>
+    <input
+      type="text"
+      id="userName"
+      formControlName="userName"
+      placeholder="Enter your username"
+    />
+    <!-- Validation Messages -->
+    <div *ngIf="userName.invalid && userName.touched" style="color: red;">
+      <p *ngIf="userName.errors?.required">Username is required.</p>
+      <p *ngIf="userName.errors?.minlength">
+        Minimum {{ userName.errors?.minlength.requiredLength }} characters
+        required.
+      </p>
+      <p *ngIf="userName.errors?.pattern">Only letters are allowed.</p>
+    </div>
+  </div>
+
+  <!-- Password Field -->
+  <div>
+    <label for="password">Password</label>
+    <input
+      type="password"
+      id="password"
+      formControlName="password"
+      placeholder="Enter your password"
+    />
+    <!-- Validation Messages -->
+    <div *ngIf="password.invalid && password.touched" style="color: red;">
+      <p *ngIf="password.errors?.required">Password is required.</p>
+      <p *ngIf="password.errors?.minlength">
+        Minimum {{ password.errors?.minlength.requiredLength }} characters
+        required.
+      </p>
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="registeredUser.invalid">Register</button>
+</form>
+```
+
+```typescript
+import { Component } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import {
+  ReactiveFormsModule,
+  FormBuilder,
+  FormGroup,
+  Validators,
+} from "@angular/forms";
+
+@Component({
+  selector: "app-register-form",
+  standalone: true,
+  imports: [CommonModule, ReactiveFormsModule],
+  templateUrl: "./register-form.component.html",
+})
+export class RegisterFormComponent {
+  registeredUser: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) {
+    this.registeredUser = this.formBuilder.group({
+      userName: [
+        "",
+        [
+          Validators.required,
+          Validators.minLength(3),
+          Validators.pattern("^[A-Za-z]{3,}$"),
+        ],
+      ],
+      password: ["", [Validators.required, Validators.minLength(6)]],
+    });
+  }
+
+  // Getter methods for easy access in template
+  get userName() {
+    return this.registeredUser.get("userName");
+  }
+
+  get password() {
+    return this.registeredUser.get("password");
+  }
+
+  onSubmit() {
+    if (this.registeredUser.valid) {
+      console.log("Form Submitted:", this.registeredUser.value);
+    }
+  }
+}
+```
+
+#### Reactive forms key features
+
+- Can access form values using `formGroup.value`. (e.g. `registeredUser.value`).
+- Also can access single value with `formGroup.get('controlName')`. (e.g. `registeredUser.get('userName')`).
+- We can enhance accessing with `get` by adding a getter method in the component class.
+
+```typescript
+get userName() {
+  return this.registeredUser.get("userName");
+}
+```
+
+```html
+<h4>Username: {{ userName.value }}</h4>
+```
+
+- Now we can access also access state of property like `userName.invalid`, `userName.touched`, etc...
+
+#### Working with Nested From Groups
+
+- We can create nested form groups to group related form controls.
+
+```typescript
+export class RegisterFormComponent {
+  registeredUser: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) {
+    this.registeredUser = this.formBuilder.group({
+      userName: [
+        "",
+        [
+          Validators.required,
+          Validators.minLength(3),
+          Validators.pattern("^[A-Za-z]{3,}$"),
+        ],
+      ],
+      password: ["", [Validators.required, Validators.minLength(6)]],
+      address: this.formBuilder.group({
+        street: ["", Validators.required],
+        city: ["", Validators.required],
+        state: ["", Validators.required],
+        zip: ["", Validators.required],
+      }),
+    });
+  }
+```
+
+```html
+<h2>Register</h2>
+
+<form [formGroup]="registeredUser" (ngSubmit)="onSubmit()">
+  <!-- Username Field -->
+  <div>
+    <label for="userName">Username</label>
+    <input
+      type="text"
+      id="userName"
+      formControlName="userName"
+      placeholder="Enter your username"
+    />
+    <!-- Validation Messages -->
+    <div *ngIf="userName.invalid && userName.touched" style="color: red;">
+      <p *ngIf="userName.errors?.required">Username is required.</p>
+      <p *ngIf="userName.errors?.minlength">
+        Minimum {{ userName.errors?.minlength.requiredLength }} characters
+        required.
+      </p>
+      <p *ngIf="userName.errors?.pattern">Only letters are allowed.</p>
+    </div>
+  </div>
+
+  <!-- Address Field Group -->
+  <div formGroupName="address">
+    <h3>Address</h3>
+    <!-- Street Field -->
+    <div>
+      <label for="street">Street</label>
+      <input
+        type="text"
+        id="street"
+        formControlName="street"
+        placeholder="Enter your street"
+      />
+      <!-- Validation Messages -->
+      <div
+        *ngIf="address.street.invalid && address.street.touched"
+        style="color: red;"
+      >
+        <p *ngIf="address.street.errors?.required">Street is required.</p>
+      </div>
+    </div>
+
+    <!-- City Field -->
+    <div>
+      <label for="city">City</label>
+      <input
+        type="text"
+        id="city"
+        formControlName="city"
+        placeholder="Enter your city"
+      />
+      <!-- Validation Messages -->
+      <div
+        *ngIf="address.city.invalid && address.city.touched"
+        style="color: red;"
+      >
+        <p *ngIf="address.city.errors?.required">City is required.</p>
+      </div>
+    </div>
+
+    <!-- State Field -->
+    <div>
+      <label for="state">State</label>
+      <input
+        type="text"
+        id="state"
+        formControlName="state"
+        placeholder="Enter your state"
+      />
+      <!-- Validation Messages -->
+      <div
+        *ngIf="address.state.invalid && address.state.touched"
+        style="color: red;"
+      >
+        <p *ngIf="address.state.errors?.required">State is required.</p>
+      </div>
+    </div>
+  </div>
+</form>
+```
+
+#### Cross-Field Validation with Reactive Forms
+
+- We can create custom validation logic to validate multiple fields together.
+- We can create a custom validator function and add it to the form control.
+
+```typescript
+import { AbstractControl, ValidationErrors, ValidatorFn } from "@angular/forms";
+
+export function passwordMatched(): ValidatorFn {
+  return (control: AbstractControl): ValidationErrors | null => {
+    const password = control.get("password");
+    const confirmPassword = control.get("confirmPassword");
+
+    return password &&
+      confirmPassword &&
+      password.value !== confirmPassword.value
+      ? { passwordMatch: true }
+      : null;
+  };
+}
+```
