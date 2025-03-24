@@ -1,4 +1,4 @@
-# 🔖 ITI - D0054 - Angular (Draft)
+# 🔖 ITI - D0054 - Angular
 
 ## Routing in Angular
 
@@ -7,166 +7,225 @@
 
 ### Routing Setup
 
-Create `app.routes.ts` file to define the routes and in this module we will do the following:
+Create `app.routes.ts` file (if not exists) to define the routes and in this module we will do the following:
 
-- Import `Routes` from `@angular/router`.
-- Import the components that we want to navigate.
-- export a constant array of routes, each route is an object with the following properties:
-  - `path`: the URL path.
-  - `component`: the component to navigate to.
-- Error route: if the user navigates to a route that does not exist, we can redirect them to a default route.
+1. Import the `Routes` from `@angular/router`.
+2. **Import Components** that we want to navigate to.
+3. **Define & Export `routes`**: as an array of objects with the path and component.
 
-  ```typescript
-  // app.routes.ts
-  import { Routes } from "@angular/router";
-  import { HomeComponent } from "./home/home.component";
-  import { AboutComponent } from "./about/about.component";
-  import { ContactComponent } from "./contact/contact.component";
-  import { ErrorComponent } from "./error/error.component";
+   - `path`: URL path to navigate to the component.
+   - `component`: Component to navigate to.
 
-  export const routes: Routes = [
-    { path: "", component: HomeComponent },
-    { path: "about", component: AboutComponent },
-    { path: "contact", component: ContactComponent },
-    { path: "**", redirectTo: ErrorComponent },
-  ];
-  ```
+4. **Redirect routes**: Using `redirectTo`.
+
+   - `pathMatch: "full"`: Redirects to the full path.
+   - `pathMatch: "prefix"`: Redirects to the prefix path.
+
+5. **Handle Unknown Routes** with a wildcard (`**`) to show error page.
+
+```typescript
+// app.routes.ts
+import { Routes } from "@angular/router";
+import { HomeComponent } from "./components/home/home.component";
+import { ErrorComponent } from "./components/error/error.component";
+import { ContactComponent } from "./components/contact/contact.component";
+
+export const routes: Routes = [
+  { path: "", redirectTo: "home", pathMatch: "full" },
+  { path: "home", component: HomeComponent },
+  { path: "contact", component: ContactComponent },
+  { path: "**", component: ErrorComponent },
+];
+```
 
 **🌟 `routerLink` instead of `href`**
 
 - We can use the `href` attribute with the `<a>` tag to navigate to a different page.
 - We will use the `routerLink` directive to navigate between components in Angular to avoid reloading the page.
+- To use `routerLink`, we need to import the `RouterModule` in the component module.
 
-```html
-<!-- Note: Must import  RouterModule in component module -->
+  ```html
+  <!-- contact.component.html -->
+  <p>contact works!</p>
+  <a routerLink="/home">Back to Home!</a>
+  ```
 
-<!-- app.component.html -->
-<nav>
-  <a routerLink="/">Home</a>
-  <a routerLink="/about">About</a>
-  <a routerLink="/contact">Contact</a>
-</nav>
-```
+  ```typescript
+  // contact.component.ts
+  import { Component } from "@angular/core";
+  import { RouterModule } from "@angular/router";
+
+  @Component({
+    selector: "app-contact",
+    standalone: true,
+    imports: [RouterModule],
+    templateUrl: "./contact.component.html",
+    styleUrl: "./contact.component.css",
+  })
+  export class ContactComponent {}
+  ```
 
 ### Navigation from Component Class
 
 - We can navigate to a different component from the component class using the `Router` service.
 - Inject the `Router` service in the constructor.
-- Use the `navigate()` method to navigate to a different component.
-- Also we can use the `navigateByUrl()` method to navigate to a different URL.
+- Use `navigateByUrl(path)` method to navigate to a different URL.
 
 ```typescript
-// home.component.ts
-import { Router, RouterModule } from "@angular/router";
+// contact.component.ts
 import { Component } from "@angular/core";
+import { Router, RouterModule } from "@angular/router";
 
 @Component({
-  selector: "app-home",
+  selector: "app-contact",
+  standalone: true,
   imports: [RouterModule],
-  templateUrl: "./home.component.html",
-  styleUrls: ["./home.component.css"],
+  templateUrl: "./contact.component.html",
+  styleUrl: "./contact.component.css",
 })
-export class HomeComponent {
+export class ContactComponent {
   constructor(private router: Router) {}
 
-  navigateToAbout() {
-    this.router.navigate(["/about"]);
+  back() {
+    this.router.navigateByUrl("/home");
   }
 }
 ```
 
-### Dynamic Routing
+### Dynamic Routing (Passing Parameters)
 
-- We can use dynamic routing to navigate to a different component based on the user's input.
-- Use the `routerLink` directive with the `[]` to bind the path dynamically.
+- Dynamic routing is used to pass parameters in the URL (e.g. `/products/:id` &rarr; `/products/1`).
+- To use it we need to define path parameters in routes.
 
-**Full Example:**
-
-```typescript
-// app.routes.ts
-import { Routes } from "@angular/router";
-import { provideRouter } from "@angular/router";
-import { ProductComponent } from "./product/product.component";
-import { ProductDetailsComponent } from "./product-details/product-details.component";
-
-export const routes: Routes = [
-  { path: "product/:id", component: ProductDetailsComponent }, // Dynamic Route
-  { path: "", component: ProductComponent }, // Default Page
-];
-
-export const appRoutingProviders = [provideRouter(routes)];
-```
-
-```typescript
-// product.component.ts
-import { Component } from "@angular/core";
-import { RouterModule } from "@angular/router";
-import { CommonModule } from "@angular/common";
-
-@Component({
-  selector: "app-product",
-  standalone: true,
-  imports: [CommonModule, RouterModule], // No need for NgModule
-  template: `
-    <h2>Products</h2>
-    <ul>
-      <li *ngFor="let product of products">
-        <a [routerLink]="['/product', product.id]">{{ product.name }}</a>
-      </li>
-    </ul>
-  `,
-})
-export class ProductComponent {
-  products = [
-    { id: 1, name: "Product A" },
-    { id: 2, name: "Product B" },
+  ```typescript
+  // app.routes.ts
+  export const routes: Routes = [
+    {path: 'products', component: ProductsComponent},
+    {path: 'product/:id', component: ProductDetailComponent}
+    {path: '**', component: ErrorComponent}
   ];
-}
-```
+  ```
+
+- Add a link with the parameter in the component template.
+
+  ```html
+  <!-- products.component.html -->
+  <a [routerLink]="['/product', product.id]">{{product.name}}</a>
+  ```
+
+- Another way to navigate programmatically by using `navigateToUrl` method.
+
+- Access parameters in component class, using `ActivatedRoute` service.
 
 ```typescript
-// product-details.component.ts
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
-import { CommonModule } from "@angular/common";
-import { RouterModule } from "@angular/router";
 
 @Component({
   selector: "app-product-details",
-  standalone: true,
-  imports: [CommonModule, RouterModule],
-  template: `
-    <h2>Product Details</h2>
-    <p>Product ID: {{ productId }}</p>
-    <a routerLink="/">Go Back</a>
-  `,
+  imports: [],
+  templateUrl: "./product-details.component.html",
+  styleUrl: "./product-details.component.css",
 })
 export class ProductDetailsComponent implements OnInit {
-  productId: number | null = null;
-
+  public productId!: number;
   constructor(private route: ActivatedRoute) {}
 
-  ngOnInit() {
-    this.route.paramMap.subscribe((params) => {
-      this.productId = Number(params.get("id")); // Get the dynamic ID from URL
-    });
+  ngOnInit(): void {
+    this.productId = +(this.route.snapshot.paramMap.get("id") || 0);
+
+    // another way
+    // this.route.params.subscribe((params) => {
+    //   this.productId = parseInt(params['id'] ?? 0);
+    // });
   }
 }
 ```
 
-```typescript
-// app.component.ts
-import { Component } from "@angular/core";
-import { RouterOutlet } from "@angular/router";
+## Lifecycle Hooks
 
-@Component({
-  selector: "app-root",
-  standalone: true,
-  imports: [RouterOutlet],
-  template: `
-    <h1>Angular 19 Dynamic Routing Example</h1>
-    <router-outlet></router-outlet>
-  `,
-})
-export class AppComponent {}
-```
+- **Lifecycle hooks** are methods which get called at specific stages of a component lifecycle.
+- Hooks get called after the constructor.
+- Each hook has a specific interface that the component class should implement.
+
+### OnInit
+
+- Runs after the constructor.
+- Used to perform initialization tasks (which require some time to complete like fetching data from API).
+- To use it we need to implement the `OnInit` interface.
+
+  ```typescript
+  // products.component.ts
+
+  import { Component, OnInit } from "@angular/core";
+
+  @Component({
+    selector: "app-products",
+    templateUrl: "./products.component.html",
+    styleUrls: ["./products.component.css"],
+  })
+  export class ProductsComponent implements OnInit {
+    constructor() {}
+
+    ngOnInit(): void {
+      // Initialization tasks (e.g. fetching product list from API)
+    }
+  }
+  ```
+
+### OnChanges
+
+- Runs when the `input` properties (only) of the component change.
+- To use it, we need to implement the `OnChanges` interface.
+
+  ```typescript
+  // product.component.ts
+
+  import { Component, Input, OnChanges, SimpleChanges } from "@angular/core";
+
+  @Component({
+    selector: "app-product",
+    templateUrl: "./product.component.html",
+    styleUrls: ["./product.component.css"],
+  })
+  export class ProductComponent implements OnChanges {
+    @Input() product!: Product;
+
+    constructor() {}
+
+    ngOnChanges(changes: SimpleChanges): void {
+      // Perform tasks when input properties change
+    }
+  }
+  ```
+
+## Services
+
+- **Services** help share data and functionality across components.
+- Used for fetching data, **sharing data**, and **business logic**.
+- Generate new service using cli command `ng [generate | g] service [service-name]`.
+- **Use** `@Injectable` decorator to make the service injectable (i.e. available for dependency injection).
+- **Singleton by default** when provided in the root module (single object shared across the app).
+- **Not used for state management**, use `ngrx` for state management.
+
+  ```typescript
+  // product.service.ts
+  import { Injectable } from "@angular/core";
+
+  @Injectable({
+    providedIn: "root", // Makes it available app-wide
+  })
+  export class ProductService {
+    constructor() {}
+
+    getProducts() {
+      // Fetch all products from API
+    }
+
+    getProduct(id: number) {
+      // Fetch a product by ID
+    }
+  }
+  ```
+
+[← Prev](./iti-d0053-angular.md) | [🏠 Index](../../README.md#index) | Next →
