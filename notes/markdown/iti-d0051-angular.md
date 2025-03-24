@@ -98,28 +98,41 @@
 - **Create new Angular Project**
 
   ```bash
-  ng new project-name
+  ng new <project-name>
   ```
 
 - **Create new Angular Component**
 
   ```bash
-  ng g c component-name
+  ng [generate | g] [component | c] <component-name>
   ```
 
 - **Create new Model**
 
   ```bash
-  ng g class model-name # or `ng g c model-name`
+  # model as a class
+  ng [generate | g] class <model-name>
 
-  # or
-  ng g interface model-name # or `ng g i model-name`
+  # model as interface
+  ng [generate | g] [interface | i] <model-name>
+  ```
+
+- **Generate new Directive**
+
+  ```bash
+  ng [generate | g] [directive | d] <directive-name>
+  ```
+
+- **Generate new Pipe**
+
+  ```bash
+  ng [generate | g] [pipe | p] <pipe-name>
   ```
 
 - **Start Angular App**
 
   ```bash
-  ng s -o
+  ng [serve | s] -o
   ```
 
 ## Use Bootstrap in Angular
