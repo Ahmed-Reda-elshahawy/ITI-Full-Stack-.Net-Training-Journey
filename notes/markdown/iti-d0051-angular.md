@@ -61,10 +61,7 @@
 6. Start App.
 
    ```bash
-   ng s -o
-
-   # or
-   ng serve -o
+   ng [serve | s] -o
 
    # or
    npm start
@@ -98,35 +95,41 @@
 - **Create new Angular Project**
 
   ```bash
-  ng new <project-name>
+  ng new [project-name]
   ```
 
 - **Create new Angular Component**
 
   ```bash
-  ng [generate | g] [component | c] <component-name>
+  ng [generate | g] [component | c] [component-name]
   ```
 
 - **Create new Model**
 
   ```bash
   # model as a class
-  ng [generate | g] class <model-name>
+  ng [generate | g] class [model-name]
 
   # model as interface
-  ng [generate | g] [interface | i] <model-name>
+  ng [generate | g] [interface | i] [model-name]
   ```
 
 - **Generate new Directive**
 
   ```bash
-  ng [generate | g] [directive | d] <directive-name>
+  ng [generate | g] [directive | d] [directive-name]
   ```
 
 - **Generate new Pipe**
 
   ```bash
-  ng [generate | g] [pipe | p] <pipe-name>
+  ng [generate | g] [pipe | p] [pipe-name]
+  ```
+
+- **Generate new Service**
+
+  ```bash
+  ng [generate | g] [service | s] [service-name]
   ```
 
 - **Start Angular App**
