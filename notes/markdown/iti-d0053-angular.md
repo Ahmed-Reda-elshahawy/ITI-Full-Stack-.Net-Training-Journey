@@ -297,4 +297,4 @@ export class ChildComponent {
 }
 ```
 
-[← Prev](./iti-d0051-angular.md) | [🏠 Index](../../README.md#index) | Next →
+[← Prev](./iti-d0051-angular.md) | [🏠 Index](../../README.md#index) | [Next →](./iti-d0054-angular.md)
