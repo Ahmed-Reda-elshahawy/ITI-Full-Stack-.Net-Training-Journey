@@ -15,7 +15,17 @@
 
 - Uses the `ngForm` directive to create a form.
 - Binds input fields to the model using `[(ngModel)]`.
+
+  ```html
+  <input type="number" name="price" [(ngModel)]="product.price" />
+  ```
+
 - Uses the `(ngSubmit)` event to handle form submission.
+
+  ```html
+  <form action="" (ngSubmit)="createProduct()"></form>
+  ```
+
 - Validates inputs using HTML5 attributes like `required`.
 - Disables the submit button when the form is invalid using `[disabled]`.
 
