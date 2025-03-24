@@ -12,7 +12,9 @@
     {
       path: "products",
       loadComponent: () =>
-        import("./products/products.component").then((m) => m.ProductsModule),
+        import("./products/products.component").then(
+          (m) => m.ProductsComponent
+        ),
     },
     { path: "**", component: ErrorComponent },
   ];
