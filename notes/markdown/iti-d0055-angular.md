@@ -1,19 +1,29 @@
-# 🔖 ITI - D0055 - Angular (Draft)
+# 🔖 ITI - D0055 - Angular
 
 ## Forms in Angular
 
 - Template-driven forms
 - Reactive forms
 
-### Template-driven forms
+## Template-driven forms
 
 - Template-driven forms are built using directives in the template (HTML).
 - These forms are rely **on two-way data binding** using `ngModel` directive.
 - This form validation is done in the template (HTML) by using HTML5 validation attributes.
 
-#### Template-driven Key Features
+### Template-driven Key Features
 
+- Imports `FormsModule` from `@angular/forms`, and add it in `imports` array.
 - Uses the `ngForm` directive to create a form.
+
+  ```html
+  <form
+    action=""
+    (ngSubmit)="createProduct()"
+    #createProductForm="ngForm"
+  ></form>
+  ```
+
 - Binds input fields to the model using `[(ngModel)]`.
 
   ```html
@@ -29,7 +39,7 @@
 - Validates inputs using HTML5 attributes like `required`.
 - Disables the submit button when the form is invalid using `[disabled]`.
 
-#### Input Fields Tracking
+### Input Fields Tracking
 
 Each input field has different states that help in validation:
 
@@ -43,11 +53,11 @@ Each input field has different states that help in validation:
 1. set a template reference variable on the input field using `#name="ngModel"`.
 2. Use the variable to access the field state. (e.g. `name.invalid`, `name.touched`, etc...)
 
-```html
-<input type="text" name="name" [(ngModel)]="product.name" #name="ngModel" />
-```
+   ```html
+   <input type="text" name="name" [(ngModel)]="product.name" #name="ngModel" />
+   ```
 
-#### Template-driven Form Setup
+### Template-driven Form Setup
 
 - Setup the form reference with `ngForm` directive. (e.g. `<form #productForm="ngForm">`)
 - Use `(ngSubmit)` event to handle form submission. (e.g. `<form (ngSubmit)="createProduct(productForm)">`).
@@ -57,7 +67,7 @@ Each input field has different states that help in validation:
 - Use HTML5 validation attributes like `required`, `pattern`, etc... (e.g. `<input name="price" [(ngModel)]="product.price" required pattern="[0-9]+">`).
 - Disable the submit button when the form is invalid. (e.g. `<button type="submit" [disabled]="productForm.invalid">Create</button>`).
 
-#### Check Form Validity
+### Check Form Validity
 
 - Check if the entire form is valid by using `#formRef.invalid` (e.g. `productForm.invalid`).
 - Check if a specific field is valid by using `#fieldRef.invalid` (e.g. `name.invalid`) withe `*ngIf` directive or `@if` block.
@@ -151,7 +161,7 @@ export class CreateProductFormComponent {
 }
 ```
 
-### Reactive forms
+## Reactive forms
 
 - Reactive forms depends on validation logic in the component class.
 - Reactive forms is mostly used for complex forms.
@@ -260,7 +270,7 @@ export class RegisterFormComponent {
 }
 ```
 
-#### Reactive forms key features
+### Reactive forms key features
 
 - Can access form values using `formGroup.value`. (e.g. `registeredUser.value`).
 - Also can access single value with `formGroup.get('controlName')`. (e.g. `registeredUser.get('userName')`).
@@ -278,7 +288,7 @@ get userName() {
 
 - Now we can access also access state of property like `userName.invalid`, `userName.touched`, etc...
 
-#### Working with Nested From Groups
+### Working with Nested From Groups
 
 - We can create nested form groups to group related form controls.
 
@@ -391,10 +401,12 @@ export class RegisterFormComponent {
 </form>
 ```
 
-#### Cross-Field Validation with Reactive Forms
+### Cross-Field Validation with Reactive Forms
 
 - We can create custom validation logic to validate multiple fields together.
 - We can create a custom validator function and add it to the form control.
+
+**Step 1: Create Custom Validator**:
 
 ```typescript
 import { AbstractControl, ValidationErrors, ValidatorFn } from "@angular/forms";
@@ -404,11 +416,58 @@ export function passwordMatched(): ValidatorFn {
     const password = control.get("password");
     const confirmPassword = control.get("confirmPassword");
 
-    return password &&
-      confirmPassword &&
-      password.value !== confirmPassword.value
-      ? { passwordMatch: true }
-      : null;
+    if (!password || !confirmPassword) {
+      return null; // If fields don’t exist, no validation needed
+    }
+
+    if (password.value !== confirmPassword.value) {
+      return { unmatchedPassword: true }; // Passwords don't match
+    }
+
+    return null; // Passwords match, no error
   };
 }
 ```
+
+**Step 2: Apply Validator in a FormGroup**:
+
+```typescript
+import { AbstractControl, ValidationErrors, ValidatorFn } from "@angular/forms";
+
+export function passwordMatched(): ValidatorFn {
+  return (control: AbstractControl): ValidationErrors | null => {
+    const password = control.get("password");
+    const confirmPassword = control.get("confirmPassword");
+
+    if (!password || !confirmPassword) {
+      return null; // If fields don’t exist, no validation needed
+    }
+
+    if (password.value !== confirmPassword.value) {
+      return { unmatchedPassword: true }; // Passwords don't match
+    }
+
+    return null; // Passwords match, no error
+  };
+}
+```
+
+**Step 3: Show Validation Error in HTML**:
+
+```typescript
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <label>Password:</label>
+  <input type="password" formControlName="password" />
+
+  <label>Confirm Password:</label>
+  <input type="password" formControlName="confirmPassword" />
+
+  <p *ngIf="registerForm.errors?.unmatchedPassword" style="color: red">
+    Passwords do not match!
+  </p>
+
+  <button type="submit">Register</button>
+</form>
+```
+
+[← Prev](./iti-d0054-angular.md) | [🏠 Index](../../README.md#index) | [Next →](./iti-d0056-angular.md)
