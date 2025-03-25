@@ -209,15 +209,6 @@ This index will be updated as I progress through the training. It will contain a
 
 - [Problem Solving](./side-activities/problem-solving/README.md)
 
-## Progress
-
-- [ ] Add notes for all topics as a Markdown files.
-- [ ] Add notes for all topics as a PDF files.
-- [ ] Automate the process of converting the Markdown files to PDF files.
-- [ ] Add tasks for all topics
-
-**_[TOP⬆](#iti-full-stack-net-training-journey)_**
-
 ## Disclaimer
 
 This repository is contains my personal notes and work. It is not an official repository for ITI. It is not affiliated with ITI in any way. It is just a personal repository that I am using to document my journey through the training.
