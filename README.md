@@ -72,6 +72,18 @@ This index will be updated as I progress through the training. It will contain a
 
 </details>
 
+<details>
+
+<summary>SASS & Bootstrap</summary>
+
+#### SASS & Bootstrap
+
+| Lecture                     | Topics Covered                                                                                                                        | Notes                                               |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| 🔖 ITI - D0014 - CST - SASS | • SASS Overview<br/>• SCSS vs. SASS<br/>• Sass Variables<br/>• Sass Nesting<br/>• Sass Loops<br/>• Sass Mixins<br/>• SASS 7-1 Pattern | [Markdown](./notes/markdown/iti-d00014-cst-sass.md) |
+
+</details>
+
 ### C# Programming Language
 
 <details>
