@@ -583,4 +583,4 @@ public IActionResult Get([FromQuery] int page = 1, [FromQuery] int pageSize = 10
   app.UseCors(CorsPolicy);
   ```
 
-[← Prev](./iti-d0047-asp-mvc.md) | [🏠 Index](../../README.md#index) | [Next →](./iti-d0049-asp-api.md)
+[← Prev](./iti-d0047-asp-api.md) | [🏠 Index](../../README.md#index) | [Next →](./iti-d0049-asp-api.md)
