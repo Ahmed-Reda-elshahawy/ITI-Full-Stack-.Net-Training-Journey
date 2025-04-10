@@ -1,4 +1,4 @@
-# 🔖 ITI - D0014 - CST - Bootstrap (Draft)
+# 🔖 ITI - D0014 - CST - Bootstrap
 
 ## BootStrap Overview
 
