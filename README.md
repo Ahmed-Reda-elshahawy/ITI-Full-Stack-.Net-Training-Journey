@@ -78,9 +78,10 @@ This index will be updated as I progress through the training. It will contain a
 
 #### SASS & Bootstrap
 
-| Lecture                     | Topics Covered                                                                                                                        | Notes                                               |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
-| 🔖 ITI - D0014 - CST - SASS | • SASS Overview<br/>• SCSS vs. SASS<br/>• Sass Variables<br/>• Sass Nesting<br/>• Sass Loops<br/>• Sass Mixins<br/>• SASS 7-1 Pattern | [Markdown](./notes/markdown/iti-d00014-cst-sass.md) |
+| Lecture                          | Topics Covered                                                                                                                                                                                              | Notes                                                   |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| 🔖 ITI - D0014 - CST - SASS      | • SASS Overview<br/>• SCSS vs. SASS<br/>• Sass Variables<br/>• Sass Nesting<br/>• Sass Loops<br/>• Sass Mixins<br/>• SASS 7-1 Pattern                                                                       | [Markdown](./notes/markdown/iti-d00014-cst-sass.md)     |
+| 🔖 ITI - D0014 - CST - Bootstrap | • BootStrap Overview<br/>• How to Include Bootstrap in your Project<br/>• Layouts<br/>• Content<br/>• Utilities<br/>• Bootstrap with JS<br/>• Bootstrap Components based on JS<br/>• Components<br/>• Forms | [Markdown](./notes/markdown/iti-d0014-cst-bootstrap.md) |
 
 </details>
 
