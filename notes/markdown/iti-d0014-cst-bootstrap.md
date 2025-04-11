@@ -147,7 +147,7 @@ Bootstrap provides a shorthand responsive margin, padding, and gap utility class
 
 #### Spacing Values
 
-Bootstrap uses `$spacers` variables in Sass to easily set ranges for spacing, so it set `$spacer` value by default to `3rem` and compute following values as percentage from this `$spacer`
+Bootstrap uses `$spacers` variables in Sass to easily set ranges for spacing, so it uses `$spacer` value to compute following values as percentage from this `$spacer`
 
 - `0` - eliminate the `margin` and `padding`.
 - `1` - `$spacer *.25`
